@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="{{asset('css/aos.css')}}" />
 </head>
 <header>
-<img class="w-100" src="{{asset('img/galeri/Screenshot 2025-03-10 095047.png')}}" alt="">
+<img class="w-100" src="{{asset('img/headerGaleri.jpg')}}" alt="">
 </header>
 <div class="card-header bg-transparent mt-5">
     <div class="d-flex justify-content-between">
