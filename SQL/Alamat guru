@@ -1,0 +1,10 @@
+UPDATE guru 
+SET 
+    alamat = CASE 
+        WHEN NamaGuru LIKE '%Rialis%' THEN 'Bulu-Kraksaan'
+        ELSE alamat  -- Tetap pertahankan nilai lama jika tidak memenuhi kondisi
+    END,
+    tahun = CASE 
+    	WHEN NamaGuru LIKE '%Rialis%' THEN 2002
+        ELSE tahun  -- Tetap pertahankan nilai lama jika tidak memenuhi kondisi
+    END;
