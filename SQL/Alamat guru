@@ -1,13 +1,5 @@
 UPDATE guru 
 SET 
-    alamat = CASE 
-        WHEN NamaGuru LIKE '%Yanto%' THEN 'Sumberanyar-Paiton'
-        WHEN NamaGuru LIKE '%Sahri%' THEN 'Sumbersecang-Gading'
-        WHEN NamaGuru LIKE '%Aninatul%' THEN 'Liprak Kidul-Banyuanyar'
-        WHEN NamaGuru LIKE '%Zainul Hasan%' THEN 'Nogosaren-Gading'
-        when NamaGuru like '%Riatiningsih%' then 'Tigasan Wetan-Leces'
-        ELSE alamat  -- Tetap pertahankan nilai lama jika tidak memenuhi kondisi
-    END,
     tahun = CASE 
     	WHEN NamaGuru LIKE '%Yanto%' THEN 2006
         WHEN NamaGuru LIKE '%Sahri%' THEN 2009
@@ -15,4 +7,12 @@ SET
         WHEN NamaGuru LIKE '%Zainul Hasan%' THEN 2022
         when NamaGuru like '%Riatiningsih%' then 2011
         ELSE tahun  -- Tetap pertahankan nilai lama jika tidak memenuhi kondisi
+    END,
+alamat = CASE 
+        WHEN NamaGuru LIKE '%Yanto%' THEN 'Sumberanyar-Paiton'
+        WHEN NamaGuru LIKE '%Sahri%' THEN 'Sumbersecang-Gading'
+        WHEN NamaGuru LIKE '%Aninatul%' THEN 'Liprak Kidul-Banyuanyar'
+        WHEN NamaGuru LIKE '%Zainul Hasan%' THEN 'Nogosaren-Gading'
+        when NamaGuru like '%Riatiningsih%' then 'Tigasan Wetan-Leces'
+        ELSE alamat  -- Tetap pertahankan nilai lama jika tidak memenuhi kondisi
     END;
