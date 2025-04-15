@@ -120,7 +120,7 @@ header video {
             </form>
                 <div id="unggul" class="container mt-5 d-flex justify-content-around gap-2">
                 <a style="text-decoration:none" href=""><div class="card bg-secondary bg-opacity-50"><img class="m-3 mt-3 w-50 mx-auto" src="/img/Beranda/icon_tahfiz.png" alt=""><h6 class="fw-bold w-75 text-light mx-auto text-center mt-3 mb-3">Program Unggulan Tahfizul Quran</h6></div></a>
-                <a style="text-decoration:none" href=""><div class="card bg-secondary bg-opacity-50"><img class="m-3 mt-3 w-50 mx-auto" src="/img/Beranda/icon_tahqiq.png" alt=""><h6 class="fw-bold w-75 text-light mx-auto text-center mt-3 mb-3">Program Unggulan Tahqiqu Qiroatil Kutub</h6></div></a>
+                <a style="text-decoration:none" href="{{route('tugasakhir.index')}}"><div class="card bg-secondary bg-opacity-50"><img class="m-3 mt-3 w-50 mx-auto" src="/img/Beranda/icon_tahqiq.png" alt=""><h6 class="fw-bold w-75 text-light mx-auto text-center mt-3 mb-3">Program Unggulan Tahqiqu Qiroatil Kutub</h6></div></a>
                 <a style="text-decoration:none" href="/prodistik"><div class="card bg-secondary bg-opacity-50"><img class="m-3 mt-3 w-50 mx-auto" src="/img/Beranda/icon_pro.png" alt=""><h6 class="fw-bold w-75 text-light mx-auto text-center mt-3 mb-3">Program Unggulan Intensifikasi TIK</h6></div></a>
                 <a style="text-decoration:none" href=""><div class="card bg-secondary bg-opacity-50"><img class="m-3 mt-3 w-50 mx-auto" src="/img/Beranda/icon_olim.png" alt=""><h6 class="fw-bold w-75 text-light mx-auto text-center mt-3 mb-3">Program Unggulan Bimbingan Olimpiade</h6></div></a>
             </div>
@@ -133,21 +133,21 @@ header video {
     <div class="container">
         <div  class="image-container">
             <div data-aos="fade-right" data-aos-duration="1000" data-aos-anchor-placement="top-center" class="image-column">
-                <img src="/img/alasan2.png" alt="Gambar 2">
-                <button class="alasan" onclick="location.href='#basel'">
-                    <p class="mb-0 mt-3">Program Unggulan yang ada di MA ZAHA</p>
+                <img style="border-top-left-radius: 10px;border-top-right-radius:10px" src="/img/alasan2.jpg" alt="Gambar 2">
+                <button class="alasan" onclick="location.href='{{route('asatidz.index')}}'">
+                    <p class="mb-0 mt-3">Tenaga Pendidik yang Profesional</p>
                     <p>Baca Selengkapnya...</p>
                 </button>
                 <img src="/img/alasan3.png" alt="Gambar 3">
-                <button class="alasan" onclick="location.href='#'">
+                <button class="alasan" onclick="location.href='{{route('fasilitas.index')}}'">
                     <p class="mb-0 mt-3">Fasilitas yang tersedia</p>
                     <p>Baca Selengkapnya...</p>
                 </button>
             </div>
             <div data-aos="fade-left" data-aos-duration="1000" data-aos-anchor-placement="top-center" class="image-row">
-                <img src="/img/alasan1.png" alt="Gambar 1">
-                <button class="alasan" onclick="location.href='#'">
-                    <p class="mb-0 mt-3">Tenaga pendidik yang profesional</p>
+                <img style="border-top-left-radius: 10px;border-top-right-radius:10px" src="/img/alasan1.jpg" alt="Gambar 1">
+                <button class="alasan" onclick="location.href='#basel'">
+                    <p class="mb-0 mt-3">Program Unggulan yang ada di MA ZAHA</p>
                     <p>Baca Selengkapnya...</p>
                 </button>
             </div>
