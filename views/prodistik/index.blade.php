@@ -81,37 +81,44 @@ article img {
     font-size: 14px;
 }
 
-
 ::-webkit-scrollbar {
-display: none}
+    display: none}
+    @media only screen and (min-width:768px){
+        article img{
+            width:25%;
+        }
+        #container a{
+            font-size:1.2rem;
+        }
+    }
+    @media only screen and (max-width:767px){
+        article img{
+            width:100%;
+        }
+        #container a{
+            font-size:0.7rem;
+        }
+}
 </style>
 <header class="mb-5">
     <img class="w-100" src="/img/prodistik/header.png" alt="">
     <div id="container" class="container rounded-3 p-3 position-absolute d-flex justify-content-around w-75 flew-wrap">
         <a href="#sejarah">Sejarah Prodistik</a>
         <a href="{{route('strukturProdistik')}}">Struktur Pengelola</a>
-        <a href="#kurikulum">Kurikulum</a>
-        <a href="#karya">Karya Santri</a>
+        <a href="{{route('kurikulumProdistik')}}">Kurikulum</a>
+        <a href="{{route('tugasakhir.index')}}">Karya Santri</a>
     </div>
 </header>
 <h2 id="sejarah" class="fw-bold mx-5">Sejarah PRODISTIK</h2>
 <div class="d-flex mx-3 mb-5">
     <div id="left" class="mx-3 clearfix" style="text-align:justify">
         <article>
-            <img class="w-25" src="/img/prodistik/its.png" alt="">
+            <img src="/img/prodistik/its.png" alt="">
             <div class="description">
                 <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim maiores veritatis blanditiis libero eum non ea ipsam sunt praesentium asperiores!
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim maiores veritatis blanditiis libero eum non ea ipsam sunt praesentium asperiores!
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim maiores veritatis blanditiis libero eum non ea ipsam sunt praesentium asperiores!
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim maiores veritatis blanditiis libero eum non ea ipsam sunt praesentium asperiores!
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim maiores veritatis blanditiis libero eum non ea ipsam sunt praesentium asperiores!
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim maiores veritatis blanditiis libero eum non ea ipsam sunt praesentium asperiores!
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim maiores veritatis blanditiis libero eum non ea ipsam sunt praesentium asperiores!
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim maiores veritatis blanditiis libero eum non ea ipsam sunt praesentium asperiores!
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim maiores veritatis blanditiis libero eum non ea ipsam sunt praesentium asperiores!
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim maiores veritatis blanditiis libero eum non ea ipsam sunt praesentium asperiores!
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim maiores veritatis blanditiis libero eum non ea ipsam sunt praesentium asperiores!
+                    Program Pendidikan Terapan Bidang Teknologi Informasi dan Komunikasi (TIK) yang selanjutnya disebut PRODISTIK adalah suatu program pendidikan yang dikembangkan oleh Institut Teknologi Sepuluh Nopember (ITS) sejak tahun 2007. Tujuan dari Prodistik adalah memberikan pengetahuan dan ketrampilan Teknologi Informasi dan Komunikasi sejak dini kepada siswa MA/SMA. PRODISTIK dilaksanakan sekolah/madrasah bekerjasama dengan ITS dan program ini ditempuh selama siswa dalam masa belajar di sekolah/madrasah.
+Adapun materi yang disampaikan meliputi bidang Perkantoran, Desain grafis, Multimedia, Animasi dan programming yang terangkum dalam kurikulum Prodistik dengan beban Pendidikan 25 SKS (Sistem Kredit Semester) yang terbagi dalam 5 (lima) semester. Bidang keahlian/bidang minat bisa diambil mulai semester III sesuai minat dari para peserta didik PRODISTIK.
+Dengan adanya program ini diharapkan lulusan dari Madrasah/sekolah akan memiliki keterampilan di bidang Teknologi Informasi dan Komunikasi sebagai bekal untuk menghadapi tantangan jaman di era globalisasi
                 </p>
             </div>
         </article>
@@ -120,80 +127,18 @@ display: none}
     <div class="my-5">
         <h2 class="text-center fw-bold">Komentar Mereka tentang Prodistik</h2>
         <div class="d-flex overflow-x-auto gap-3 mt-5 mx-3">
-           
+            @foreach($tests as $tes)
             <div class="testimonial-card">
-                <img src="/img/prodistik/person.png" alt="Foto Alumni" class="testimonial-img">
-                <div class="testimonial-text">
-                    <p class="quote overflow-y-auto">
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor congue massa. 
-                        Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, 
-                        sit amet commodo magna eros quis urna."
-                    </p>
-                    <p class="name"><strong>Yuliatin Ningsih</strong></p>
-                    <p class="info">Alumni Prodistik Angkatan 2022 Jurusan Administrasi Perkantoran</p>
-                </div>
-            </div>
-            <div class="testimonial-card">
-                <img src="/img/prodistik/person.png" alt="Foto Alumni" class="testimonial-img">
+                <img src="/img/prodistik/{{$tes->foto}}" alt="Foto Alumni" class="testimonial-img h-100" style="object-fit: cover">
                 <div class="testimonial-text">
                     <p class="quote">
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor congue massa. 
-                        Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, 
-                        sit amet commodo magna eros quis urna."
+                        {{$tes->testimoni}}
                     </p>
-                    <p class="name"><strong>Yuliatin Ningsih</strong></p>
-                    <p class="info">Alumni Prodistik Angkatan 2022 Jurusan Administrasi Perkantoran</p>
+                    <p class="name"><strong>{{$tes->nama}}</strong></p>
+                    <p class="info">Alumni Prodistik Angkatan {{$tes->tahun_lulus}} {{$tes->jurusan}}</p>
                 </div>
             </div>
-            <div class="testimonial-card">
-                <img src="/img/prodistik/person.png" alt="Foto Alumni" class="testimonial-img">
-                <div class="testimonial-text">
-                    <p class="quote">
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor congue massa. 
-                        Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, 
-                        sit amet commodo magna eros quis urna."
-                    </p>
-                    <p class="name"><strong>Yuliatin Ningsih</strong></p>
-                    <p class="info">Alumni Prodistik Angkatan 2022 Jurusan Administrasi Perkantoran</p>
-                </div>
-            </div>
-            <div class="testimonial-card">
-                <img src="/img/prodistik/person.png" alt="Foto Alumni" class="testimonial-img">
-                <div class="testimonial-text">
-                    <p class="quote">
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor congue massa. 
-                        Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, 
-                        sit amet commodo magna eros quis urna."
-                    </p>
-                    <p class="name"><strong>Yuliatin Ningsih</strong></p>
-                    <p class="info">Alumni Prodistik Angkatan 2022 Jurusan Administrasi Perkantoran</p>
-                </div>
-            </div>
-            <div class="testimonial-card">
-                <img src="/img/prodistik/person.png" alt="Foto Alumni" class="testimonial-img">
-                <div class="testimonial-text">
-                    <p class="quote">
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor congue massa. 
-                        Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, 
-                        sit amet commodo magna eros quis urna."
-                    </p>
-                    <p class="name"><strong>Yuliatin Ningsih</strong></p>
-                    <p class="info">Alumni Prodistik Angkatan 2022 Jurusan Administrasi Perkantoran</p>
-                </div>
-            </div>
-            <div class="testimonial-card">
-                <img src="/img/prodistik/person.png" alt="Foto Alumni" class="testimonial-img">
-                <div class="testimonial-text">
-                    <p class="quote">
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor congue massa. 
-                        Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, 
-                        sit amet commodo magna eros quis urna."
-                    </p>
-                    <p class="name"><strong>Yuliatin Ningsih</strong></p>
-                    <p class="info">Alumni Prodistik Angkatan 2022 Jurusan Administrasi Perkantoran</p>
-                </div>
-            </div>
-            
+            @endforeach
         </div>
     </div>
 @endsection
