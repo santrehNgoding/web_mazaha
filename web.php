@@ -16,20 +16,31 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-
+use App\Http\Controllers\TugasAkhirController;
+Route::get('/tugas-akhir/{id?}', [TugasAkhirController::class, 'index'])
+     ->name('tugasakhir.index');
 Route::get('/', [App\Http\Controllers\BerandaController::class, 'index'])->name('beranda');
 // Route::get('/asatidz', [App\Http\Controllers\AsatidzController::class, 'index'])->name('asatidz');
 Route::get('/test', [App\Http\Controllers\BerandaController::class, 'test'])->name('test');
+Route::get('/card', [App\Http\Controllers\BerandaController::class, 'card'])->name('card');
 Route::get('/struktur', [App\Http\Controllers\StrukturController::class, 'index'])->name('struktur');
 Route::get('/galeri/add', [App\Http\Controllers\GaleriController::class, 'add'])->name('add');
 Route::get('/prodistik/struktur', [App\Http\Controllers\ProdistikController::class, 'struktur'])->name('strukturProdistik');
+Route::get('/prodistik/kurikulum', [App\Http\Controllers\ProdistikController::class, 'kurikulum'])->name('kurikulumProdistik');
 Route::resource('berita', App\Http\Controllers\BeritaController::class);
+Route::resource('tugasakhir', App\Http\Controllers\TugasAkhirController::class)->except(['index']);
 Route::resource('fasilitas', App\Http\Controllers\FasilitasController::class);
 Route::resource('asatidz', App\Http\Controllers\AsatidzController::class);
 Route::resource('galeri', App\Http\Controllers\GaleriController::class);
-Route::resource('ekstra', App\Http\Controllers\EkstraController::class);
+Route::resource('ekstra', App\Http\Controllers\EkstraController::class)->except(['show']);
 Route::resource('prestasi', App\Http\Controllers\PrestasiController::class);
 Route::resource('prodistik', App\Http\Controllers\ProdistikController::class);
+use App\Http\Controllers\EkstraController;
+Route::get('/ekstra/buat',[EkstraController::class,'buat'])->name('ekstra.buat');
+Route::post('/ekstra/tambah',[EkstraController::class,'tambah'])->name('ekstra.tambah');
+Route::get('/ekstra/ubah/{id}',[EkstraController::class,'ubah'])->name('ekstra.ubah');
+Route::post('/ekstra/ganti/{id}',[EkstraController::class,'ganti'])->name('ekstra.ganti');
+Route::delete('/ekstra/hapus/{id}',[EkstraController::class,'hapus'])->name('ekstra.hapus');
 use App\Http\Controllers\GaleriController;
 Route::delete('/galeri/delete/{kategori}', [GaleriController::class, 'delete'])->name('galeri.delete');
 
