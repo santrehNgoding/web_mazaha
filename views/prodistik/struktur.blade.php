@@ -3,7 +3,6 @@
 <style>
 .header{
     background-color: #046c3c;
-    padding-top:200px !important;
 }
 .right img{
     width:25vw;
@@ -238,10 +237,16 @@ button.primary.ghost {
 ::-webkit-scrollbar{
   display:none;
 }
+a {
+    color: inherit; 
+    text-decoration: none;
+}
+
 </style>
 <div class="header p-5">
-   <a href="#struktur"><h1 class="text-light mt-5">Struktur Pengelola PRODISTIK</h1></a>
-   <a href="#instruktur"><h2 class="text-light">Tim Instruktur</h2></a>
+   <a href="#struktur"><h1 class="text-light fw-bold mt-5">Struktur Pengelola PRODISTIK</h1></a>
+   <a href="#instruktur"><h2 class="text-light fw-bold">Tim Instruktur</h2></a>
+   <a href="{{route('prodistik.index')}}"><h2 class="text-light"><--</h2></a>
 </div>
 <article id='struktur'>
     <div class="p-5">
@@ -283,7 +288,7 @@ button.primary.ghost {
                 </p>
             </div>
             <div class="right">
-                <img class="rounded-circle bg-secondary" src="/img/prodistik/Pengelola/sek.png" alt="">
+                <img class="rounded-circle bg-secondary" src="/img/prodistik/Pengelola/yono.png" alt="">
             </div>
         </div>
         <h3 class="fw-bold text-success-emphasis mb-3 text-decoration-underline">Bendahara Program</h3>
@@ -309,7 +314,7 @@ button.primary.ghost {
                 <p style="text-align: justify;">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis animi modi rem non repellat ad magnam hic quis repellendus atque iste, ipsam distinctio esse quasi nobis laborum voluptate exercitationem incidunt maxime minus ducimus quas. Voluptatem placeat praesentium corrupti reprehenderit ratione nisi quas cum suscipit, unde adipisci ut eos voluptatum maxime. Inventore quibusdam nobis iste. Commodi vitae molestias deserunt, similique laboriosam blanditiis atque, iste vel laborum sint cupiditate laudantium aliquid? Delectus odio adipisci, nulla fugiat laboriosam vel aut, a quaerat, inventore saepe excepturi? Suscipit repellendus totam ratione sit autem accusamus ipsam delectus! Tempore id voluptates non modi optio dolore laborum veniam?
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis animi modi rem non repellat ad magnam hic quis repellendus atque iste, ipsam distinctio esse quasi nobis laborum voluptate exercitationem incidunt maxime minus ducimus quas. Voluptatem placeat praesentium corrupti reprehenderit ratione nisi quas cum suscipit, unde adipisci ut eos voluptatum maxime. Inventore quibusdam nobis iste. Commodi vitae molestias deserunt, similique laboriosam blanditiis atque, iste vel laborum sint cupiditate laudantium aliquid? Delectus odio adipisci, nulla fugiat laboriosam vel aut, a quaerat, inventore saepe excepturi? Suscipit repellendus totam ratione sit autem accusamus ipsam delectus! Tempore id voluptates non modi optio dolore laborum veniam?
-                </p>
+                  </p>
             </div>
             <div class="right">
                 <img class="rounded-circle bg-secondary" src="/img/prodistik/Pengelola/staf.png" alt="">
@@ -319,187 +324,43 @@ button.primary.ghost {
 </article>
 <h3 id="instruktur" class="fw-bold text-success-emphasis mb-3 px-5 text-decoration-underline">Tim Instruktur</h3>
 <div class="px-5 mb-5 d-flex overflow-x-auto gap-3">
+  @foreach ($dosens as $dosen)
   <div class="card-container p-3">
     <span class="pro"></span>
-    <img class="round" src="/img/prodistik/Pengelola/ket.png" alt="user" width="100px" />
-    <h3>A Muhibul Firdaus, M.Pd.I</h3>
-    <h6>Karangbong-Pajarakan</h6>
-    <p>Pendidik dan Pengusaha</p>
+    <img class="round" src="/img/prodistik/Pengelola/{{$dosen->file}}" alt="user" width="100px" />
+    <h3>{{$dosen->NamaGuru}}</h3>
+    <h6>{{$dosen->alamat}}</h6>
+    <p>{{$dosen->jabatan}}</p>
+
     <div class="buttons">
-      <button class="primary">Message</button>
-      <button class="primary ghost">Following</button>
+      <button class="primary">
+        <a href="https://t.me/{{$dosen->telegram}}">Message</a>
+      </button>
+      <button class="primary ghost">
+        <a href="#">Following</a>
+      </button>
     </div>
+
     <div class="skills">
       <h6>Pengampu Mata Kuliah</h6>
       <ul>
-        <li>UI / UX</li>
-        <li>Front End Development</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Node</li>
+        @if (!empty($dosen->mapel))
+          @foreach(json_decode($dosen->mapel, true) as $mapel)
+            <li>{{ $mapel }}</li>
+          @endforeach
+        @else
+          <li>Belum ada mata kuliah</li>
+        @endif
+        {{-- @if(auth()->user()->id=='admin') --}}
+        <li>
+          <a class="btn btn-primary w-100" style="border-radius:0px" href="{{route('prodistik.edit',$dosen->id)}}"><span>Ubah</span></a>
+        </li>
+        {{-- @endif --}}
       </ul>
     </div>
   </div>
-  <div class="card-container p-3">
-    <span class="pro"></span>
-    <img class="round" src="/img/prodistik/Pengelola/sek.png" alt="user" width="100px" />
-    <h3>Sumaryono, M.Pd.I</h3>
-    <h6>Karangbong-Pajarakan</h6>
-    <p>Pendidik dan Pengusaha</p>
-    <div class="buttons">
-      <button class="primary">Message</button>
-      <button class="primary ghost">Following</button>
-    </div>
-    <div class="skills">
-      <h6>Pengampu Mata Kuliah</h6>
-      <ul>
-        <li>UI / UX</li>
-        <li>Front End Development</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Node</li>
-      </ul>
-    </div>
-  </div>
-  <div class="card-container p-3">
-    <span class="pro"></span>
-    <img class="round" src="/img/prodistik/Pengelola/bend.png" alt="user" width="100px" />
-    <h3>Yanto,S.Pd.I, M.Si</h3>
-    <h6>Karangbong-Pajarakan</h6>
-    <p>Pendidik dan Pengusaha</p>
-    <div class="buttons">
-      <button class="primary">Message</button>
-      <button class="primary ghost">Following</button>
-    </div>
-    <div class="skills">
-      <h6>Pengampu Mata Kuliah</h6>
-      <ul>
-        <li>UI / UX</li>
-        <li>Front End Development</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Microsoft Access</li>
-        <li>Microsoft Word</li>
-        <li>Power Point</li>
-      </ul>
-    </div>
-  </div>
-  <div class="card-container p-3">
-    <span class="pro"></span>
-    <img class="round" src="/img/prodistik/Pengelola/iqbal.png" alt="user" width="100px" />
-    <h3>Iqbal Zakariyah, S.T, M.Kom</h3>
-    <h6>Karangbong-Pajarakan</h6>
-    <p>Pendidik dan Pengusaha</p>
-    <div class="buttons">
-      <button class="primary">Message</button>
-      <button class="primary ghost">Following</button>
-    </div>
-    <div class="skills">
-      <h6>Pengampu Mata Kuliah</h6>
-      <ul>
-        <li>Database MySQL</li>
-        <li>Back End Development</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Laravel</li>
-        <li>Js Node</li>
-      </ul>
-    </div>
-  </div>
-  <div class="card-container p-3">
-    <span class="pro"></span>
-    <img class="round" src="/img/prodistik/Pengelola/rofiqo.png" alt="user" width="100px" />
-    <h3>Rofiqo Handayani, S.Kom</h3>
-    <h6>Karangbong-Pajarakan</h6>
-    <p>Pendidik dan Pengusaha</p>
-    <div class="buttons">
-      <button class="primary">Message</button>
-      <button class="primary ghost">Following</button>
-    </div>
-    <div class="skills">
-      <h6>Pengampu Mata Kuliah</h6>
-      <ul>
-        <li>CorelDraw</li>
-        <li>Photo Shop</li>
-      </ul>
-    </div>
-  </div>
-  <div class="card-container p-3">
-    <span class="pro"></span>
-    <img class="round" src="/img/prodistik/Pengelola/taufiq.png" alt="user" width="100px" />
-    <h3>Taufiqur Rahman, S.Kom</h3>
-    <h6>Karangbong-Pajarakan</h6>
-    <p>Pendidik dan Pengusaha</p>
-    <div class="buttons">
-      <button class="primary">Message</button>
-      <button class="primary ghost">Following</button>
-    </div>
-    <div class="skills">
-      <h6>Pengampu Mata Kuliah</h6>
-      <ul>
-        <li>Photography</li>
-        <li>Film Pendek</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Node</li>
-      </ul>
-    </div>
-  </div>
-  <div class="card-container p-3">
-    <span class="pro"></span>
-    <img class="round" src="/img/prodistik/Pengelola/muzanni.png" alt="user" width="100px" />
-    <h3>Ahmad Muzanni, S.Kom</h3>
-    <h6>Karangbong-Pajarakan</h6>
-    <p>Pendidik dan Pengusaha</p>
-    <div class="buttons">
-      <button class="primary">Message</button>
-      <button class="primary ghost">Following</button>
-    </div>
-    <div class="skills">
-      <h6>Pengampu Mata Kuliah</h6>
-      <ul>
-        <li>CorelDraw</li>
-        <li>Photo Shop</li>
-        <li>Canva</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Node</li>
-      </ul>
-    </div>
-  </div>
-  <div class="card-container p-3">
-    <span class="pro"></span>
-    <img class="round" src="/img/prodistik/Pengelola/new.png" alt="user" width="100px" />
-    <h3>Muhammad Ishomuddin</h3>
-    <h6>Karangbong-Pajarakan</h6>
-    <p>Pendidik dan Pengusaha</p>
-    <div class="buttons">
-      <button class="primary">Message</button>
-      <button class="primary ghost">Following</button>
-    </div>
-    <div class="skills">
-      <h6>Pengampu Mata Kuliah</h6>
-      <ul>
-        <li>UI / UX</li>
-        <li>Front End Development</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Node</li>
-      </ul>
-    </div>
-  </div>
-</div>
+@endforeach
+
 <script>
      document.querySelectorAll("details").forEach((detail) => {
         let icon = detail.querySelector(".icon");
