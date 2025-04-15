@@ -34,8 +34,10 @@ class AsatidzController extends Controller
         $file->move(public_path('img/asatidz'), $namaFile);
         \App\Models\Guru::create([
             'NamaGuru'=>$request['NamaGuru'],
+            'alamat'=>$request['alamat'],
             'Profil'=>$namaFile,
             'Bidang'=>$request['Bidang'],
+            'tahun'=>$request['tahun'],
             'Motto'=>$request['Motto'],
             'Telegram'=>$request['Telegram'],
             'Email'=>$request['Email'],
@@ -59,8 +61,10 @@ class AsatidzController extends Controller
            $data=[
 
                'NamaGuru'=>$request['NamaGuru'],
+               'alamat'=>$request['alamat'],
                'Profil'=>$namaFile,
                'Bidang'=>$request['Bidang'],
+               'tahun'=>$request['tahun'],
                'Motto'=>$request['Motto'],
                'Telegram'=>$request['Telegram'],
                'Email'=>$request['Email'],

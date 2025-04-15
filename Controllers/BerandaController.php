@@ -15,6 +15,9 @@ class BerandaController extends Controller
     {
     return view('webMA');
 }
+public function card(){
+    return view('card');
+}
     // public function indexTestimoni(Request $request)
     // {
     // $model = \App\Models\Testimoni::select('*');
