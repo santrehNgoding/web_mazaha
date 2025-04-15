@@ -72,9 +72,20 @@ label {
                          value="{{$row->foto}}">
                     </div>
                     <div class="form-group mb-3">
-                        <label for="guru">Nama Pengajar</label>
-                        <input type="text" class="form-control" name="guru"
-                         value="{{$row->guru}}">
+                        <label for="id_guru1">Nama Pengajar 1</label>
+                        <select name="id_guru1" id="" value="{{$row->id_guru1}}">
+                            @foreach($teachers as $teacher)
+                            <option value="{{$teacher->id}}">{{$teacher->nama}}</option>
+                            @endforeach
+                        </select>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="id_guru2">Nama Pengajar 2</label>
+                        <select name="id_guru2" id="" value="{{$row->id_guru1}}">
+                            @foreach($teachers as $teacher)
+                            <option value="{{$teacher->id}}">{{$teacher->nama}}</option>
+                            @endforeach
+                        </select>
                     </div>
                     <div class="form-group mb-3">
                         <label for="deskripsi">Deskripsi</label>
