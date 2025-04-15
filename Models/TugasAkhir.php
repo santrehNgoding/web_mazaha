@@ -2,17 +2,19 @@
 
 namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
-class Galeri extends Model
+class TugasAkhir extends Model
 {
     public $timestamps = false;
-    protected $table = 'galeri';
+    protected $table = 'tugasakhir';
     protected $primaryKey = 'id';
     protected $fillable = [
         'id',
-        'file',
         'title',
-        'kategori',
-        'created_at',
-        'keterangan'
+        'file',
+        'link',
+        'name',
+        'jurusan',
+        'tahun',
+        'deskripsi',
        ];
 }

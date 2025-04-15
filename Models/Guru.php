@@ -10,8 +10,10 @@ class Guru extends Model
     protected $fillable = [
         'id',
         'NamaGuru',
+        'alamat',
         'Profil',
         'Bidang',
+        'tahun',
         'Motto',
         'Telegram',
         'Email',

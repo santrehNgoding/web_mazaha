@@ -2,17 +2,18 @@
 
 namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
-class Galeri extends Model
+class TesPro extends Model
 {
     public $timestamps = false;
-    protected $table = 'galeri';
+    protected $table = 'testimoni_prodistik';
     protected $primaryKey = 'id';
     protected $fillable = [
         'id',
-        'file',
-        'title',
-        'kategori',
         'created_at',
-        'keterangan'
+        'nama',
+        'foto',
+        'tahun_lulus',
+        'jurusan',
+        'testimoni',
        ];
 }
