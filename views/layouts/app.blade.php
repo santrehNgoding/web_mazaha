@@ -235,9 +235,9 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Platform Digital</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Simumtaz</a></li>
-                            <li><a class="dropdown-item" href="#">Aromaza</a></li>
-                            <li><a class="dropdown-item" href="#">Tes Psikologi Jurusan</a></li>
+                            <li><a class="dropdown-item" href="https://simumtaz.mazainulhasan1.sch.id/login">Simumtaz</a></li>
+                            <li><a class="dropdown-item" href="https://t.me/MAzahaBot">Aromaza</a></li>
+                            <li><a class="dropdown-item" href="https://psychic.mazainulhasan1.sch.id">Tes Psikologi Jurusan</a></li>
                         </ul>
                     </li>
     
@@ -261,7 +261,7 @@
                     </li>
     
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Pojok Kajian</a>
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Kajian Santri</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Keislaman</a></li>
                             <li><a class="dropdown-item" href="#">Kajian Umum</a></li>
