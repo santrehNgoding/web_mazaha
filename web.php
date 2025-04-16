@@ -34,6 +34,7 @@ Route::resource('asatidz', App\Http\Controllers\AsatidzController::class);
 Route::resource('galeri', App\Http\Controllers\GaleriController::class);
 Route::resource('ekstra', App\Http\Controllers\EkstraController::class)->except(['show']);
 Route::resource('prestasi', App\Http\Controllers\PrestasiController::class);
+Route::resource('olimpiade', App\Http\Controllers\OlimpiadeController::class);
 Route::resource('prodistik', App\Http\Controllers\ProdistikController::class);
 use App\Http\Controllers\EkstraController;
 Route::get('/ekstra/buat',[EkstraController::class,'buat'])->name('ekstra.buat');
