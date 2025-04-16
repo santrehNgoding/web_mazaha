@@ -122,7 +122,7 @@ header video {
                 <a style="text-decoration:none" href=""><div class="card bg-secondary bg-opacity-50"><img class="m-3 mt-3 w-50 mx-auto" src="/img/Beranda/icon_tahfiz.png" alt=""><h6 class="fw-bold w-75 text-light mx-auto text-center mt-3 mb-3">Program Unggulan Tahfizul Quran</h6></div></a>
                 <a style="text-decoration:none" href="{{route('tugasakhir.index')}}"><div class="card bg-secondary bg-opacity-50"><img class="m-3 mt-3 w-50 mx-auto" src="/img/Beranda/icon_tahqiq.png" alt=""><h6 class="fw-bold w-75 text-light mx-auto text-center mt-3 mb-3">Program Unggulan Tahqiqu Qiroatil Kutub</h6></div></a>
                 <a style="text-decoration:none" href="/prodistik"><div class="card bg-secondary bg-opacity-50"><img class="m-3 mt-3 w-50 mx-auto" src="/img/Beranda/icon_pro.png" alt=""><h6 class="fw-bold w-75 text-light mx-auto text-center mt-3 mb-3">Program Unggulan Intensifikasi TIK</h6></div></a>
-                <a style="text-decoration:none" href=""><div class="card bg-secondary bg-opacity-50"><img class="m-3 mt-3 w-50 mx-auto" src="/img/Beranda/icon_olim.png" alt=""><h6 class="fw-bold w-75 text-light mx-auto text-center mt-3 mb-3">Program Unggulan Bimbingan Olimpiade</h6></div></a>
+                <a style="text-decoration:none" href="{{route('olimpiade.index')}}"><div class="card bg-secondary bg-opacity-50"><img class="m-3 mt-3 w-50 mx-auto" src="/img/Beranda/icon_olim.png" alt=""><h6 class="fw-bold w-75 text-light mx-auto text-center mt-3 mb-3">Program Unggulan Bimbingan Olimpiade</h6></div></a>
             </div>
     </div>
         </div>
