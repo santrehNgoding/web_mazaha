@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 15 Apr 2025 pada 01.23
+-- Waktu pembuatan: 16 Apr 2025 pada 20.17
 -- Versi server: 10.4.32-MariaDB
 -- Versi PHP: 8.2.12
 
@@ -557,6 +557,34 @@ INSERT INTO `guruekstra` (`id`, `nama`, `foto`, `bidang`, `tahun`, `alamat`, `te
 -- --------------------------------------------------------
 
 --
+-- Struktur dari tabel `guru_olimpiade`
+--
+
+CREATE TABLE `guru_olimpiade` (
+  `id` int(11) NOT NULL,
+  `nama` text NOT NULL,
+  `file` text NOT NULL,
+  `jabatan` text NOT NULL,
+  `telegram` text NOT NULL,
+  `kurikulum` text DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data untuk tabel `guru_olimpiade`
+--
+
+INSERT INTO `guru_olimpiade` (`id`, `nama`, `file`, `jabatan`, `telegram`, `kurikulum`) VALUES
+(1, 'Aninatul Baidiyah, S.TP', 'Picture1.jpg', 'Pembina Olimpiade', 'aninatul_baidiyah', NULL),
+(2, 'Tutik Qomaria, S.Si', 'Picture2.jpg', 'Pembimbing Mapel Matematika', 'TutikQmryh', 'Teori Bilangan, Aljabar, Kombinatorika, Geometri, Statistika'),
+(3, 'Mohammad Jamalul Lail, S.Pd', 'Picture3.jpg', 'Pembimbing Mapel Fisika', 'iyLoeL', 'Mekanika, Dinamika, Kinematika, Energi, Kalor, Optik, Fisika Modern'),
+(4, 'Agus Surahman, S.Si', 'Picture4.jpg', 'Pembimbing Mapel Kimia', 'agus_surahman', 'Hakikat Ilmu Kimia dan metode ilmiah, Struktur Atom, Konfigurasi Elektron (Tabel Periodik), Sifat Periodik Unsur, Tata Nama Senyawa Biner, redoks, dan kompleks, Persamaan reaksi kimia dan penyetaraan, Hukum dasar kimia, Konsep Mol dan Stoikhiometri, Ikatan kimia, bentuk molekul, gaya antar molekul, pembentukan senyawa dan pemanfaatannya, Termokimia, Laju Reaksi, Kesetimbangan Kimia, Konsep Asam Basa, Larutan Penyangga, Larutan Hidrolisis Garam, Titrasi Asam Basa, Stoikhiometri Larutan, Larutan Elektrolit dan non elektrolit, Sifat Koligatif larutan, Reaksi Redoks dan Penyetaraannya, Elektrokimia, Senyawa Hidrokarbon (Alkana, Alkena, dan Alkuna), Senyawa turunan Hidrokarbon, Benzena dan Turunannya, Polimer, Biomolekul (Karbohidrat, Protein, dan Lemak).'),
+(5, 'Amelia Mudrika, S.Pd', 'Picture5.jpg', 'Pembimbing Mapel Biologi', 'amell313', 'Genetika, Biomolekuler, Virus dan Bakteri, Embriologi, Anfismawan (Anatomi fisiologi hewan), Anfismatum (Anatomi Fisiologi tumbuhan), struktur dan fungsi makhluk hidup (pada manusia).'),
+(6, 'Sri Wahyuni Diyah Rahayu, S.Pd', 'Picture6.jpg', 'Pembimbing Mapel Ekonomi\r\n', 'Yunidiyah', 'Akuntansi dasar , Permintaan penawaran, Keseimbangan pasar, Elastisitas, Kebijakan fiskal moneter , Ekonomi mikro dan makro , dll.'),
+(7, 'Selvi Nanda Oktavia, S.Pd', 'Picture7.jpg', 'Pembimbing Mapel Geografi', 'Selvind', 'Iklim dan perubahan iklim, Kebencanaan dan manajemen bencana, Sumber daya dan manajemen sumber daya, Geografi lingkungan dan pembangunan berkelanjutan, Geomorfologi dan penggunaan lahan, Geografi pertanian dan permasalahan pangan, Kependudukan dan dinamika penduduk, Geografi kota, peremajaan kota, dan perencanaan kota, Geografi pembangunan dan teori keruangan, Pariwisata dan manajemen pariwisata, Geografi ekonomi dan globalisasi, Geografi budaya dan identitas regional.');
+
+-- --------------------------------------------------------
+
+--
 -- Struktur dari tabel `instruktur`
 --
 
@@ -657,7 +685,7 @@ INSERT INTO `prestasi` (`id`, `title`, `file`, `tahun`, `berita`, `created_at`) 
 (30, 'Juara 2 Bahasa Inggris', 'winner-20250312 145008.jpg', 2021, 'Selamat dan sukses atas prestasi santri MA Zaha dalam ajang Pekan Olahraga dan Seni (PORSENI) yang diadakan oleh Kemenag Kab. Probolinggo tanggal 13 - 16 November 2021. Mumtaz!', '2021-11-26'),
 (31, 'Juara 2 Bahasa Arab', 'winner-20250312 145052.jpg', 2021, 'Selamat dan sukses atas prestasi santri MA Zaha dalam ajang Pekan Olahraga dan Seni (PORSENI) yang diadakan oleh Kemenag Kab. Probolinggo tanggal 13 - 16 November 2021. Mumtaz!', '2021-11-26'),
 (32, 'Juara 3 Cipta puisi', 'winner-20250312 145133.jpg', 2021, 'Selamat dan sukses atas prestasi santri MA Zaha dalam ajang Pekan Olahraga dan Seni (PORSENI) yang diadakan oleh Kemenag Kab. Probolinggo tanggal 13 - 16 November 2021. Mumtaz!', '2021-11-26'),
-(33, 'Juaa 3 MFQ', 'winner-20250312 145220.jpg', 2021, 'Selamat dan sukses atas prestasi santri MA Zaha dalam ajang Pekan Olahraga dan Seni (PORSENI) yang diadakan oleh Kemenag Kab. Probolinggo tanggal 13 - 16 November 2021. Mumtaz!', '2021-11-26'),
+(33, 'Juara 3 MFQ', 'winner-20250312 145220.jpg', 2021, 'Selamat dan sukses atas prestasi santri MA Zaha dalam ajang Pekan Olahraga dan Seni (PORSENI) yang diadakan oleh Kemenag Kab. Probolinggo tanggal 13 - 16 November 2021. Mumtaz!', '2021-11-26'),
 (34, 'Desain Konten Terfavorit', 'winner-20250312 145439.jpg', 2021, 'Selamat dan sukses atas prestasi santri MA Zaha di tingkat Nasional dalam ajang Procommit V.11 Prodistik ITS Surabaya yang memperoleh Juara Desain Content Instagram Terfavorit atas nama Sasa Nola Tsaira (XI IPA 3)', '2021-11-29'),
 (35, 'Juara 2 Procommit', 'winner-20250312 145607.jpg', 2021, 'Selamat dan sukses atas prestasi santri MA Zaha di tingkat Nasional dalam ajang Procommit V.11 Prodistik ITS Surabaya yang memperoleh  Juara 2 Apresiasi Karya Akhir Siswa dengan judul \"Aplikasi Database Klinik Hafshawaty Pesantren Zainul Hasan Menggunakan Ms Access\" atas nama Yuliatin Ningsih (XII IPA 3)', '2021-11-29'),
 (36, 'Bronze Award PhIMO', 'winner-20250312 145846.jpg', 2021, 'Selamat dan sukses atas prestasi santri MA Zaha di tingkat Internasional atas nama Salsabila Meisefiyani (XI PK 1)\r\nMendapat Bronze Award dalam ajang PHIMO (Philippine International Mathematical Olympiad) Final Internasional yg bersaing dengan negara-negara lain.', '2021-11-29'),
@@ -726,6 +754,76 @@ INSERT INTO `prestasi` (`id`, `title`, `file`, `tahun`, `berita`, `created_at`) 
 (99, 'Lolos PTN jalur SNBP', 'winner-20250326 171957.jpg', 2025, 'SELAMAT DAN SUKSES\r\n\r\n25 santri MA Zaha diterima di Perguruan Tinggi Negeri Jalur SNBP (Seleksi Nasional Berdasarkan Prestasi) 2025.', '2025-03-17'),
 (100, 'Finalis KMNR-20', 'winner-20250326 172138.jpg', 2025, 'Congratulations\r\n- Widhat Ainur Muttaqin X-G\r\n- Sidqiana Azzahra XII IPA 1\r\nLOLOS BABAK FINAL\r\nOlimpiade KMNR-20 (Kompetisi Matematika Nalaria Realistik) se-Indonesia oleh KPM (Klinik Pendidikan MIPA) Readi Human School 2025 ke Tangerang (Banten) \r\n26 - 28 April 2025.', '2025-03-25'),
 (102, 'Lolos SPAN PTKIN 2025', 'winner-20250414 050710.jpg', 2025, 'SELAMAT DAN SUKSES\r\n\r\n71 santri MA Zaha diterima di Perguruan Tinggi Negeri Jalur SPAN-PTKIN 2025.', '2025-03-29');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `prestasi_olimpiade`
+--
+
+CREATE TABLE `prestasi_olimpiade` (
+  `id` int(11) NOT NULL,
+  `title` text NOT NULL,
+  `file` text NOT NULL,
+  `tahun` int(11) NOT NULL,
+  `berita` text DEFAULT NULL,
+  `created_at` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data untuk tabel `prestasi_olimpiade`
+--
+
+INSERT INTO `prestasi_olimpiade` (`id`, `title`, `file`, `tahun`, `berita`, `created_at`) VALUES
+(11, 'Bronze Award TIMO', 'winner-20250312 140432.jpg', 2021, 'Alhamdulillah..\r\nSelamat dan sukses atas diraihnya prestasi oleh santri MA Zainul Hasan 1 Genggong pada Thailand International Mathematical Olympiad 2020-2021.', '2021-02-11'),
+(12, 'Merit Award TIMO', 'winner-20250312 140511.jpg', 2021, 'Alhamdulillah..\r\nSelamat dan sukses atas diraihnya prestasi oleh santri MA Zainul Hasan 1 Genggong pada Thailand International Mathematical Olympiad 2020-2021.', '2021-02-11'),
+(13, 'Medali Perak MSC', 'winner-20250312 142304.jpg', 2021, 'Alhamdulillah. Selamat dan sukses untuk santri MA Zainul Hasan 1 Genggong yang meraih medali pada Olimpiade MSC (Madrasah Sains Competition) 28 Februari lalu.', '2021-03-22'),
+(14, 'Medali Perunggu MSC', 'winner-20250312 142348.jpg', 2021, 'Alhamdulillah. Selamat dan sukses untuk santri MA Zainul Hasan 1 Genggong yang meraih medali pada Olimpiade MSC (Madrasah Sains Competition) 28 Februari lalu.', '2021-03-22'),
+(15, 'Medali Perunggu MSC', 'winner-20250312 142422.jpg', 2021, 'Alhamdulillah. Selamat dan sukses untuk santri MA Zainul Hasan 1 Genggong yang meraih medali pada Olimpiade MSC (Madrasah Sains Competition) 28 Februari lalu.', '2021-03-22'),
+(16, 'Medali Perunggu MSC', 'winner-20250312 142532.jpg', 2021, 'Alhamdulillah. Selamat dan sukses untuk santri MA Zainul Hasan 1 Genggong yang meraih medali pada Olimpiade MSC (Madrasah Sains Competition) 28 Februari lalu.', '2021-03-22'),
+(17, 'Medali Perunggu MSC', 'winner-20250312 142609.jpg', 2021, 'Alhamdulillah. Selamat dan sukses untuk santri MA Zainul Hasan 1 Genggong yang meraih medali pada Olimpiade MSC (Madrasah Sains Competition) 28 Februari lalu.', '2021-03-22'),
+(18, 'Medali Perunggu MSC', 'winner-20250312 142721.jpg', 2021, 'Alhamdulillah. Selamat dan sukses untuk santri MA Zainul Hasan 1 Genggong yang meraih medali pada Olimpiade MSC (Madrasah Sains Competition) 28 Februari lalu.', '2021-03-22'),
+(19, 'Medali Perunggu MSC', 'winner-20250312 142756.jpg', 2021, 'Alhamdulillah. Selamat dan sukses untuk santri MA Zainul Hasan 1 Genggong yang meraih medali pada Olimpiade MSC (Madrasah Sains Competition) 28 Februari lalu.', '2021-03-22'),
+(20, 'Medali Perunggu MSC', 'winner-20250312 142834.jpg', 2021, 'Alhamdulillah. Selamat dan sukses untuk santri MA Zainul Hasan 1 Genggong yang meraih medali pada Olimpiade MSC (Madrasah Sains Competition) 28 Februari lalu.', '2021-03-22'),
+(22, 'Silver Award PhIMO', 'winner-20250312 143241.jpg', 2021, 'Alhamdulillah. Selamat dan sukses kepada Salsabila Meisefiyani yang telah meraih SILVER AWARD pada Phillipine International Mathematical Olympiad Heat Round 2021. Semoga membawa barokah. Aamiin', '2021-04-04'),
+(23, 'Silver Award TIMO', 'winner-20250312 143622.jpg', 2021, 'Alhamdulillah. Selamat dan sukses kepada Salsabila Meisefiyani yang telah meraih Silver Award pada Thailand International Mathematical  Olympiad 2020-2021. Sebuah kabar gembira untuk Keluarga Besar MA Zainul Hasan 1 Genggong di tengah suasana Idulfitri dan pandemi. Semoga membawa barokah. Aamiin', '2021-05-17'),
+(24, 'Achiever Medal PIMSO', 'winner-20250312 143947.jpg', 2021, 'Alhamdulillah. Selamat dan sukses atas diraihnya Medali Achiever pada Philippine International Math and Science Olympics (Indonesia Region 2021). Semoga barokah', '2021-06-07'),
+(25, 'Lolos KSN-K Fisika', 'winner-20250312 144117.jpg', 2021, 'Alhamdulillah. Kabar bahagia datang lagi untuk MA Zaha \r\nSelamat dan sukses untuk Akmal Aditya yang lolos pada KSN Tingkat Kabupaten se-Jatim (Mapel Fisika).\r\nSemoga membawa berkah dan dilancarkan di tingkat Provinsi nanti. Aamiin', '2021-06-21'),
+(26, 'Lolos KSM-K', 'winner-20250312 144340.jpg', 2021, 'Selamat dan sukses untuk santri-santri MA Zainul Hasan 1 Genggong yang telah berhasil Lolos Kompetisi Sains Madrasah (KSM) 2021 tingkat Kabupaten.', '2021-08-28'),
+(28, 'Gold Medal TIMO', 'winner-20250312 144725.jpg', 2021, 'Alhamdulillah untuk kesekian kalinya Ananda Salsa mengharumkan nama MA Zaha dan Pesantren di ajang Internasional. \r\nSelamat dan sukses kepada Salsabila Meisefiyani yang telah meraih GOLD MEDAL pada Thailand International Mathematical Olympiad (TIMO) Indonesia Region 2021. Semoga membawa barokah', '2021-11-09'),
+(36, 'Bronze Award PhIMO', 'winner-20250312 145846.jpg', 2021, 'Selamat dan sukses atas prestasi santri MA Zaha di tingkat Internasional atas nama Salsabila Meisefiyani (XI PK 1)\r\nMendapat Bronze Award dalam ajang PHIMO (Philippine International Mathematical Olympiad) Final Internasional yg bersaing dengan negara-negara lain.', '2021-11-29'),
+(39, 'Silver Award HKIMO', 'winner-20250312 151505.jpg', 2022, 'Selamat dan sukses \r\nAnanda Salsabila Meisefiyani Mendapatkan *Silver Award* dalam ajang HKIMO (Hongkong Internasional Mathematical Olympiad) Indonesia round 2022', '2022-06-08'),
+(40, 'Lolos OSN-K Geografi', 'winner-20250312 151639.jpg', 2022, 'FAHMI RAMADHAN SIREGAR (XI IPS 2)\r\nLolos ke tingkat Provinsi (OSN - P) 2022\r\nBidang Geografi\r\n\r\nMohon doanya, semoga diberikan kemudahan di tingkat provinsi dan lolos ke tingkat Nasional.', '2022-06-15'),
+(42, 'Juara 3 KSM-K Ekonomi', 'winner-20250312 152017.jpg', 2022, 'Kabar gembira di bulan Kemerdekaan. Santri MA Zaha atas nama Ahmad Kusairi meraih Juara 3 pada ajang Olimpiade Kompetisi Sains Madrasah 2022 Bidang Studi Ekonomi Tingkat Kabupaten.', '2022-08-20'),
+(43, 'Semifinalis OLMAT UINSA', 'winner-20250312 152220.jpg', 2022, 'Alhamdulillah 2 peserta santri MA Zainul Hasan 1 Genggong LOLOS ke babak Semifinal Olimpiade Matematika yang diselenggarakan oleh UIN Sunan Ampel Surabaya, atas nama:\r\n- Salsabila Meisefiyani XII PK 1 (peserta 50 terbaik nasional) \r\n(10 % terbaik tingkat rayon se-Malang)', '2022-09-14'),
+(44, 'Semifinalis OLMAT UINSA', 'winner-20250312 152308.jpg', 2022, 'Alhamdulillah 2 peserta santri MA Zainul Hasan 1 Genggong LOLOS ke babak Semifinal Olimpiade Matematika yang diselenggarakan oleh UIN Sunan Ampel Surabaya, atas nama:\r\n- Barizatul Jannah XII IPA 1 \r\n(10 % terbaik tingkat rayon se-Malang)', '2022-09-14'),
+(46, 'Semifinalis Matriks', 'winner-20250312 152649.jpg', 2022, 'Selamat dan sukses \r\nKepada \r\nSalsabila Meisefiyani\r\nAtas prestasi nya sebagai\r\nPeserta lolos babak semifinal MATRIKS COMPETITION VI 2022\r\nOlimpiade Matematika tingkat SMA/SMK/MA se-Jawa Timur\r\nYang diselenggarakan oleh \r\nUniversitas Islam Negeri Jember', '2022-11-20'),
+(53, 'Silver Award Final TIMO', 'winner-20250312 154623.jpg', 2023, 'Selamat dan sukses\r\nSalsabila Meisefiyani atas diraihnya SILVER AWARD pada ajang Thailand International Mathematical Olympiad (TIMO) Final Round 2022 - 2023 di Pattaya, Thailand.', '2023-05-06'),
+(58, 'Juara KSM-K', 'winner-20250312 155401.jpg', 2023, 'Selamat dan Sukses\r\n\r\n3 Santri MA Zaha menorehkan prestasi pada ajang Kompetisi Sains Madrasah (KSM) 2023 Tingkat Kabupaten dan berhak mewakili Kabupaten Probolinggo ke tingkat Provinsi.\r\n1. Sidqiana Azzahra (Juara 1 KSM Matematika Terintegrasi)\r\n2. Ghinan Nafsi Manzilatul Hasanah (Juara 1 KSM Kimia Terintegrasi)\r\n3. Da\'imatul Istiqomah (Juara 3 KSM Fisika Terintegrasi)\r\nSemoga diberikan kemudahan dan kelancaran di tingkat provinsi.', '2023-07-14'),
+(62, 'Finalis PHI', 'winner-20250312 155943.jpg', 2023, 'Selamat dan sukses \r\nkepada\r\nSidqiana Azzahra (XI IPA 1)\r\nLolos ke babak perebutan juara\r\nOlimpiade Matematika Tingkat Nasional PHI XXII 2023\r\nUniversitas Islam Malang (UNISMA)', '2023-09-17'),
+(63, 'Semifinalis Nupho', 'winner-20250312 160052.jpg', 2023, 'Selamat dan sukses \r\nkepada\r\nM. AMRI AMIRUDDIN (XII IPA 4)\r\nLolos ke babak semifinal\r\nOlimpiade Fisika Tingkat Nasional NuPho 2023 Universitas Negeri Malang.', '2023-09-24'),
+(64, 'Merit Award Final PHI', 'winner-20250312 160205.jpg', 2023, 'Selamat dan sukses \r\nkepada\r\nSidqiana Azzahra (XI IPA 1)\r\nmendapatkan Merit Award pada Grand Final\r\nOlimpiade Matematika Tingkat Nasional PHI XXII 2023\r\nUniversitas Islam Malang (UNISMA)', '2023-10-03'),
+(65, 'Silver Medal LIMAS', 'winner-20250312 160317.jpg', 2023, 'Selamat dan sukses \r\nkepada\r\nSidqiana Azzahra (XI IPA 1)\r\nAtas diraihnya Silver Medal pada Olimpiade Matematika Tingkat Nasional LIMAS IV 2023 oleh COLUMNA SAINTICIA.\r\nBerhak maju ke Grand Final dan mengikuti Indonesian Math Camp di Kota Batu.', '2023-10-19'),
+(66, 'Medalis TIMO', 'winner-20250312 160421.jpg', 2023, 'Selamat dan sukses \r\n3 santri MA Zaha Goes to Thailand\r\n1. Faizah Vivi Wulandari (Silver Award)\r\n2. Sidqiana Azzahra (Bronze Award)\r\n3. Nuriyah Rahmawati (Silver Award)\r\nBerhak maju ke babak final di Thailand pada ajang Thailand Internasional Mathematical Olympiad (TIMO) 2023 - 2024.', '2023-11-03'),
+(67, 'Bronze Award BBB', 'winner-20250312 160544.jpg', 2023, 'Congratulations\r\nSantri MA ZAHA GOES to MACAU-HONGKONG\r\nNuriyah Rahmawati (BRONZE AWARD)\r\nMaju ke babak FINAL di Hongkong pada ajang Olimpiade BBB (Big Bay Bei) International Mathematical Olympiad 2023 - 2024.', '2023-11-29'),
+(68, 'Semifinalis KMNR-19', 'winner-20250312 160804.jpg', 2024, 'Selamat dan sukses\r\n- Faizah Vivi Agustin X IPAS 1\r\n- Aliya Firnanda X IPAS 3\r\n- Nuriyah Rahmawati X PK 1\r\n- Sidqiana Azzahra XI IPA 1\r\nLolos ke babak semifinal\r\nOlimpiade KMNR-19 (Kompetisi Matematika Nalaria Realistik) se-Indonesia oleh KPM (Klinik Pendidikan MIPA) Readi Human School', '2024-01-05'),
+(71, 'Semifinalis LSM UNY', 'winner-20250312 161323.jpg', 2024, 'Selamat dan sukses\r\nAnanda\r\nSIDQIANA AZZAHRA XI IPA 1\r\nLolos ke babak semifinal\r\nOlimpiade Matematika Tingkat Nasional LSM XXXII 2024 UNY (Universitas Negeri Yogyakarta) \r\nMA ZAHA goes to JOGJA', '2024-02-29'),
+(72, 'Merit Award LSM UNY', 'winner-20250312 161501.jpg', 2024, 'Congratulations\r\nAnanda\r\nSidqiana Azzahra \r\nPada Grand Final Olimpiade Matematika Tingkat Nasional LSM XXXII oleh UNY (Universitas Negeri Yogyakarta) mendapatkan MERIT AWARD', '2024-03-03'),
+(73, 'Medalis OLNAS', 'winner-20250312 161618.jpg', 2024, 'Congratulations\r\nAnanda\r\n- Nur Jannah Binti Jamal Mendapatkan Medali Perak (Olimpiade Bhs Inggris) \r\n- Salsabila Nadiah Mendapatkan Medali Emas (Olimpiade Biologi) \r\n- Salzabila Ghina Firyal Mendapatkan Medali Perak (Olimpiade Biologi) \r\nPada ajang OLNAS (Olimpiade Sains Nasional) 2024\r\nPenyelenggara :\r\nRUANG DOSEN RI\r\nSTAI YAPNAS NASIONAL\r\nTRANS STUDIO', '2024-03-04'),
+(75, 'Finalis KMNR-19', 'winner-20250312 161838.jpg', 2024, 'Congratulations\r\nAnanda\r\n- Nuriyah Rahmawati X PK 1\r\nLolos ke BABAK FINAL\r\nOlimpiade KMNR-19 (Kompetisi Matematika Nalaria Realistik) se-Indonesia oleh KPM (Klinik Pendidikan MIPA) Readi Human School\r\nMA ZAHA goes to JAKARTA', '2024-03-30'),
+(78, 'Merit Award Final BBB', 'winner-20250312 162141.jpg', 2024, 'Congratulations\r\nNuriyah Rahmawati X PK 1\r\nMendapatkan MERIT AWARD\r\nBabak FINAL Olimpiade Matematika Internasional BBB (Big Bay Bei) MACAU-HONGKONG 2023 - 2024', '2024-04-21'),
+(79, 'Juara 1 OSN-K Informatika', 'winner-20250312 162246.jpg', 2024, 'Selamat dan Sukses\r\nAnanda\r\nShidqiana Azzahra XI IPA 1\r\nJuara 1 Tingkat Kabupaten Mapel Informatika \r\nLolos ke Tingkat Provinsi\r\nOSN 2024 (Olimpiade Sains Nasional) oleh Kemendikbud', '2024-04-22'),
+(80, 'Merit Award Final TIMO', 'winner-20250312 162408.jpg', 2024, 'Congratulations\r\nAnanda\r\n1. Sidqiana Azzahra \r\n2. Nuriyah Rahmawati\r\n3. Faizah Vivi Agustin\r\nMendapatkan MERIT AWARD\r\nBabak FINAL Olimpiade Matematika Internasional TIMO (Thailand International Mathematic Olympiad) 2023 - 2024\r\nBangkok, 25-29 April 2024', '2024-04-29'),
+(84, 'Juara 1 KSM-K', 'winner-20250312 163042.jpg', 2024, 'Selamat dan Sukses\r\nTIM MA Zaha\r\n1. Tania Lutfiyani (XI IPA 1)\r\n2. Listiana Azizah (XI IPA 1)\r\n2. Wely Astutik (XI IPS 2)\r\nJuara 1 \r\nMapel Sosial Sains Terpadu\r\nPada ajang KSM (Kompetisi Sains Madrasah) 2024 oleh KEMENAG \r\ndan Lolos ke Tingkat PROVINSI.', '2024-07-07'),
+(89, 'Finalis PHI', 'winner-20250312 163729.jpg', 2024, 'Congratulations\r\nAnanda\r\nFaizah Vivi Agustin XI IPA 1\r\nAisyah Putri Maulidasyah XII IPA 3\r\nLolos ke babak perebutan juara\r\nOlimpiade Matematika Tingkat Nasional PHI XXIII 2024 oleh Universitas Islam Malang (UNISMA)', '2024-09-19'),
+(90, 'Merit Award Final PHI', 'winner-20250312 163833.jpg', 2024, 'Selamat dan sukses \r\nFaizah Vivi Agustin (XI IPA 1)\r\nAisyah Putri Maulidasyah (XII IPA 3) \r\nmendapatkan Merit Award pada Grand Final\r\nOlimpiade Matematika Tingkat Nasional PHI XXIII 2024\r\nUniversitas Islam Malang (UNISMA)', '2024-10-01'),
+(92, 'Finalis Matematika EMC', 'winner-20250312 164113.jpg', 2024, 'Congratulations\r\nAnanda\r\nSaelan Maulidany Midad (X-I) \r\nWidhat Ainur Muttaqin (X-G) \r\nFaizah Vivi Agustin (XI IPA 1) \r\nAliya Firnanda (XI IPA 3) \r\nNuriyah Rahmawati (XI PK 1) \r\nSidqiana Azzahra (XII IPA 1)\r\nLOLOS BABAK FINAL\r\nOlimpiade Matematika Tingkat Nasional EMC (Eduversal Mathematics Competition) oleh Eduversal Foundation di Malang.', '2024-11-09'),
+(93, 'Bronze Medal IKSC', 'winner-20250312 164245.jpg', 2024, 'Congratulations\r\nNayfal Alif Azzamul Haq (X-I) \r\nMendapatkan BRONZE MEDAL\r\nPada ajang Olimpiade IKSC (International Kangaroo Science Contest) se-Indonesia\r\nPenyelenggara KPM (Klinik Pendidikan MIPA) Readi Human School', '2024-11-20'),
+(94, 'Semifinalis Fisika UNEJ', 'winner-20250312 164408.jpg', 2024, 'Congratulations\r\nAnanda\r\nNuri Faizatul Himmah Ramadhani XII IPA 2\r\nSidqiana Azzahra XII IPA 1\r\nLolos ke babak Semifinal \r\nOlimpiade Fisika Tingkat Nasional 2024 di Universitas Negeri Jember (UNEJ) OFFLINE', '2024-11-30'),
+(95, 'Juara Fisika UNEJ', 'winner-20250312 164742.jpg', 2024, 'Selamat dan sukses \r\nkepada\r\nSidqiana Azzahra (XII IPA 1) Juara Harapan 3\r\nNuri Faizatul Himmah R. (XII IPA 2) Juara 10 Besar \r\nPada Grand Final (Offline) \r\nOlimpiade Fisika Tingkat Nasional PHYSTON 2024\r\nUniversitas Negeri Jember (UNEJ)', '2024-12-04'),
+(96, 'Semifinalis KMNR-20', 'winner-20250312 165415.jpg', 2025, 'Congratulations\r\n- Sidqiana Azzahra XII IPA 1\r\n- Faizah Vivi Agustin XI IPA 1\r\n- Aliya Firnanda XI IPA 3\r\n- Nuriyah Rahmawati XI PK 1\r\n- Widhat Ainur Muttaqin X-G\r\n- Saelan Maulidany Midad X-I \r\nLOLOS BABAK SEMIFINAL\r\nOlimpiade KMNR-20 (Kompetisi Matematika Nalaria Realistik) se-Indonesia oleh KPM (Klinik Pendidikan MIPA) Readi Human School 2025.', '2025-02-08'),
+(98, 'Finalis OLNAS', 'winner-20250326 171810.jpg', 2025, 'Congratulations\r\n\r\n- Faizah Vivi Agustin XI IPA 1\r\n- Aliya Firnanda XI IPA 3\r\n- Nuriyah Rahmawati XI PK 1\r\n- Aril Prasetya XI IPA 4 \r\n- Ula Syafwan Maulana XI IPA 4 \r\n\r\nLOLOS BABAK FINAL\r\nOLNAS 2025 (Olimpiade Sains Nasional) se-Indonesia oleh Ruang Dosen RI ke Batu (Malang) Tgl 27 April 2025.', '2025-03-16'),
+(100, 'Finalis KMNR-20', 'winner-20250326 172138.jpg', 2025, 'Congratulations\r\n- Widhat Ainur Muttaqin X-G\r\n- Sidqiana Azzahra XII IPA 1\r\nLOLOS BABAK FINAL\r\nOlimpiade KMNR-20 (Kompetisi Matematika Nalaria Realistik) se-Indonesia oleh KPM (Klinik Pendidikan MIPA) Readi Human School 2025 ke Tangerang (Banten) \r\n26 - 28 April 2025.', '2025-03-25');
 
 -- --------------------------------------------------------
 
@@ -831,7 +929,25 @@ INSERT INTO `tugasakhir` (`id`, `title`, `file`, `link`, `name`, `jurusan`, `tah
 (40, 'Dokumenter \"Sampah\"', 'ta-20250414 191101.avif', 'ZZZvIE_pBLc&', 'Fahri Hibatur Rahman', 'Multimedia', '2023', 'Film Dokumenter \"Sampah\"'),
 (41, 'Film \"Ini Saatnya\"', 'ta-20250414 191428.avif', 'DoUo-O7WlAo', 'Silsilatul Makwah', 'Multimedia', '2022', '\"INI SAATNYA\" - TA PRODISTIK MA ZAHA _Silsilatul Makwah'),
 (42, 'Film \"Aku Berbeda\"', 'ta-20250414 192116.avif', 'cPuLTQIC5vY', 'Nurul Ilmiah', 'Multimedia', '2021', '\"jangan pernah mengeluh atas  kekuranganmu.karena kekurangan akan  mengingatkanmu  untuk terus mencari  kelebihan yang ada dalam dirimu. sebab tidak segalanya dapat kita mengerti  meski berapa hal dapat mudah dihadapi  dengan sebuah penerimaan\".'),
-(43, 'Film \"PR\"', 'ta-20250414 192809.avif', 'Z0fXfbJp3QI', 'M. Saiful Haq', 'Multimedia', '2018', 'FILM PENDEK \"PR\" - TA PRODISTIK MA ZAHA 1 - M. Saiful Haq - TA Terbaik 1');
+(43, 'Film \"PR\"', 'ta-20250414 192809.avif', 'Z0fXfbJp3QI', 'M. Saiful Haq', 'Multimedia', '2018', 'FILM PENDEK \"PR\" - TA PRODISTIK MA ZAHA 1 - M. Saiful Haq - TA Terbaik 1'),
+(44, 'Desain Packaging Parfum \"Hosanti\"', 'ta-20250416 015259.png', NULL, 'Aurilia Junita Hosanti', 'Design Graphic', '2025', 'Pembuatan Packaging Parfume \"Hosanti\" Dengan Menggunakan Aplikasi Coreldraw 2020'),
+(45, 'Desain Box \"Komodo Island\"', 'ta-20250416 024537.png', NULL, 'Ainit Taufiqoh', 'Design Graphic', '2025', 'Pembuatan Box Kaca Dengan Judul \"Komodo Island\" Menggunakan Aplikasi Coreldraw 2020'),
+(46, 'Desain Produk \"Matcha\"', 'ta-20250416 024741.png', NULL, 'Farhatun Jamilah', 'Design Graphic', '2025', 'Pembuatan Kemasan Produk \"Matcha\" Menggunakan Aplikasi Coreldraw 2014'),
+(47, 'Desain Mading 3D Pakaian Adat', 'ta-20250416 024957.png', NULL, 'Fasya Rohmatika', 'Design Graphic', '2025', 'Pembuatan Mading 3D Keberagaman Pakaian Adat Budaya Bangsa Indonesia Menggunakan Aplikasi Coreldraw 2020'),
+(48, 'Desain Pop Up Light Box KH. Ahmad Tuhfah', 'ta-20250416 025156.png', NULL, 'Himmatul Aliyah', 'Design Graphic', '2025', 'Pembuatan Pop Up Light Box KH. Ahmad Tuhfah Nahrawi Dengan Menggunakan Aplikasi Coreldraw 2020'),
+(49, 'Desain \"Sensory Book For Kids\"', 'ta-20250416 025256.png', NULL, 'Inayatul Ma\'rufa', 'Design Graphic', '2025', 'Pembuatan Sensory Book For Kids Dengan Menggunakan Aplikasi Coreldaw 2021'),
+(50, 'Desain Ular Tangga', 'ta-20250416 025404.png', NULL, 'Intan Nur Fitriani', 'Design Graphic', '2025', 'Pembuatan Permainan Ular Tangga Tentang Tokoh-Tokoh Nasional Indonesia Dengan Menggunakan Coreldraw 2020'),
+(51, 'Desain poster \"Dasar Ilmu Tajwid\"', 'ta-20250416 025536.png', NULL, 'Laella Farkiyah Fitriani', 'Design Graphic', '2025', 'Pembuatan Poster Media Pembelajaran Untuk Pemula Dasar Ilmu Tajwid Dengan Menggunakan Aplikasi Coreldraw 2020'),
+(52, 'Desain Smart Table', 'ta-20250416 025632.png', NULL, 'Lailatus Syarifah', 'Design Graphic', '2025', 'Pembuatan Smart Table \"Menstimulasi Kemampuan Dasar Pra Keaksaraan Anak Usia Dini\" Melalui Permainan Edukatif Dan Kreatif Dengan Menggunakan Aplikasi Coreldraw 2020'),
+(53, 'Desain brand \"Deli Green\"', 'ta-20250416 025743.png', NULL, 'Laili Agustin', 'Design Graphic', '2025', 'Pembuatan Brand Kemasan Produk Kacang Hijau \"Deli Green\" Dengan Menggunakan Aplikasi Coreldraw 2020'),
+(54, 'Desain branding \"Jawara Rasa\"', 'ta-20250416 025845.png', NULL, 'Madinatul Munauwaroh', 'Design Graphic', '2025', 'Branding Olahan Ikan Tongkol \"Jawara Rasa\" Dengan Menggunakan Aplikasi Coreldraw 2020'),
+(55, 'Desain Produk \"Chili Mountain\"', 'ta-20250416 025933.png', NULL, 'Maufiratus Soleha', 'Design Graphic', '2025', 'Pembuatan Kemasan Produk \"Chili Mountain\" Dengan Menggunakan Aplikasi Coreldraw 2020'),
+(56, 'Desain Pop Up Book Hewan', 'ta-20250416 030037.png', NULL, 'Mufidatul Maisaroh', 'Design Graphic', '2025', 'Pembuatan Pop Up Book Hewan Yang Sudah Punah pada Abad 17-20 dengan Menggunakan Aplikasi Coreldraw 2020'),
+(57, 'Desain Seragam Dan Kemasan \"Arsee Store\"', 'ta-20250416 030122.png', NULL, 'Najmi Nayla Fahza', 'Design Graphic', '2025', 'Pembuatan Desain Seragam Dan Kemasan \"Arsee Store\" Dengan Menggunakan Aplikasi Coreldraw 2020'),
+(58, 'Desain Brand \"Warm Ginger\"', 'ta-20250416 030233.png', NULL, 'Nita Auliya Naja', 'Design Graphic', '2025', 'Pembuatan Brand \"Warm Ginger\" Dengan Menggunakan Aplikasi Coreldraw 2020'),
+(59, 'Desain \"Peninggalan Sunan Kali Jaga\"', 'ta-20250416 030358.png', NULL, 'Nur Azizah', 'Design Graphic', '2025', 'Pembuatan History Box \"Peninggalan Sunan Kali Jaga\" Sang Penjahat Terpuji Menggunakan Aplikasi Coreldraw 2020'),
+(60, 'Desain Brand \"Moomilk\"', 'ta-20250416 030444.png', NULL, 'Rieza Sofwan Naksabandiyah', 'Design Graphic', '2025', 'Pembuatan Brand \"Moomilk\" Dengan Menggunakan Coreldraw 2020'),
+(61, 'Desain Pop Up Box \"Indonesian Core And Its President\"', 'ta-20250416 030536.png', NULL, 'Rizqiyah Rohimatum Misbah', 'Design Graphic', '2025', 'Pembuatan Pop Up Box \"Indonesian Core And Its President\" (Bahasa, Ras, Budaya Dan Agama) Dengan Menggunakan Aplikasi Coreldraw 2020');
 
 --
 -- Indexes for dumped tables
@@ -862,6 +978,12 @@ ALTER TABLE `guruekstra`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indeks untuk tabel `guru_olimpiade`
+--
+ALTER TABLE `guru_olimpiade`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indeks untuk tabel `instruktur`
 --
 ALTER TABLE `instruktur`
@@ -883,6 +1005,12 @@ ALTER TABLE `migrations`
 -- Indeks untuk tabel `prestasi`
 --
 ALTER TABLE `prestasi`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indeks untuk tabel `prestasi_olimpiade`
+--
+ALTER TABLE `prestasi_olimpiade`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -932,6 +1060,12 @@ ALTER TABLE `guruekstra`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
+-- AUTO_INCREMENT untuk tabel `guru_olimpiade`
+--
+ALTER TABLE `guru_olimpiade`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
 -- AUTO_INCREMENT untuk tabel `instruktur`
 --
 ALTER TABLE `instruktur`
@@ -956,6 +1090,12 @@ ALTER TABLE `prestasi`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=103;
 
 --
+-- AUTO_INCREMENT untuk tabel `prestasi_olimpiade`
+--
+ALTER TABLE `prestasi_olimpiade`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=103;
+
+--
 -- AUTO_INCREMENT untuk tabel `testimoni_alumni`
 --
 ALTER TABLE `testimoni_alumni`
@@ -971,7 +1111,7 @@ ALTER TABLE `testimoni_prodistik`
 -- AUTO_INCREMENT untuk tabel `tugasakhir`
 --
 ALTER TABLE `tugasakhir`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=62;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
