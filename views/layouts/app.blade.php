@@ -207,7 +207,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto gap-4 mx-5">
-                    <li class="nav-item"><a class="nav-link" href="{{route('beranda')}}">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{route('beranda')}}">Beranda</a></li>
                     
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Profil Madrasah</a>
@@ -229,6 +229,7 @@
                             <li><a class="dropdown-item" href="#">Tahfidzul Qur’an</a></li>
                             <li><a class="dropdown-item" href="#">Tahqiqu Kiroatil Kutub</a></li>
                             <li><a class="dropdown-item" href="/prodistik">Program Intensifikasi TIK</a></li>
+                            <li><a class="dropdown-item" href="{{route('olimpiade.index')}}">Bimbingan Olimpiade</a></li>
                         </ul>
                     </li>
     
