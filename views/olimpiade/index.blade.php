@@ -197,7 +197,7 @@ padding: 5px !important;
         <a href="#sejarah" class="button"><span>Sejarah</span></a>
         <a href="#struktur" class="button"><span>Struktur</span></a>
         <a href="#kurikulum" class="button" style="width: 25%"><span>Kurikulum</span></a>
-        <a href="#prestasi" class="button"><span>Prestasi</span></a>
+        <a href="{{route('olimpiade.prestasi')}}" class="button"><span>Prestasi</span></a>
     </div>
 </header>
 <div class="news-ticker" id="newsTickerContainer">
@@ -268,10 +268,10 @@ padding: 5px !important;
             </div>
         
             <div class="carousel-inner mt-5">
-                <div class="carousel-item active bg-light bg-opacity-50" style="margin-left:10vw;width:80vw">
+                <div class="carousel-item active bg-light bg-opacity-50  rounded-3 border-secondary" style="margin-left:10vw;width:80vw">
                     <div class="container d-flex flex-wrap p-5 w-100">
-                        <div class="item w-50">
-                            <img class="w-75" src="/img/olimpiade/Picture1.jpg" alt="">
+                        <div class="item w-50 ">
+                            <img class="w-75 d-block shadow-lg rounded-pill rounded-bottom-0" src="/img/olimpiade/Picture1.jpg" alt="">
                         </div>
                         <div class="item w-50 fw-bold">
                             <h1 style="font-size:5vw" class="text-success-emphasis text-end fw-bold">Aninatul Baidiyah,S.TP</h1>
@@ -291,10 +291,10 @@ padding: 5px !important;
                 </div>
                 @foreach ($teachers as $teacher)
                 @if($teacher->id>1)
-                <div id="kartu" class="carousel-item bg-light bg-opacity-50" style="margin-left:10vw;width:80vw;height:40vw">
+                <div id="kartu" class="carousel-item bg-light bg-opacity-50 shadow-lg rounded-3 border-secondary" style="margin-left:10vw;width:80vw;height:40vw">
                     <div class="container d-flex flex-wrap p-5 w-100">
                         <div class="item w-50">
-                            <img class="w-75" src="/img/olimpiade/{{$teacher->file}}" alt="">
+                            <img class="w-75 d-block shadow-lg rounded-pill rounded-bottom-0" src="/img/olimpiade/{{$teacher->file}}" alt="">
                         </div>
                         <div class="item w-50 fw-bold">
                             <h1 style="font-size:3vw" class="text-success-emphasis text-end fw-bold">{{$teacher->nama}}</h1>
