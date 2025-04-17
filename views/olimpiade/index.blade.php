@@ -8,8 +8,11 @@
         object-position: bottom;
     }
     @media only screen and (max-width:767px){
-        .left,.right{
+        .right,.center{
             width:100%;
+        }
+        .left{
+            display:none;
         }
         .auto-type, .left h1{
             font-size:10vw !important;
@@ -21,7 +24,7 @@
         .right{
             order: 1;
         }
-        .left{
+        .center{
             order: 2;
         }
         #headerOlim{
@@ -37,11 +40,17 @@
     }
     @media only screen and (min-width:768px){
         .left,.right{
+            width:25%;
+        }
+        .center{
             width:50%;
         }
         #headerOlim{
             height:80vh;
         }
+    }
+    .center{
+        text-align: center;
     }
     .news-ticker {
         width: 100%;
@@ -160,6 +169,9 @@ a{
     height:auto;
     order: 1;
 }
+#item-purpose{
+    width:90% !important;
+}
 #myCarousel{
     top: -320px;
 }
@@ -186,12 +198,15 @@ padding: 5px !important;
 <link rel="stylesheet" href="{{asset('css/aos.css')}}">
 <script src="{{asset('js/typed.umd.js')}}"></script>
 <header id="headerOlim" class="d-flex flex-wrap align-items-center p-5" >
-    <div data-aos="fade-left" data-aos-duration="1000" class="left">
+    <div data-aos="fade-right" data-aos-duration="1000" class="left">
+        <img class="d-block m-auto w-100" src="{{asset('img/olimpiade/coce.png')}}" alt="">
+    </div>
+    <div data-aos="fade-left" data-aos-duration="1000" class="center">
         <h1 class="text-success-emphasis"><span class="fs-1 fw-bold text-warning-emphasis">Bimbingan</span> <br> <span style="font-size:6vw;font-weight:bold">Olimpiade</span></h1>    
         <p id="auto-type" class="fw-bold"></p>
     </div>
     <div data-aos="fade-right" data-aos-duration="1000" class="right">
-        <img class="d-block m-auto" src="{{asset('img/olimpiade/contoh.png')}}" alt="">
+        <img class="d-block m-auto w-100" src="{{asset('img/olimpiade/coco.png')}}" alt="">
     </div>
     <div data-aos="fade-up" data-aos-duration="1000" class="w-50 d-flex flex-wrap gap-2" id="nav">
         <a href="#sejarah" class="button"><span>Sejarah</span></a>
@@ -216,26 +231,26 @@ padding: 5px !important;
     </p>
     <div class="container d-flex flex-wrap">
         <div id="purpose" class="d-flex flex-wrap gap-2 mt-2">
-            <div data-aos="zoom-in" data-aos-duration="1000" class="card bg-success p-3" style="width:45%;height:auto">
+            <div id="item-purpose" data-aos="zoom-in" data-aos-duration="1000" class="card bg-success p-3" style="width:45%;height:auto">
                 <img class="w-25" src="/img/asah.png" alt="">
                 <h5 class="fw-bold text-light">Mengasah Kemampuan</h5>
                 <p class="text-light">Ajang kompetisi itu seperti tempat latihan untuk mengasah kemampuan berpikir kritis, memecahkan masalah, dan belajar banyak hal baru.</p>
             </div>
-            <div data-aos="zoom-in" data-aos-duration="1000" class="card border-success border-5 p-3" style="width:45%;height:auto">
+            <div id="item-purpose" data-aos="zoom-in" data-aos-duration="1000" class="card border-success border-5 p-3" style="width:45%;height:auto">
                 <img class="w-25" src="/img/jabat.png" alt="">
                 <h5 class="fw-bold text-success">Membangun Jaringan</h5>
                 <p class="text-success">
                     Santri juga bisa bertemu banyak teman baru yang punya minat yang sama saat berkompetisi secara offline.
                 </p>
             </div>
-            <div data-aos="zoom-in" data-aos-duration="1000" class="card border-success border-5 p-3" style="width:45%;height:auto">
+            <div id="item-purpose" data-aos="zoom-in" data-aos-duration="1000" class="card border-success border-5 p-3" style="width:45%;height:auto">
                 <img class="w-25" src="/img/Medal.png" alt="">
                 <h5 class="fw-bold text-success">Membanggakan Keluarga dan Madrasah</h5>
                 <p class="text-success">
                     Jika santri berhasil meraih prestasi di beberapa ajang kompetisi, mereka tidak hanya membanggakan diri sendiri, tetapi juga keluarga dan madarasah.
                 </p>
             </div>
-            <div data-aos="zoom-in" data-aos-duration="1000" class="card bg-success p-3" style="width:45%;height:auto">
+            <div id="item-purpose" data-aos="zoom-in" data-aos-duration="1000" class="card bg-success p-3" style="width:45%;height:auto">
                 <img class="w-25" src="/img/jurusan.png" alt="">
                 <h5 class="fw-bold text-light">Membuka Peluang</h5>
                 <p class="text-light">Dengan mengikuti beberapa ajang kompetisi, santri punya kesempatan untuk masuk perguruan tinggi favorit dan mendapatkan beasiswa.</p>
