@@ -625,7 +625,7 @@ article img {
                         <div class="w-25" style="background-color: rgba(0,0,0,0);"><a href="{{route('ekstra.edit',$row->id)}}" id="editt" style="background-color: #033919;" title="Tambah Pengajar"><img style="max-width: 20px;background-color: none;" src="/img/edit.png" alt=""></a>
                         </div>
                         
-                    </summary>S
+                    </summary>
                     
                     <!-- Card Buttons -->
                     <div class="d-flex justify-content-around mt-3">
