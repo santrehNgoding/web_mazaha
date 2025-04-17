@@ -14,5 +14,7 @@ class PrestasiOlimpiade extends Model
         'tahun',
         'berita',
         'created_at',
+        'tingkat',
+        'jumlah',
        ];
 }
