@@ -102,7 +102,9 @@ header video {
         .alasan:hover{
             background-color: #046c3c;
         }
-
+        h3{
+            text-shadow: 10px 0px 10px #000;
+        }
     </style>
     <link rel="stylesheet" href="{{asset('css/alumni.css')}}">
     <link rel="stylesheet" href="{{asset('css/aos.css')}}">
