@@ -8,7 +8,7 @@
                 margin-bottom: 30px;
                 overflow: hidden;
             }
-            
+
             .featured-image {
                 width: 100%;
                 height: 500px;
@@ -131,6 +131,12 @@
                 }
                 .search{
                     width:100%
+                }
+                .index {
+                    width:100%;
+                }
+                .thesis-item{
+                    width:90%;
                 }
             }
             @media only screen and (min-width:768px){
