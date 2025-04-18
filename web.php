@@ -35,6 +35,7 @@ Route::resource('galeri', App\Http\Controllers\GaleriController::class);
 Route::resource('ekstra', App\Http\Controllers\EkstraController::class)->except(['show']);
 Route::resource('prestasi', App\Http\Controllers\PrestasiController::class);
 Route::resource('prodistik', App\Http\Controllers\ProdistikController::class);
+Route::resource('tahfiz', App\Http\Controllers\TahfizController::class);
 Route::resource('olimpiade', App\Http\Controllers\OlimpiadeController::class)->except(['show']);
 use App\Http\Controllers\OlimpiadeController;
 Route::get('/olimpiade/prestasi',[OlimpiadeController::class,'prestasi'])->name('olimpiade.prestasi');
