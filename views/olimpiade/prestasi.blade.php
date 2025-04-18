@@ -2,7 +2,7 @@
 @section('content')
 <style>
      .title{
-    background-color: rgba(17, 207, 74, 0.4);
+    /* background-color: rgba(17, 207, 74, 0.4); */
     position: absolute;
     top: 0;
     left: 0;
@@ -86,8 +86,8 @@ video {
         <h1 id="h1"  class="text-center text-light fw-bold">🏅Prestasi Olimpiade🏅</h1>
         <q class="text-light text-center mx-auto d-block">Perjalanan meraih mimpi dan membanggakan almamater melalui kompetisi akademik tingkat lokal hingga internasional</q>
     </div>
-    <video autoplay loop plays-inline style="width:100%;border:none">
-        <source src="/img/Beranda/VIDIO 1.mp4">
+    <video autoplay muted loop plays-inline style="width:100%;border:none">
+        <source src="/img/olimpiade/prestasi.mp4">
     </video>
 </header>
 <div  class="d-flex justify-content-around position-absolute gap-3" 
