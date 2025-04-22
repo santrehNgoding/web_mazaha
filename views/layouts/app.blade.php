@@ -212,17 +212,22 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Profil Madrasah</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Sambutan Kepala Madrasah</a></li>
+                            <li><a class="dropdown-item" href="/sambutan">Sambutan Kepala Madrasah</a></li>
                             <li><a class="dropdown-item" href="/struktur">Struktur Madrasah</a></li>
                             <li><a class="dropdown-item" href="#">Visi Misi Motto dan Tujuan</a></li>
                             <li><a class="dropdown-item" href="/asatidz">Profil Asatidz</a></li>
-                            <li><a class="dropdown-item" href="/fasilitas">Fasilitas Pembelajaran</a></li>
                         </ul>
                     </li>
-    
-                    <li class="nav-item"><a class="nav-link" href="{{route('ekstra.index')}}">Kurikulum</a></li>
 
-    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Wakabid</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="{{route('ekstra.index')}}">Kurikulum</a></li>
+                            <li><a class="dropdown-item" href="#">Kesiswaan</a></li>
+                            <li><a class="dropdown-item" href="/fasilitas">Sarana Prasarana</a></li>
+                            <li><a class="dropdown-item" href="#">Hubungan Masyarakat</a></li>
+                        </ul>
+                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Program Unggulan</a>
                         <ul class="dropdown-menu">
