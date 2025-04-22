@@ -111,6 +111,9 @@
         #container{
             display: inline !important;
         }
+        #poster{
+            width:95% !important;
+        }
     }
 
     summary {
@@ -540,7 +543,6 @@ article img {
   background: #D14836 !important;
   color: #fff;
 }
-
 .wrapper .instagram:hover,
 .wrapper .instagram:hover .tooltip,
 .wrapper .instagram:hover .tooltip::before {
@@ -587,11 +589,11 @@ article img {
     <h2 class="fw-bold mb-3 mt-5 m-5" style="color:#033919">Muatan Kurikulum</h2>
     <div id="container" class="d-flex mx-3">
         <!-- Left Content -->
-        <div id="left" class="mx-3 clearfix" style="text-align:justify">
-            <article>
+        <div id="left" class="mx-3 clearfix overflow-x-hidden" style="text-align:justify">
+            <article class="w-100">
                 <img id="poster" class="w-25" src="/img/gp.jpg" alt="">
                 <div class="description">
-                    <p>
+                    <p style="width:90%">
                         MA Zainul Hasan 1 Genggong merupakan madrasah mumtaz (unggul) yang mengintegrasikan pendidikan berbasis pesantren dan teknologi, menjadikannya sebagai lembaga pendidikan yang adaptif terhadap perkembangan zaman namun tetap kokoh dalam nilai-nilai keislaman. Kurikulumnya dirancang secara holistik dan integratif, mencakup aspek akademik, keagamaan, dan pengembangan karakter santri. Terdapat tiga program unggulan yang menjadi ciri khas madrasah ini. Pertama, Program Intensifikasi TIK yang bekerjasama langsung dengan Universitas Negeri Malang (UM), memfasilitasi siswa dalam penguasaan teknologi dan keterampilan digital sejak dini. Kedua, Program Tahfidzul Qur’an yang mendorong peserta didik untuk menjadi hafidz-hafidzah yang cinta Al-Qur’an. Ketiga, Tahqiqu Qiro’atil Kutub, yaitu program pendalaman literasi kitab kuning, yang menjadi ciri khas pesantren salaf.
 
                         Selain itu, MA Zainul Hasan 1 Genggong menyediakan kelas bimbingan olimpiade sains, matematika, dan sosial yang telah sukses mengantarkan siswa-siswinya berprestasi di tingkat nasional hingga internasional. Program kelas dibagi menjadi dua jalur, yaitu IPAS (Ilmu Pengetahuan Alam dan Sosial) dan PK (Program Keagamaan), yang disesuaikan dengan minat dan bakat siswa.
@@ -606,7 +608,7 @@ article img {
             <form method="GET" action="" class="mb-3">
                 <div class="input-group">
                     {{-- <input type="text" name="ekstra" class="form-control" placeholder="Cari Jenis Ekstrakulikuler..."> --}}
-                    <div class="input-group-append">
+                    <div class="input-group-append mx-auto">
                         {{-- <button type="submit" class="btn btn-success">
                             <img style="max-height:2vw" src="/img/search.png" alt=""></button> --}}
                         <a href="{{route('ekstra.create')}}" class="btn btn-success" title="Tambah Ekstrakulikuler">+ Ekstrakulikuler</a>
@@ -615,10 +617,10 @@ article img {
                 </div>
             </form>
 
-            <h4 class="fw-bold">Jenis Ekstrakulikuler</h4>
+            <h4 class="fw-bold text-center">Jenis Ekstrakulikuler</h4>
             
             @foreach ($rows as $row)
-            <div class="mb-1 ekstra-container" data-id="{{$row->id}}">
+            <div class="mb-1 ekstra-container mx-3" data-id="{{$row->id}}">
                 <details class="border border-success-subtle rounded-3">
                     <summary class="bg-success-subtle p-2 d-flex justify-content-between">
                         <div class="w-75"><span class="icons">+</span>{{$row->title}}</div>
