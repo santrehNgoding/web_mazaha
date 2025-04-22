@@ -21,6 +21,7 @@ Route::get('/tugas-akhir/{id?}', [TugasAkhirController::class, 'index'])
      ->name('tugasakhir.index');
 Route::get('/', [App\Http\Controllers\BerandaController::class, 'index'])->name('beranda');
 // Route::get('/asatidz', [App\Http\Controllers\AsatidzController::class, 'index'])->name('asatidz');
+Route::get('/sambutan', [App\Http\Controllers\BerandaController::class, 'sambutan'])->name('sambutan');
 Route::get('/test', [App\Http\Controllers\BerandaController::class, 'test'])->name('test');
 Route::get('/card', [App\Http\Controllers\BerandaController::class, 'card'])->name('card');
 Route::get('/struktur', [App\Http\Controllers\StrukturController::class, 'index'])->name('struktur');
