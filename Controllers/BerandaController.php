@@ -18,6 +18,10 @@ class BerandaController extends Controller
 public function card(){
     return view('card');
 }
+public function sambutan(){
+    $rows=\App\Models\KepalaMadrasah::all();
+    return view('sambutan',['rows'=>$rows]);
+}
     // public function indexTestimoni(Request $request)
     // {
     // $model = \App\Models\Testimoni::select('*');
