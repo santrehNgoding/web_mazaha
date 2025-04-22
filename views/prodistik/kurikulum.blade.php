@@ -25,7 +25,7 @@
 <div style="background-image: url('/img/prodistik/Mask group.png');height:273px;">
     <div class="w-100 h-100 bg-success" style="--bs-bg-opacity: .6;">
         <h1 style="padding-top:180px;padding-left:15px;color:#fff">Kurikulum Prodistik</h1>
-        <a href="{{route('prodistik.index')}}"><h2 class="text-light"><--</h2></a>
+        <a href="{{route('prodistik.index')}}"><h2 class="text-light mx-3 mb-5"><--</h2></a>
     </div>
 </div>
 <main class="p-3">
@@ -130,6 +130,10 @@ Bergabunglah dengan kami dan jadilah bagian dari masa depan teknologi!
                 <td>Tugas Akhir</td>
                 <td class="text-center">4</td>
             </tr>
+            <tr>
+                <td class="text-center table table-warning fw-bold" colspan="2">Jumlah SKS</td>
+                <td class="text-center table table-warning fw-bold" colspan="2">25</td>
+            </tr>
         </tbody>
     </table>
 </div>
@@ -209,6 +213,10 @@ Bergabunglah dengan kami dan jadilah bagian dari masa depan teknologi!
                 <td>Tugas Akhir</td>
                 <td class="text-center">4</td>
             </tr>
+            <tr>
+                <td class="text-center table table-warning fw-bold" colspan="2">Jumlah SKS</td>
+                <td class="text-center table table-warning fw-bold" colspan="2">25</td>
+            </tr>
         </tbody>
     </table>
 </div>
@@ -286,6 +294,10 @@ Bergabunglah dengan kami dan jadilah bagian dari masa depan teknologi!
                 <td>11</td>
                 <td>Tugas Akhir</td>
                 <td class="text-center">4</td>
+            </tr>
+            <tr>
+                <td class="text-center table table-warning fw-bold" colspan="2">Jumlah SKS</td>
+                <td class="text-center table table-warning fw-bold" colspan="2">25</td>
             </tr>
         </tbody>
     </table>
