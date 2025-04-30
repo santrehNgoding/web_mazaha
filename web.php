@@ -28,6 +28,10 @@ Route::get('/struktur', [App\Http\Controllers\StrukturController::class, 'index'
 Route::get('/galeri/add', [App\Http\Controllers\GaleriController::class, 'add'])->name('add');
 Route::get('/prodistik/struktur', [App\Http\Controllers\ProdistikController::class, 'struktur'])->name('strukturProdistik');
 Route::get('/prodistik/kurikulum', [App\Http\Controllers\ProdistikController::class, 'kurikulum'])->name('kurikulumProdistik');
+Route::get('/kesiswaan/osis', [App\Http\Controllers\KesiswaanController::class, 'osis'])->name('kesiswaan.osis');
+Route::resource('humas', App\Http\Controllers\HumasController::class);
+Route::resource('bendahara', App\Http\Controllers\BendaharaController::class);
+Route::resource('kesiswaan', App\Http\Controllers\KesiswaanController::class);
 Route::resource('berita', App\Http\Controllers\BeritaController::class);
 Route::resource('tugasakhir', App\Http\Controllers\TugasAkhirController::class)->except(['index']);
 Route::resource('fasilitas', App\Http\Controllers\FasilitasController::class);
