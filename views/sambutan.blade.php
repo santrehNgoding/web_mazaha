@@ -60,55 +60,70 @@
         </div>
     </div>
 </header>
+<div>
+
+    <h1 data-aos="flip-left" data-aos-duration="1000" class="mt-5 text-center fw-bold text-success-emphasis">Sambutan Kepala Madrasah</h1>
+    <img data-aos="flip-left" data-aos-duration="1000" style="max-width: 75%" class="mx-auto d-block mb-4"  src="/img/hr.png" alt="">
+    <h3 class="text-center">Assalamualaikum Warahmatullahi Wabarokatuh</h3>
+    <p style="text-align:justify;" class="px-5">
+        Hamdan lillah, tabaaroka wata’ala Wa Musholliyan ala Rosulillah.
+        Atas nama pribadi mewakili segenap Pimpinan Madrasah Aliyah serta Dewan Asatid mengucapkan selamat atas hadirnya Website Madrasah Aliyah Zainul Hasan 1 Genggong yang launchingnya pada hari kamis tanggal 22 Mei 2014, bertepatan dengan acara Pisah kenang untuk kelas XII Putri.
+        Semoga, dengan hadirnya Website MA. ZaHA 1 Genggong, kita bisa ikut berpartisipasi dalam pengembangan informasi melalui media IT yang sudah berkembang pesat di era ini. Harapan kami, tim website yang sudah terbentuk dapat memberikan warna baru bagi kemaslahatan Madrasah serta mengupdate informasi terbaru bagi pembaca terutama dalam cakupan dunia maya. Website MA. Zainul Hasan 1 Genggong hadir untuk menunjukkan existensi kreatifitas lembaga dalam menunjang kemampuan ber-IT untuk menampilkan berbagai kegiatan yang ada di Madrasah, intra maupun extra, terutama kegiatan-kegiatan unggulan kami agar bisa diterima dengan cepat di masyarakat. Website ini pula, kami niatkan sebagai media dakwah bil qolam yang contentnya akan kami muat dari hasil pemikiran dan ide para santri-santri yang berada di bawah naungan lembaga aliyah. Sekali lagi, kami mengucapkan selamat atas hadirnya Website MA. Zainul Hasan 1 Genggong. Semoga bermanfaat.
+    </p>
+    <h3 class="text-center">Wassalamualaikum Warahmatullahi Wabarokatuh</h3>
+</div>
 <h1 data-aos="flip-left" data-aos-duration="1000" class="mt-5 text-center fw-bold text-success-emphasis">Kepala Madrasah dari Masa ke Masa</h1>
 <img data-aos="flip-left" data-aos-duration="1000" style="max-width: 75%" class="mx-auto d-block mb-4"  src="/img/hr.png" alt="">
 <p class="mx-5" style="text-align: justify">
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint cumque atque minima nisi odio voluptas totam, velit quis, alias autem consequatur assumenda eos, esse itaque labore vero laborum? Repellat sit aperiam delectus, dolores magni voluptas dolor nesciunt alias dolore. Minus placeat, eos, sequi vero aliquid explicabo et vel amet adipisci eligendi exercitationem beatae quo accusamus magnam repellat voluptates error facere quia velit in reprehenderit porro nulla? Maxime quos nulla deleniti beatae mollitia aperiam laborum, debitis possimus necessitatibus, magnam nesciunt impedit repellat temporibus doloremque rem iure omnis qui voluptas ipsa! Atque iste, animi provident similique voluptatibus illum tempora cum architecto quaerat.
 </p>
 <section style="height: 800px;overflow-y:auto">
-<div class="d-flex flex-wrap mx-5 mb-5">
-    <div id="leftGanjil">
-        <img class="w-75 mx-auto d-block" src="/img/Kepala Madrasah_circle.png" alt="">
-        <h4 class="text-center fw-bold mt-3">Nun Ahsan Maliki, S.Sy,M.Pd</h4>
-        <h6 class="text-center fw-bold ">Periode 2012 - Sekarang</h6>
+    <div class="d-flex flex-wrap mx-5 mb-5">
+        <div id="leftGanjil">
+            <img class="w-75 mx-auto d-block" src="/img/nun_alex.png" alt="">
+            <h4 class="text-center fw-bold mt-3">Nun Ahsan Maliki, S.Sy,M.Pd</h4>
+            <h6 class="text-center fw-bold ">Periode 2012 - Sekarang</h6>
+        </div>
+        <div id="rightGanjil">
+            <button class="btn btn-success my-3">Profil Singkat</button>
+            <p class="w-100">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, laborum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt corporis eaque, eveniet illum odit necessitatibus delectus nisi. A, ad autem!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, laborum!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, laborum!
+            </p>
+            <button class="btn btn-success my-3">Gagasan</button>
+            <p class="w-100">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, laborum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt corporis eaque, eveniet illum odit necessitatibus delectus nisi. A, ad autem!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, laborum!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, laborum!
+            </p>
+        </div>
     </div>
-    <div id="rightGanjil">
-        <button class="btn btn-success my-3">Profil Singkat</button>
-        <p class="w-100">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, laborum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt corporis eaque, eveniet illum odit necessitatibus delectus nisi. A, ad autem!
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, laborum!
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, laborum!
-        </p>
-        <button class="btn btn-success my-3">Gagasan</button>
-        <p class="w-100">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, laborum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt corporis eaque, eveniet illum odit necessitatibus delectus nisi. A, ad autem!
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, laborum!
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, laborum!
-        </p>
+    <div class="d-flex flex-wrap mx-5 mb-5">
+        <div id="leftGenap">
+            <img class="w-75 mx-auto d-block" src="/img/nun_alex.png" alt="">
+            <h4 class="text-center fw-bold mt-3">Nun Ahsan Maliki, S.Sy,M.Pd</h4>
+            <h6 class="text-center fw-bold ">Periode 2012 - Sekarang</h6>
+        </div>
+        <div id="rightGenap">
+            <button class="btn btn-success my-3">Profil Singkat</button>
+            <p class="w-100">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, laborum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt corporis eaque, eveniet illum odit necessitatibus delectus nisi. A, ad autem!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, laborum!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, laborum!
+            </p>
+            <button class="btn btn-success my-3">Gagasan</button>
+            <p class="w-100">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, laborum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt corporis eaque, eveniet illum odit necessitatibus delectus nisi. A, ad autem!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, laborum!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, laborum!
+            </p>
+        </div>
     </div>
-</div>
-<div class="d-flex flex-wrap mx-5 mb-5">
-    <div id="leftGenap">
-        <img class="w-75 mx-auto d-block" src="/img/Kepala Madrasah_circle.png" alt="">
-        <h4 class="text-center fw-bold mt-3">Nun Ahsan Maliki, S.Sy,M.Pd</h4>
-        <h6 class="text-center fw-bold ">Periode 2012 - Sekarang</h6>
-    </div>
-    <div id="rightGenap">
-        <button class="btn btn-success my-3">Profil Singkat</button>
-        <p class="w-100">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, laborum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt corporis eaque, eveniet illum odit necessitatibus delectus nisi. A, ad autem!
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, laborum!
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, laborum!
-        </p>
-        <button class="btn btn-success my-3">Gagasan</button>
-        <p class="w-100">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, laborum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt corporis eaque, eveniet illum odit necessitatibus delectus nisi. A, ad autem!
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, laborum!
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, laborum!
-        </p>
-    </div>
-</div>
 </section>
+<div>
+
+</div>
 <script src="{{asset('js/aos.js')}}"></script>
 <script>
     AOS.init();
