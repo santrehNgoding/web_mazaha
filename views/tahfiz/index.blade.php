@@ -274,7 +274,7 @@
     </div>
     <div data-aos="fade-down" data-aos-duration="1000" class="mx-auto" id="nav">
         <!-- From Uiverse.io by MuhammadHasann --> 
-<button class="button" onclick="document.getElementById('murottal').play()">
+        <button class="button" id="audioControl">
     <div class="dots_border"></div>
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -307,21 +307,62 @@
         d="M6.5 4L6.303 4.5915C6.24777 4.75718 6.15472 4.90774 6.03123 5.03123C5.90774 5.15472 5.75718 5.24777 5.5915 5.303L5 5.5L5.5915 5.697C5.75718 5.75223 5.90774 5.84528 6.03123 5.96877C6.15472 6.09226 6.24777 6.24282 6.303 6.4085L6.5 7L6.697 6.4085C6.75223 6.24282 6.84528 6.09226 6.96877 5.96877C7.09226 5.84528 7.24282 5.75223 7.4085 5.697L8 5.5L7.4085 5.303C7.24282 5.24777 7.09226 5.15472 6.96877 5.03123C6.84528 4.90774 6.75223 4.75718 6.697 4.5915L6.5 4Z"
       ></path>
     </svg>
-    <span class="text_button fw-bold text-light">Putar Murottal</span>
+    <span class="text_button fw-bold text-light" id="audioText">Putar Murottal</span>
   </button>
   
         {{-- <button onclick="document.getElementById('murottal').play()">Putar Murottal</button> --}}
         <audio id="murottal">
           <source src="/img/tahfiz/murottal.mp3" type="audio/mpeg">
         </audio>
+        <script>
+                const audioControl = document.getElementById('audioControl');
+    const audio = document.getElementById('murottal');
+    const audioText = document.getElementById('audioText');
 
+    audioControl.addEventListener('click', function() {
+        if (audio.paused) {
+            audio.play();
+            audioText.textContent = 'Pause Murottal';
+        } else {
+            audio.pause();
+            audioText.textContent = 'Putar Murottal';
+        }
+    });
+
+    // Optional: Update text when audio ends
+    audio.addEventListener('ended', function() {
+        audioText.textContent = 'Putar Murottal';
+    });
+        </script>
     </div>
 </header>
 <div class="p-5 d-flex flex-wrap">
     <div class="ket" data-aos="fade-left" data-aos-duration="1000">
-        <p>Program Tahfidz Qur’an Adalah Program Pembelajaran Untuk Menghafal Al-Qur’an. Dan Program Ini Bertujuan Untuk Mencetak Generasi Yang Ber-Akhlak Qur’ani,Ber-Prestasi Dan Mengamalkan Al-Qur’an Dalam Kehidupan Sehari-Hari. Insyaallah Program Ini Sudah Berdiri Selama 8 Tahun Dimadrasah MA 1 ZAHA GENGGONG PAJARAKAN PROBOLINGGO. Yang dipimpin oleh kepala madrasah non hassan ahsan malik M.pd</p>
-        <p>Program Ini Disediakan Untuk Siswa/I Yang Berminat Dalam Menghafalkan Al-Qur’an. Serta Bekerja Sama Dengan Jam’iyatul Qurra’ Wal Huffadz (JAMKUR) Cabang Kota Kraksaaan Yang Dipimpin Oleh Al-Mukarram Al-Ust Al-Habib Anis Bin Hamid Bin Shaikh Al-Habsyi. Dengan Adanya Kerja Sama Ini Siswa/I Bisa Sambung Sanad Sampai Kepusaran Sanad Al-Qur’an Indonesia. </p>
-        <p>Program Tahfidz Qur’an Memiliki Persyaratan Bagi Siswa/I Yang Ingin Bergabung Dalam Program Ini. Salah Satunya Yaitu Siswa/I Harus Memiliki Hafalan Juz 30, Dan Memberikan Peluang Bagi Yang Punya Keinginan Dalam Menghafal Al-Qur’an Namun Tidak Mempunyai Hafalan Juz 30. Maka, Siswa/I Akan Diberikan Jangka selama 2 Bulan Menghafalkannya Dan Disetorkan Kepada Pihak Tahfidz Qur’an.</p>
+        <p>
+        Al-Qur'an merupakan pedoman hidup bagi umat islam.allah swt menjaga ke-aslian Al-qur'an salah satunya dengan banyaknya penghafal al-qur'an.
+Pendidikan tahfidz qur'an telah berjalan lama sejak zaman rosulullah saw hingga akhir zaman.kini banyak lembaga pendidikan yang menjalankan program Tahfidz Al-qur'an di indonesia. Tujuan-nya ialah sebagai membimbing penghafalnya untuk hidup berlandaskan al qur an.salah satu lembaga pendidikan yang mengadakan program tahfidz Qur'an ialah madrasah aliyah zainul hasan 1 genggong. Pada saat ini tahfidz qur'an di MA ZAHA 1 GENGGONG sudh berjalan selama 9 tahun. Tentunya tidaklah luput dari peran seorang kepala sekolah NUN HASSAN AHSAN MALIK M.pd yg memperjuangkan & keinginan-nya untuk menjadikan madrasah yg ber akhlak qur'ani.
+Dan tidak lupa ucapan terima kasih kepada pembina tahfidz qur an di MA ZAHA 1 GENGGONG yang sudah mengorbankan tenaganya untuk mendidik siswa/i sehingga bisa dikatakan berkembang.
+Dengan berkembangnya tahfidz qur'an di MA ZAHA 1 GENGGONG saat ini.
+Alhamdulillah 2024 salah satu dari siswa/i MA ZAHA 1 GENGGONG yang sudah tuntas hafalannya sebanyak 30 juz atas nama: M.nuril ma'rifah (bondowoso)
+Sebagian dari siswa/i juga sudah mencapai target. Ada yang 15,20,23 juz
+Semua ini adalah sebuah prestasi yang sangat luar biasa bagi siswa/i hususnya diprogram unggulan tahfidz qur'an di MA ZAHA 1 GENGGONG.
+Sasaran program tahfidz ini kepada seluruh siswa/i-nya  ialah maksimal 5 juz pertahun. Namun, bilamana ad yang lebih dari itu semua. maka, siswa/i tersebut dikatakan mampu (MUMTAZ).
+Empat hari Dalam satu minggu siswa/i  wajib setor hafalan & muroja'ah-nya kepada guru masing-masing. 
+Terkadang keduanya mempunyai faktor pendukung dan faktor terhampat pelaksaan program tahfidz qur'an ialah dilihat dari faktor guru,siswa dan lingkungan. Guru harus bisa mengatur dan memotivasi siswa/i untuk konsisten dalam menghafalkan qur an.
+Siswa memiliki kendala dari dalam dirinya seperti rasa malas,kurang motivasidan dari faktor eksternal seperti kegiatan yang terlalu padat.faktor lingkungan dibutuhkan bagi siswa tahfidz untuk bisa fokus dalam menghafal al qur an.
+Para pengelola tahfidz qur'an di MA ZAHA 1 GENGGONG mempunyai keinginan yang sama dengan kepala sekolah untuk menjadikan madrasah yang ber-akhlak qur'ani.
+Dari hasil musyawaroh bersama. Program ini mengadakan rutinan harian, mingguan,bulanan dan tahunan.
+Harian: siswa/i setor hafalan  & moroja'ah kepada guru masing-masing.
+Mingguan: siswa/i diadakan tasyhih oleh guru masing-masing.
+Bulanan: siswa/i tahfidz qur'an serentak melaksanakan khotmil qur'an.tujuan mengharap barokah para kyai pp zainul hasan genggong & niat untuk melancarkan hafalan-nya
+Tahunan: menjadi 2 bagian
+Pertama: study qur'an kepondok yang ber-begron tahfidz.
+Yang kedua: wisuda program unggulan yang sudh mengikuti seleksi kelulusan.
+Perlu disimpulkan bahwa
+Selama 9 tahun ini (2016-2025) perkembangan tahfidz qur'an sangat pesat sekali. Dari siswa/i nya yang semakin bertambah. Dan kegiatannya semakin berkualitas..
+MA ZAHA MUMTAZ BERKUALITAS
+#cintailah hafalan-mu sehingga ayat-ayat allah selalu menyayangi-mu.
+</p>
     </div>
     <div class="img" data-aos="fade-right" data-aos-duration="1000">
         <img class="w-75 mx-auto d-block" src="/img/tahfiz/ketua.png" alt="">
@@ -499,6 +540,7 @@
 <script src="{{asset('js/aos.js')}}"></script>
 <script>
     AOS.init();
+
     function kelas10() {
         swal({
             content: {
