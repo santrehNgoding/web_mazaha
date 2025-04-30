@@ -67,6 +67,11 @@ label {
                     value="{!!$row->NamaGuru!!}" >
                 </div>
                 <div class="form-group mb-3">
+                    <label for="alamat">Alamat</label>
+                    <input type="text" class="form-control" name="alamat"
+                    value="{!!$row->alamat!!}" >
+                </div>
+                <div class="form-group mb-3">
                     <label for="files">Foto Profil</label>
                     <input type="file" class="form-control" name="files"
                     value="{!!$row->Profil!!}" >
@@ -75,6 +80,11 @@ label {
                     <label for="Bidang">Mata Pelajaran</label>
                     <input type="text" class="form-control" name="Bidang"
                     value="{!!$row->Bidang!!}" >
+                </div>
+                <div class="form-group mb-3">
+                    <label for="tahun">Tahun Mulai Mengabdi</label>
+                    <input type="text" class="form-control" name="tahun"
+                    value="{!!$row->tahun!!}" >
                 </div>
                 <div class="form-group mb-3">
                     <label for="Motto">Motto</label>
@@ -95,7 +105,27 @@ label {
                     <label for="noHp">Nomor HP / WA</label>
                     <input type="number" class="form-control" name="noHp"
                     value="{!!$row->noHp!!}" >
-                    </div>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="kepala">Kepala Madrasah</label>
+                    <input type="radio" name="kepala" value="Ya">Ya
+                    <input type="radio" name="kepala" value="Tidak">Tidak
+                </div>
+                <div class="form-group mb-3">
+                    <label for="pimpinan">Pimpinan Madrasah : </label>
+                    <input type="radio" name="pimpinan" value="Ya">Ya
+                    <input type="radio" name="pimpinan" value="Tidak">Tidak
+                </div>
+                <div class="form-group mb-3">
+                    <label for="staf">Karyawan Staf : </label>
+                    <input type="radio" name="staf" value="Ya">Ya
+                    <input type="radio" name="staf" value="Tidak">Tidak
+                </div>
+                <div class="form-group mb-3">
+                    <label for="pengajar">Tenaga Pendidik : </label>
+                    <input type="radio" name="pengajar" value="Ya">Ya
+                    <input type="radio" name="pengajar" value="Tidak">Tidak
+                </div>
                     <button type="submit" class="custom-btn btn-4 mt-4 w-100">Update</button>
             </form>
             </div>
