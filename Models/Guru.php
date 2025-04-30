@@ -18,5 +18,9 @@ class Guru extends Model
         'Telegram',
         'Email',
         'noHp',
+        'kepala',
+        'pimpinan',
+        'staf',
+        'pengajar',
     ];
 }
