@@ -135,7 +135,6 @@
 
         .navbar-nav .nav-link:hover {
             font-weight: bold;
-            background-color: #046c3c;
             border-radius:10px;
         }
 
@@ -174,9 +173,9 @@
                 font-size: 0.875rem;
             }
         }
-        .nav-link.dropdown-toggle::after {
+        /* .nav-link.dropdown-toggle::after {
   display: none !important;
-}
+} */
     </style>
 </head>
 <body>
@@ -206,8 +205,18 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto gap-4 mx-5">
-                    <li class="nav-item"><a class="nav-link" href="{{route('beranda')}}">Beranda</a></li>
+                <ul class="navbar-nav ms-auto mx-5 gap-4">
+                    <li class="nav-item"><a class="nav-link" href="{{route('beranda')}}">Beranda</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Kabar Madrasah</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/berita">Berita</a></li>
+                            <li><a class="dropdown-item" href="/galeri">Galeri</a></li>
+                            <li><a class="dropdown-item" href="/prestasi">Prestasi</a></li>
+                            <li><a class="dropdown-item" href="#">Agenda Madrasah</a></li>
+                        </ul>
+                    </li>
                     
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Profil Madrasah</a>
@@ -220,21 +229,23 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Wakabid</a>
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Bidang</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="{{route('ekstra.index')}}">Kurikulum</a></li>
-                            <li><a class="dropdown-item" href="#">Kesiswaan</a></li>
+                            <li><a class="dropdown-item" href="{{route('kesiswaan.index')}}">Kesiswaan</a></li>
                             <li><a class="dropdown-item" href="/fasilitas">Sarana Prasarana</a></li>
-                            <li><a class="dropdown-item" href="#">Hubungan Masyarakat</a></li>
+                            <li><a class="dropdown-item" href="{{route('humas.index')}}">Hubungan Masyarakat</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Program Unggulan</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="{{route('tahfiz.index')}}">Tahfidzul Qur’an</a></li>
-                            <li><a class="dropdown-item" href="#">Tahqiqu Kiroatil Kutub</a></li>
+                            <li><a class="dropdown-item" href="#">Tahqiqu Qiroatil Kutub</a></li>
                             <li><a class="dropdown-item" href="/prodistik">Program Intensifikasi TIK</a></li>
                             <li><a class="dropdown-item" href="{{route('olimpiade.index')}}">Bimbingan Olimpiade</a></li>
+                            <li><a class="dropdown-item" href="{{route('olimpiade.index')}}">LPBA</a></li>
+                            <li><a class="dropdown-item" href="{{route('olimpiade.index')}}">LPBI</a></li>
                         </ul>
                     </li>
     
@@ -243,17 +254,8 @@
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="https://simumtaz.mazainulhasan1.sch.id/login">Simumtaz</a></li>
                             <li><a class="dropdown-item" href="https://t.me/MAzahaBot">Aromaza</a></li>
-                            <li><a class="dropdown-item" href="https://psychic.mazainulhasan1.sch.id">Tes Psikologi Jurusan</a></li>
-                        </ul>
-                    </li>
-    
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Kabar Madrasah</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/berita">Berita</a></li>
-                            <li><a class="dropdown-item" href="/galeri">Galeri</a></li>
-                            <li><a class="dropdown-item" href="/prestasi">Prestasi</a></li>
-                            <li><a class="dropdown-item" href="#">Agenda Madrasah</a></li>
+                            <li><a class="dropdown-item" href="https://play.google.com/store/apps/details?id=id.co.solusinegeri.mumtaz">e-Mumtaz</a></li>
+                            <li><a class="dropdown-item" href="https://psychic.mazainulhasan1.sch.id">Psychic</a></li>
                         </ul>
                     </li>
     
