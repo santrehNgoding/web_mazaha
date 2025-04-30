@@ -125,7 +125,7 @@ Dengan adanya program ini diharapkan lulusan dari Madrasah/sekolah akan memiliki
     </div>
     </div>
     <div class="my-5">
-        <h2 class="text-center fw-bold">Komentar Mereka tentang Prodistik</h2>
+        <h2 class="text-center fw-bold">Testimoni Mereka tentang Prodistik</h2>
         <div class="d-flex overflow-x-auto gap-3 mt-5 mx-3">
             @foreach($tests as $tes)
             <div class="testimonial-card">
