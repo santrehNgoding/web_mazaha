@@ -7,14 +7,27 @@ class AsatidzController extends Controller
     
     public function index(Request $request)
 {
-    $km = \App\Models\Guru::where('id', 1)->first();
-    $query = \App\Models\Guru::query();
+    $km = \App\Models\Guru::where('kepala', 'Ya')->first();
+    $allpimpinan = \App\Models\Guru::query()->where('pimpinan', 'Ya')->get();
+    $staff = \App\Models\Guru::where('staf','Ya')->get();
+    $query = \App\Models\Guru::query()->where('pengajar','Ya');
     if ($request->filled('NamaGuru')) {
         $query->where('NamaGuru', 'like', '%'.$request->NamaGuru.'%');
     }
-    $rows = $query->paginate(18);
+    if ($request->filled('pimpinan')) {
+        $allpimpinan->where('NamaGuru', 'like', '%'.$request->NamaGuru.'%');
+    }
+    // if ($request->filled('staf')) {
+    //     $staff->where('NamaGuru', 'like', '%'.$request->staf.'%')->get();
+    // }
+    $rows = $query->paginate(16);
 
-    return view('asatidz.asatidz', ['rows' => $rows, 'km' => $km]);
+    return view('asatidz.asatidz', [
+    'rows' => $rows, 
+    'km' => $km,
+    'allpimpinan' => $allpimpinan,
+    'staf'=>$staff
+]);
 }
 
     public function create() {
@@ -41,7 +54,11 @@ class AsatidzController extends Controller
             'Motto'=>$request['Motto'],
             'Telegram'=>$request['Telegram'],
             'Email'=>$request['Email'],
-            'noHp'=>$request['noHp']
+            'noHp'=>$request['noHp'],
+            'kepala'=>$request['kepala'],
+            'pimpinan'=>$request['pimpinan'],
+            'staf'=>$request['staf'],
+            'pengajar'=>$request['pengajar'],
         ]);
         return redirect()->to('/asatidz')->with('success','berhasil');
 
@@ -68,8 +85,11 @@ class AsatidzController extends Controller
                'Motto'=>$request['Motto'],
                'Telegram'=>$request['Telegram'],
                'Email'=>$request['Email'],
-               'noHp'=>$request['noHp']
-           ];
+               'noHp'=>$request['noHp'],
+                'kepala'=>$request['kepala'],
+                'pimpinan'=>$request['pimpinan'],
+                'staf'=>$request['staf'],
+                'pengajar'=>$request['pengajar'],           ];
            \App\Models\Guru::where('id', $id)->update($data);
 
            
