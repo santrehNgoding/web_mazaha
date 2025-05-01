@@ -235,6 +235,7 @@
                             <li><a class="dropdown-item" href="{{route('kesiswaan.index')}}">Kesiswaan</a></li>
                             <li><a class="dropdown-item" href="/fasilitas">Sarana Prasarana</a></li>
                             <li><a class="dropdown-item" href="{{route('humas.index')}}">Hubungan Masyarakat</a></li>
+                            <li><a class="dropdown-item" href="{{route('bendahara.index')}}">Keuangan</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
