@@ -584,7 +584,9 @@ article img {
         <div class="circle big"></div>
         <div class="circle med"></div>
     </div>
+    <div class="d-flex flex-wrap">
 
+    </div>
     <!-- Main Content -->
     <h2 class="fw-bold mb-3 mt-5 m-5" style="color:#033919">Muatan Kurikulum</h2>
     <div id="container" class="d-flex mx-3">
@@ -594,12 +596,13 @@ article img {
                 <img id="poster" class="w-25" src="/img/gp.jpg" alt="">
                 <div class="description">
                     <p style="width:90%">
-                        MA Zainul Hasan 1 Genggong merupakan madrasah mumtaz (unggul) yang mengintegrasikan pendidikan berbasis pesantren dan teknologi, menjadikannya sebagai lembaga pendidikan yang adaptif terhadap perkembangan zaman namun tetap kokoh dalam nilai-nilai keislaman. Kurikulumnya dirancang secara holistik dan integratif, mencakup aspek akademik, keagamaan, dan pengembangan karakter santri. Terdapat tiga program unggulan yang menjadi ciri khas madrasah ini. Pertama, Program Intensifikasi TIK yang bekerjasama langsung dengan Universitas Negeri Malang (UM), memfasilitasi siswa dalam penguasaan teknologi dan keterampilan digital sejak dini. Kedua, Program Tahfidzul Qur’an yang mendorong peserta didik untuk menjadi hafidz-hafidzah yang cinta Al-Qur’an. Ketiga, Tahqiqu Qiro’atil Kutub, yaitu program pendalaman literasi kitab kuning, yang menjadi ciri khas pesantren salaf.
-
-                        Selain itu, MA Zainul Hasan 1 Genggong menyediakan kelas bimbingan olimpiade sains, matematika, dan sosial yang telah sukses mengantarkan siswa-siswinya berprestasi di tingkat nasional hingga internasional. Program kelas dibagi menjadi dua jalur, yaitu IPAS (Ilmu Pengetahuan Alam dan Sosial) dan PK (Program Keagamaan), yang disesuaikan dengan minat dan bakat siswa.
-                        
-                        Madrasah ini juga unggul dalam bidang pengembangan diri dan karakter melalui berbagai kegiatan ekstrakurikuler, seperti Karya Ilmiah Remaja (KIR), paduan suara, olahraga, pramuka, hadrah, Bahasa Arab, Bahasa Inggris, dan lainnya. Dengan segudang prestasi di bidang akademik maupun non-akademik, MA Zainul Hasan 1 Genggong terus berkomitmen mencetak generasi muslim yang cerdas, berakhlak mulia, dan siap bersaing di era global, tanpa kehilangan jati diri sebagai santri.                    </p>
-                </div>
+                        Madrasah Aliyah Zainul Hasan adalah salah satu lembaga pendidikan dalam naungan pondok pesantren yang memiliki prioritas kuat terhadap pengembangan minat, bakat, dan potensi santri. Madrasah Aliyah Zainul Hasan berkomitmen penuh untuk meningkatkan bakat dan minat tersebut melalui kegiatan ekstrakurikuler. Selain untuk sarana minat dan bakat santri, ekstrakurikuler juga bertujuan sebagai kegiatan praktis di luar kurikulum yang dapat meningkatkan keterampilan sosial, pengembangan kreatifitas, pelatihan kepemimpinan, dan kerja sama tim.
+                        Ekstrakurikuler yang dikembangkan oleh MA Zainul Hasan diklasifikasikan menjadi beberapa macam. Di antaranya yakni, ekstrakurikuler pengembangan bahasa, seni budaya dan keterampilan, olahraga, kajian ilmiah dan public speaking. 
+                        Ekstrakurikuler dibentuk untuk mendukung pendidikan yang holistik. Dengan demikian, secara berkala konsep dan kegiatan ekstrakurikuler di MA Zainul Hasan akan terus diperbaharui seiring perkembangan waktu, yakni dengan pembentukan ekstrakurikuler-ekstrakurikuler baru yang dapat mewadahi seluruh kebutuhan minat dan bakat santri serta pembaharuan sistem konsep dan metode pembelajaran sesuai dengan trend perkembangan peradaban keilmuan. 
+                        Ekstrakurikuler di Madrasah Aliyah Zainul Hasan dilakukan setiap pukul 09:00 – 10:30 pada hari Ahad. Sebagaimana pembelajaran normal yang memisahkan lokasi santri putra dan santri putri, maka konsep pembelajaran esktrakurikuler juga memisahkan antara lokasi santri putra dan putri. Santri putra bertempat di Madrasah Aliyah Putra P5 dan santri putri bertempat di gedung At-Tachriliyah pondok pusat. Kegiatan ekstrakurikuler ini dikonsep dengan pembelajaran yang bebas, terbuka dan tidak menjenuhkan yakni dengan sistem indoor dan outdoor. Kemampuan para asatid/asatidzah yang kompeten dan kreatif tidak dapat diragukan kualitasnya dalam mendukung potensi santri yang progresif dan dinamis. 
+                        Berikut beberapa klasifikasi ekstrakurikuler yang disediakan Madrasah Aliyah:
+                         
+                    </div>
             </article>
         </div>
 
