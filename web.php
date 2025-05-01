@@ -21,7 +21,6 @@ Route::get('/tugas-akhir/{id?}', [TugasAkhirController::class, 'index'])
      ->name('tugasakhir.index');
 Route::get('/', [App\Http\Controllers\BerandaController::class, 'index'])->name('beranda');
 // Route::get('/asatidz', [App\Http\Controllers\AsatidzController::class, 'index'])->name('asatidz');
-Route::get('/sambutan', [App\Http\Controllers\BerandaController::class, 'sambutan'])->name('sambutan');
 Route::get('/test', [App\Http\Controllers\BerandaController::class, 'test'])->name('test');
 Route::get('/card', [App\Http\Controllers\BerandaController::class, 'card'])->name('card');
 Route::get('/struktur', [App\Http\Controllers\StrukturController::class, 'index'])->name('struktur');
@@ -29,6 +28,8 @@ Route::get('/galeri/add', [App\Http\Controllers\GaleriController::class, 'add'])
 Route::get('/prodistik/struktur', [App\Http\Controllers\ProdistikController::class, 'struktur'])->name('strukturProdistik');
 Route::get('/prodistik/kurikulum', [App\Http\Controllers\ProdistikController::class, 'kurikulum'])->name('kurikulumProdistik');
 Route::get('/kesiswaan/osis', [App\Http\Controllers\KesiswaanController::class, 'osis'])->name('kesiswaan.osis');
+Route::get('/sambutan/{id?}', [App\Http\Controllers\KepalaMadrasahController::class, 'index'])
+     ->name('sambutan.index');
 Route::resource('humas', App\Http\Controllers\HumasController::class);
 Route::resource('bendahara', App\Http\Controllers\BendaharaController::class);
 Route::resource('kesiswaan', App\Http\Controllers\KesiswaanController::class);
