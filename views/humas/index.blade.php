@@ -243,50 +243,48 @@ button.primary {
                 <h3 class="text-center w-100">Tugas, Pokok, dan Fungsi</h3>
             </div>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item">Mengatur Program dan pelaksanaan BK </li>
-              <li class="list-group-item">Mengatur dan mengkoordinasikan pelaksaan 7K </li>
-              <li class="list-group-item">Mengatur dan membina kegiatan Program OSIS </li>
-              <li class="list-group-item">Mengatur pelaksanaan peraturan Madrasah </li>
-              <li class="list-group-item">Menyusun dan mengatur pelaksanaan pemilihan siswa prestasi</li>
-              <li class="list-group-item">Menyusun Penyelenggaraan extra kurikuler </li>
-              <li class="list-group-item">Menyeleksi calon untuk Bea siswa bersama waka humas </li>
-              <li class="list-group-item">Mengatur mutasi siswa</li>
-              <li class="list-group-item">Menyelenggarakan tasyakuran akhirus sanah </li>
+              <li class="list-group-item">Mengatur dan mengembangkan hubungan dengan Komite , Wali Santri, tokoh Masyarakat dan lain sebagainya  </li>
+              <li class="list-group-item">Menyelenggarakan kemah bakti santri </li>
+              <li class="list-group-item">Menyelenggaarakan milad MADRASAH ( gebyar seni ) </li>
+              <li class="list-group-item">Mendata para Alumni </li>
+              <li class="list-group-item">Menjalani hubungan kerja sama dengan lembaga-lembaga professional dan instansi terkait </li>
+              <li class="list-group-item">Menangani karnaval, upacara hari besar Nasional / hari besar Islam dan lain sebagainya  </li>
+              <li class="list-group-item">Mengawasi dan melaporkan keaktifan guru kepada kepala madrasah yang rekapanya di kirim oleh petugas Piket</li>
             </ul>
         </div>
     </div>
     <div id="staf" class="d-flex flex-wrap w-50 p-5">
-        <h3 class="text-center w-100">Struktur Kesiswaan</h3>
+        <h3 class="text-center w-100">Struktur HUMAS</h3>
         <div id="struktur" class="card w-100 p-3" style="max-height: 90px">
             <div class="d-flex">
                 <div style="width:10%;">
-                    <img src="/img/asatidz/IMG_5119.jpg" style="object-fit:cover;width:50px;height:50px;object-position:top" class="rounded-circle d-block" alt="">
+                    <img src="/img/asatidz/IMG-20250319 074215.png" style="object-fit:cover;width:50px;height:50px;object-position:top" class="rounded-circle d-block" alt="">
                 </div>
                 <div class="w-75 px-3">
-                    <h5>Zaenih, M.Pd</h5>
-                    <p>Waka Kesiswaan</p>
+                    <h5>Ahmad Taufiq, S.Pd</h5>
+                    <p>Waka HUMAS</p>
                 </div>
             </div>
         </div>
         <div id="struktur" class="card w-100 p-3" style="max-height: 90px">
             <div class="d-flex">
                 <div style="width:10%;">
-                    <img src="/img/asatidz/IMG_5099.jpg" style="object-fit:cover;width:50px;height:50px;object-position:top" class="rounded-circle d-block" alt="">
+                    <img src="/img/asatidz/IMG-20250312 095540.jpg" style="object-fit:cover;width:50px;height:50px;object-position:top" class="rounded-circle d-block" alt="">
                 </div>
                 <div class="w-75 px-3">
-                    <h5>Didik Supriyanto, S.H</h5>
-                    <p>Staf Kesiswaan</p>
+                    <h5>Muhammad Daniel Ainul Islam</h5>
+                    <p>Staf HUMAS</p>
                 </div>
             </div>
         </div>
         <div id="struktur" class="card w-100 p-3" style="max-height: 90px">
             <div class="d-flex">
                 <div style="width:10%;">
-                    <img src="/img/asatidz/IMG_5123.jpg" style="object-fit:cover;width:50px;height:50px;object-position:top" class="rounded-circle d-block" alt="">
+                    <img src="/img/asatidz/IMG-20250312 095217.jpg" style="object-fit:cover;width:50px;height:50px;object-position:top" class="rounded-circle d-block" alt="">
                 </div>
                 <div class="w-75 px-3">
-                    <h5>Lilikatus sholeha, S.Pd.I</h5>
-                    <p>Staf Kesiswaan</p>
+                    <h5>Muhammad Fakhrur Rizky, SE.</h5>
+                    <p>Staf HUMAS</p>
                 </div>
             </div>
         </div>
