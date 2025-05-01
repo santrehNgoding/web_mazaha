@@ -1,23 +1,122 @@
 @extends('layouts.app')
 @section('content')
 <style>
-        .news-ticker {
-        width: 100%;
-        height: 50px;
-        overflow: hidden;
-        position: relative;
-        background-color:#046c3c;
-        border-top: 1px solid #ddd;
-        border-bottom: 1px solid #ddd;
-
+    #headerOlim{
+        /* background-image: linear-gradient(to top, #046c3c,#033919); */
+        /* background-attachment: fixed; */
+        background-size:cover;
+        object-position: bottom;
+    }
+    @media only screen and (max-width:767px){
+        .right,.center{
+            width:100%;
+        }
+        .left{
+            display:none;
+        }
+        .auto-type, .left h1{
+            font-size:10vw !important;
+            text-align: center;
+        }
+        .left p {
+            text-align: center;
+        }
+        .right{
+            order: 1;
+        }
+        .center{
+            order: 2;
+            text-align: center !important;
+            font-size: 1.5rem;
+        }
+        .judul {
+            font-size: 10vw !important;
+        }
+        #headerOlim{
+            height:auto;
+        }
+        #nav{
+            order:3;
+            width: 100% !important;
+        }
+        .button span {
+            font-size: 2vw;
+        }
+        #headerOlim img {
+            width:90%;
+            height:auto !important;
+        }
+        .bk, .bk2{
+    margin-top: 50px;
+}
+.bk > div {
+    background-image: linear-gradient(to right, #033919,#1a9c46)
+}
+.bk2 > div {
+    background-image: linear-gradient(to left, #033919,#1a9c46)
+}
+.bk h1, .bk2 h1 {
+    font-size: 3vw;
+}
+.bk h4, .bk2 h4 {
+    font-size: 2vw;
+}
+#BK_putra {
+    position: relative;
+    margin-top: -15%;
+}
+#BK_putri {
+    position: relative;
+    margin-top: -15%;
+    margin-left:75%;
+}
+#tugas, #staf{
+    width: 100% !important;
+}
+.primary{
+    height: 35px !important;
+    font-size:2vw;
+}
+    }
+    @media only screen and (min-width:768px){
+        .right{
+            width:50%;
+        }
+        .right img{
+            max-width:70%;
+        }
+        .center{
+            width:50%;
+        }
+        #headerOlim{
+            height:80vh;
+        }
+        .bk, .bk2{
+    margin-top: 150px;
+}
+.bk > div {
+    background-image: linear-gradient(to right, #033919,#1a9c46)
+}
+.bk2 > div {
+    background-image: linear-gradient(to left, #033919,#1a9c46)
+}
+#BK_putra {
+    position: relative;
+    margin-top: -15%;
+}
+#BK_putri {
+    position: relative;
+    margin-top: -15%;
+    margin-left:75%;
+}
     }
     
     .news-content {
-        position: absolute;
+        /* position: absolute; */
         white-space: nowrap;
         font-size: 18px;
         font-weight: 500;
-        color: #fff;
+        color: #033919;
         line-height: 50px;
         padding: 0 20px;
         /* Hapus animasi sementara */
@@ -29,133 +128,211 @@
         left: 100%;
         animation: scroll-news linear infinite;
     }
-    @media only screen and (max-width:767px){
-        #leftGanjil,#leftGenap,#rightGenap, #rightGanjil{
-            width:100%;
-        }
-    }
-    @media only screen and (min-width:768px){
-        #leftGanjil,#leftGenap,#rightGenap, #rightGanjil{
-            width:50%;
-        }
-        #rightGenap{
-            order:1;
-        }
-        #leftGenap{
-            order:2;
-        }
-    }
-    p{
-        text-align: justify;
-    }
+    /* From Uiverse.io by abrahamcalsin */ 
+.button {
+    width: 20%; 
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  /* background: #033919; */
+  border:#eee 2px solid !important;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  cursor: pointer;
+  border: none;
+}
+
+.button:after {
+  content: " ";
+  width: 0%;
+  height: 100%;
+  background: #ffd401;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  right: 0;
+}
+
+.button:hover::after {
+  right: auto;
+  left: 0;
+  width: 100%;
+}
+a{
+    text-decoration: none;
+}
+.button span {
+  text-align: center;
+  text-decoration: none;
+  width: 50%;
+  padding-top:10px;
+  padding-bottom:10px;
+  color: #033919;
+  /* font-size: 1.125em; */
+  font-weight: 700;
+  /* letter-spacing: 0.3em; */
+  z-index: 20;
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover span {
+  color: #033919;
+  animation: scaleUp 0.3s ease-in-out;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.95);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+#nav{
+    height:10vw;
+}
+#struktur:hover{
+    background-color: rgba(128, 236, 143, 0.3)
+}
+
+button.primary {
+  background-color: goldenrod;
+  border: 1px solid goldenrod;
+  border-radius: 3px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  padding: 10px 25px;
+}
+.primary:hover{
+  background-color: gold;
+  transition-duration: 0.4s;
+}
 </style>
 <link rel="stylesheet" href="{{asset('css/aos.css')}}">
-<header>
-    <video class="w-100 h-auto" loop controls autoplay plays-inline style="height:auto;margin-top:0px;padding:0px">
-        <source class="m-0 p-0" src="/img/sambutan.mp4">
-    </video>
-    <div class="news-ticker" id="newsTickerContainer">
-        <div class="news-content" id="newsTicker">
-            Sambutan Kepala Madrasah Aliyah Zainul Hasan 1 Genggong : Nun Ahsan Maliki, S.Sy, M.Pd
+<script src="{{asset('js/typed.umd.js')}}"></script>
+<header id="headerOlim" class="d-flex flex-wrap align-items-center p-5" >
+    <div data-aos="fade-up" data-aos-duration="1000" class="center">
+        <h1 class="text-success-emphasis"><span class="fs-1 fw-bold text-warning-emphasis">Bagian</span> <br> <span class="judul" style="font-size:6vw;font-weight:bold">Keuangan</span></h1>    
+        <p class="fw-bold text-warning-emphasis">MA <span id="auto-type" class="fw-bold text-warning-emphasis"></span></p>
+        <div class="d-flex flex-wrap gap-2" id="nav">
+            <a href="#tupoksi" class="button" style="width: 25%"><span>TUPOKSI</span></a>
+            <a href="#tatib" class="button" ><span>TATIB</span></a>
+            <a href="#bk" class="button"><span>BK</span></a>
+            <a href="{{route('olimpiade.prestasi')}}" class="button"><span>OSIS</span></a>
         </div>
+    </div>
+    <div data-aos="fade-right" data-aos-duration="1000" class="right">
+        <img style="height:30vw" class="d-block m-auto" src="{{asset('img/keuangan.png')}}" alt="">
     </div>
 </header>
-<div>
-
-    <h1 data-aos="flip-left" data-aos-duration="1000" class="mt-5 text-center fw-bold text-success-emphasis">Sambutan Kepala Madrasah</h1>
-    <img data-aos="flip-left" data-aos-duration="1000" style="max-width: 75%" class="mx-auto d-block mb-4"  src="/img/hr.png" alt="">
-    <h3 class="text-center">Assalamualaikum Warahmatullahi Wabarokatuh</h3>
-    <p style="text-align:justify;" class="px-5">
-        Hamdan lillah, tabaaroka wata’ala Wa Musholliyan ala Rosulillah.
-        Atas nama pribadi mewakili segenap Pimpinan Madrasah Aliyah serta Dewan Asatid mengucapkan selamat atas hadirnya Website Madrasah Aliyah Zainul Hasan 1 Genggong yang launchingnya pada hari kamis tanggal 22 Mei 2014, bertepatan dengan acara Pisah kenang untuk kelas XII Putri.
-        Semoga, dengan hadirnya Website MA. ZaHA 1 Genggong, kita bisa ikut berpartisipasi dalam pengembangan informasi melalui media IT yang sudah berkembang pesat di era ini. Harapan kami, tim website yang sudah terbentuk dapat memberikan warna baru bagi kemaslahatan Madrasah serta mengupdate informasi terbaru bagi pembaca terutama dalam cakupan dunia maya. Website MA. Zainul Hasan 1 Genggong hadir untuk menunjukkan existensi kreatifitas lembaga dalam menunjang kemampuan ber-IT untuk menampilkan berbagai kegiatan yang ada di Madrasah, intra maupun extra, terutama kegiatan-kegiatan unggulan kami agar bisa diterima dengan cepat di masyarakat. Website ini pula, kami niatkan sebagai media dakwah bil qolam yang contentnya akan kami muat dari hasil pemikiran dan ide para santri-santri yang berada di bawah naungan lembaga aliyah. Sekali lagi, kami mengucapkan selamat atas hadirnya Website MA. Zainul Hasan 1 Genggong. Semoga bermanfaat.
-    </p>
-    <h3 class="text-center">Wassalamualaikum Warahmatullahi Wabarokatuh</h3>
+<div class="d-flex flex-wrap" id="tupoksi">
+    <div id="tugas" class="w-50 p-5">
+        <div class="card border-success">
+            <div class="card-header bg-success-subtle">
+                <h3 class="text-center w-100">Tugas, Pokok, dan Fungsi</h3>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Menerima keuangan dari siswa melalui pembantu bendahara </li>
+              <li class="list-group-item">Memasukkan ke rekening Bank yang telah ditentukan </li>
+              <li class="list-group-item">Membukukan ke buku Kas ke uangan dibantu pembantu bendahara </li>
+              <li class="list-group-item">Menyetorkan / membayar HR dan Transport guru dan karyawan  </li>
+              <li class="list-group-item">Membayar rekening listrik, wifi, koran dan telepon </li>
+              <li class="list-group-item">Menyetorkan keuangan pesantren /  Yayasan </li>
+              <li class="list-group-item">Mengeluarkan keuangan untuk keperluan MADRASAH di luar rutin setelah diketahui kepala MADRASAH </li>
+              <li class="list-group-item">laporan bulanan  </li>
+            </ul>
+        </div>
+    </div>
+    <div id="staf" class="d-flex flex-wrap w-50 p-5">
+        <h3 class="text-center w-100">Struktur Keuangan</h3>
+        <div id="struktur" class="card w-100 p-3" style="max-height: 90px">
+            <div class="d-flex">
+                <div style="width:10%;">
+                    <img src="/img/asatidz/IMG_5120.jpg" style="object-fit:cover;width:50px;height:50px;object-position:top" class="rounded-circle d-block" alt="">
+                </div>
+                <div class="w-75 px-3">
+                    <h5>Ahmad Juwaini, M., S.Ag, M.Pd</h5>
+                    <p>Bendahara</p>
+                </div>
+            </div>
+        </div>
+        <div id="struktur" class="card w-100 p-3" style="max-height: 90px">
+            <div class="d-flex">
+                <div style="width:10%;">
+                    <img src="/img/asatidz/IMG-20250312 095345.jpg" style="object-fit:cover;width:50px;height:50px;object-position:top" class="rounded-circle d-block" alt="">
+                </div>
+                <div class="w-75 px-3">
+                    <h5>Nur Fitriyah, S.Pd.I</h5>
+                    <p>Staf Keuangan</p>
+                </div>
+            </div>
+        </div>
+        <div id="struktur" class="card w-100 p-3" style="max-height: 90px">
+            <div class="d-flex">
+                <div style="width:10%;">
+                    <img src="/img/asatidz/IMG-20250312 131602.jpg" style="object-fit:cover;width:50px;height:50px;object-position:top" class="rounded-circle d-block" alt="">
+                </div>
+                <div class="w-75 px-3">
+                    <h5>Siti Walida, S.Pd</h5>
+                    <p>Staf Keuangan</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-<h1 data-aos="flip-left" data-aos-duration="1000" class="mt-5 text-center fw-bold text-success-emphasis">Kepala Madrasah dari Masa ke Masa</h1>
+<div id="tatib">
+    <h1 data-aos="flip-left" data-aos-duration="1000" class="text-center fw-bold text-success-emphasis">Tata Tertib Guru dan Santri</h1>
+    <img data-aos="flip-left" data-aos-duration="1000" style="max-width: 75%" class="mx-auto d-block mb-4"  src="/img/hr.png" alt="">
+    <div class="d-flex" style="max-width: 100%;overflow-x:auto">
+        <embed src="/img/tatib-guru.pdf" type="application/pdf" height="600px" width="50%">
+        <embed src="/img/tatib-santri.pdf" type="application/pdf" height="600px" width="50%">
+    </div>
+</div>
+<h1 id="bk" data-aos="flip-left" data-aos-duration="1000" class="mt-5 text-center fw-bold text-success-emphasis">Bimbingan & Konseling</h1>
 <img data-aos="flip-left" data-aos-duration="1000" style="max-width: 75%" class="mx-auto d-block mb-4"  src="/img/hr.png" alt="">
-<p class="mx-5" style="text-align: justify">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint cumque atque minima nisi odio voluptas totam, velit quis, alias autem consequatur assumenda eos, esse itaque labore vero laborum? Repellat sit aperiam delectus, dolores magni voluptas dolor nesciunt alias dolore. Minus placeat, eos, sequi vero aliquid explicabo et vel amet adipisci eligendi exercitationem beatae quo accusamus magnam repellat voluptates error facere quia velit in reprehenderit porro nulla? Maxime quos nulla deleniti beatae mollitia aperiam laborum, debitis possimus necessitatibus, magnam nesciunt impedit repellat temporibus doloremque rem iure omnis qui voluptas ipsa! Atque iste, animi provident similique voluptatibus illum tempora cum architecto quaerat.
-</p>
-<section style="height: 800px;overflow-y:auto">
-    <div class="d-flex flex-wrap mx-5 mb-5">
-        <div id="leftGanjil">
-            <img class="w-75 mx-auto d-block" src="/img/nun_alex.png" alt="">
-            <h4 class="text-center fw-bold mt-3">Nun Ahsan Maliki, S.Sy,M.Pd</h4>
-            <h6 class="text-center fw-bold ">Periode 2012 - Sekarang</h6>
-        </div>
-        <div id="rightGanjil">
-            <button class="btn btn-success my-3">Profil Singkat</button>
-            <p class="w-100">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, laborum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt corporis eaque, eveniet illum odit necessitatibus delectus nisi. A, ad autem!
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, laborum!
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, laborum!
-            </p>
-            <button class="btn btn-success my-3">Gagasan</button>
-            <p class="w-100">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, laborum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt corporis eaque, eveniet illum odit necessitatibus delectus nisi. A, ad autem!
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, laborum!
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, laborum!
-            </p>
+<div class="bk">
+    <div class="card rounded-5 d-flex mx-auto" style="width: 90%;">
+        <img class="w-25" id="BK_putra" src="/img/bk-putra.png" alt="">
+        <div style="position: absolute; left: 30%; top: 40%; transform: translateY(-50%);">
+            <h1 class="fw-bold text-light">Mohammad Ahsanun Na'im, S.Sos</h1>
+            <h4 class="text-light">Guru BK Putra</h4>
+            <button class="primary">
+                <a class="text-success-emphasis" href="https://t.me/ahsanaim">Kirim Pesan</a>
+              </button>
         </div>
     </div>
-    <div class="d-flex flex-wrap mx-5 mb-5">
-        <div id="leftGenap">
-            <img class="w-75 mx-auto d-block" src="/img/nun_alex.png" alt="">
-            <h4 class="text-center fw-bold mt-3">Nun Ahsan Maliki, S.Sy,M.Pd</h4>
-            <h6 class="text-center fw-bold ">Periode 2012 - Sekarang</h6>
+</div>
+<div class="bk2 mb-5">
+    <div class="card rounded-5 d-flex mx-auto justify-content-end" style="width: 90%;">
+        <div style="position: absolute; left: 30%; top: 40%; transform: translateY(-50%);">
+            <h1 class="fw-bold text-light">Najwan Nada, S.Sos</h1>
+            <h4 class="text-light">Guru BK Putri</h4>
+            <button class="primary">
+                <a class="text-success-emphasis" href="https://t.me/najwannada">Kirim Pesan</a>
+              </button>
         </div>
-        <div id="rightGenap">
-            <button class="btn btn-success my-3">Profil Singkat</button>
-            <p class="w-100">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, laborum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt corporis eaque, eveniet illum odit necessitatibus delectus nisi. A, ad autem!
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, laborum!
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, laborum!
-            </p>
-            <button class="btn btn-success my-3">Gagasan</button>
-            <p class="w-100">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, laborum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt corporis eaque, eveniet illum odit necessitatibus delectus nisi. A, ad autem!
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, laborum!
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, laborum!
-            </p>
-        </div>
+        <img class="w-25" id="BK_putri" src="/img/bk-putri.png" alt="">
     </div>
-</section>
-<div>
-
 </div>
 <script src="{{asset('js/aos.js')}}"></script>
 <script>
     AOS.init();
-     document.addEventListener('DOMContentLoaded', function() {
-        const container = document.getElementById('newsTickerContainer');
-        const ticker = document.getElementById('newsTicker');
-        
-        // Tampilkan teks secara paksa untuk menghitung width
-        ticker.style.visibility = 'visible';
-        ticker.style.left = '100%';
-        
-        const textWidth = ticker.scrollWidth;
-        const viewportWidth = window.innerWidth;
-        const scrollSpeed = 150; // px per detik
-        
-        // Hitung durasi
-        const duration = (textWidth + viewportWidth) / scrollSpeed;
-        // Buat keyframes dinamis
-        const style = document.createElement('style');
-        style.innerHTML = `
-            @keyframes scroll-news {
-                0% { transform: translateX(0); }
-                100% { transform: translateX(-${textWidth + viewportWidth}px); }
-            }
-        `;
-        document.head.appendChild(style);
-        
-        // Terapkan animasi
-        ticker.style.animationDuration = `${duration}s`;
-        
-        // Tandai container sudah ready
-        container.classList.add('ready');
-    });
+    var typed = new Typed("#auto-type", {
+            strings: ["ZAHA 1","MUMTAZ","BERKUALITAS"], 
+            typeSpeed: 50,
+            backSpeed: 50,
+            loop: true,
+        });
 </script>
 @endsection
