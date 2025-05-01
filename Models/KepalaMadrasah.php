@@ -14,6 +14,6 @@ class KepalaMadrasah extends Model
         'tahun_mulai',
         'tahun_selesai',
         'profil',
-        'gagasan',
+        'profil2',
     ];
 }
