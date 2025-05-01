@@ -50,7 +50,7 @@ public function edit($id){
             $ekstensi = $file->getClientOriginalExtension();
             $tanggal = str_replace(['-',':',''],'',\Carbon\Carbon::now());
             $namaFile = 'winner-'.$tanggal.'.'.$ekstensi;
-            $file->move(public_path('img/olimpiade'), $namaFile);
+            $file->move(public_path('img/prestasi'), $namaFile);
             $data['files'] = $namaFile;
            } else{
             $foto=\App\Models\PrestasiOlimpiade::where('id',$id)->first();
