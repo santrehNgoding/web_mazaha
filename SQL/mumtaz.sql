@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 17 Apr 2025 pada 18.55
+-- Waktu pembuatan: 01 Bulan Mei 2025 pada 16.33
 -- Versi server: 10.4.32-MariaDB
 -- Versi PHP: 8.2.12
 
@@ -68,17 +68,17 @@ CREATE TABLE `ekstrakulikuler` (
 --
 
 INSERT INTO `ekstrakulikuler` (`id`, `title`, `id_guru1`, `id_guru2`, `foto`, `deskripsi`) VALUES
-(2, 'Pramuka', 2, 11, 'ekstra-20250324 153256.jpg', NULL),
-(3, 'Bahasa Arab', 3, NULL, 'ekstra-20250324 153637.jpg', NULL),
-(4, 'Tartil dan Tilawah', 4, 10, 'ekstra-20250324 153744.jpg', NULL),
-(5, 'Karya Ilmiah Remaja', 5, 6, 'ekstra-20250324 153823.jpg', NULL),
-(6, 'Master of Ceremony (MC)', 7, 1, 'ekstra-20250324 153942.jpg', NULL),
-(7, 'Olahraga Futsal', 8, NULL, 'ekstra-20250324 154059.jpg', NULL),
+(2, 'Pramuka', 2, 11, 'ekstra-20250324 153256.jpg', 'Kegiatan ekstrakurikuler Pramuka di MA Zainul Hasan 1 Genggong bertujuan untuk mengembangkan berbagai keterampilan dan karakter positif siswa, seperti jiwa kepemimpinan, kemandirian, keberanian, kerjasama, dan rasa cinta terhadap alam. Melalui kegiatan ini, siswa diajarkan nilai-nilai seperti kejujuran, disiplin, tanggung jawab, dan kepedulian sosial.'),
+(3, 'Bahasa Arab', 3, NULL, 'ekstra-20250324 153637.jpg', 'Kegiatan ekstrakurikuler Bahasa Arab bertujuan untuk meningkatkan kemampuan siswa dalam memahami, berbicara, membaca, dan menulis dalam Bahasa Arab secara lebih mendalam di luar pelajaran formal. Kegiatan ini penting karena membantu siswa mengembangkan kecakapan berbahasa asing yang berguna dalam studi keagamaan, komunikasi internasional, dan peluang pendidikan lanjutan. Selain itu, ekskul ini menumbuhkan minat dan kecintaan terhadap budaya Arab serta memperluas wawasan global siswa'),
+(4, 'Tartil dan Tilawah', 4, 10, 'ekstra-20250324 153744.jpg', 'Kegiatan ekstrakurikuler tilawah bertujuan untuk meningkatkan kemampuan membaca Al-Qur\'an dengan benar dan indah, serta memperdalam pemahaman tentang hukum bacaan dan makharijul huruf. Kegiatan ini juga dapat melatih suara, meningkatkan ketertarikan terhadap Al-Qur\'an, dan memperkuat nilai-nilai spiritual.'),
+(5, 'Karya Ilmiah Remaja', 5, 6, 'ekstra-20250324 153823.jpg', 'KIR MA Zainul Hasan 1 Genggong adalah tempat berkumpulnya para santri yang suka belajar, meneliti, dan menulis hal-hal bermanfaat dengan tetap menjunjung nilai-nilai keislaman. Di sini, santri diajak untuk berpikir kritis dan kreatif, sambil tetap menjaga adab dan semangat mencari ilmu karena Allah. Kegiatan KIR meliputi diskusi ringan, praktik penelitian, hingga ikut lomba karya tulis ilmiah. InsyaAllah, semua jadi bekal untuk menjadi generasi ilmuwan muslim yang cinta ilmu dan tetap rendah hati.\r\nHal ini tentunya untuk mendukung tercapainya cita-cita agung sebagaimana termaktub dalam Al-Qur\'an:\r\n\"Allah akan meninggikan orang-orang yang beriman di antaramu dan orang-orang yang diberi ilmu pengetahuan beberapa derajat.\"\r\n(QS. Al-Mujadilah: 11)'),
+(6, 'Master of Ceremony (MC)', 7, 1, 'ekstra-20250324 153942.jpg', 'Kegiatan ekstrakurikuler yang bertujuan untuk mengembangkan kemampuan santri dalam memimpin acara, berkomunikasi efektif, dan meningkatkan kepercayaan diri khususnya saat berbicara di depan umum.'),
+(7, 'Olahraga Futsal', 8, NULL, 'ekstra-20250324 154059.jpg', 'Kegiatan ekstrakurikuler futsal MA Zaha adalah bertujuan untuk mengembangkan bakat dan minat siswa/santri MA Zaha yg meliputi latihan teknik, taktik dan pembentukan tim Mumtaz FC. Siswa dilatih keterampilan dasar seperti passing, dribling, shooting dan pertahanan, serta karakter disiplin dalam permainan futsal.'),
 (8, 'Keputrian', 9, 14, 'ekstra-20250324 154221.jpg', NULL),
-(9, 'Olahraga Voly', 15, NULL, 'ekstra-20250324 172330.jpg', NULL),
-(10, 'Pagar Nusa', 16, NULL, 'ekstra-20250324 172525.jpg', NULL),
-(11, 'Hadrah', 17, NULL, 'ekstra-20250324 172614.jpg', NULL),
-(12, 'Paduan Suara', 18, NULL, 'ekstra-20250324 173126.jpg', NULL);
+(9, 'Olahraga Voly', 15, NULL, 'ekstra-20250324 172330.jpg', 'Ekstrakurikuler bola voli adalah media bagi peserta didik untuk mendorong prestasi non-akademik, sekaligus meningkatkan pertumbuhan fisik, perkembangan psikis, serta meningkatkan keterampilan dalam bermain voli.'),
+(10, 'Pagar Nusa', 16, NULL, 'ekstra-20250324 172525.jpg', 'Kegiatan ekstrakurikuler Pagar Nusa adalah ekstrakurikuler yang mengajarkan seni bela diri pencak silat, yang merupakan salah satu cabang bela diri tradisional Indonesia. Kegiatan ini bertujuan untuk melatih teknik bela diri, meningkatkan kebugaran fisik, dan menumbuhkan nilai-nilai positif seperti disiplin, keberanian, dan sportivitas.'),
+(11, 'Hadrah', 17, NULL, 'ekstra-20250324 172614.jpg', 'Kegiatan ekstrakurikuler hadrah adalah kegiatan di luar jam pelajaran yang bertujuan untuk mengembangkan bakat, minat, dan keterampilan siswa dalam bidang seni musik hadrah. Hadrah adalah seni musik Islam yang menggunakan alat tabuhan seperti rebana dan ketipung, serta iringan vokal sholawat'),
+(12, 'Paduan Suara', 18, NULL, 'ekstra-20250324 173126.jpg', 'Kegiatan ekstrakurikuler paduan suara adalah salah satu kegiatan di luar jam pelajaran sekolah untuk mengembangkan bakat, minat dan kreatifitas siswa di bidang olah vokal.');
 
 -- --------------------------------------------------------
 
@@ -430,87 +430,91 @@ CREATE TABLE `guru` (
   `Motto` text DEFAULT NULL,
   `Telegram` varchar(100) DEFAULT NULL,
   `Email` varchar(100) DEFAULT NULL,
-  `noHp` varchar(100) DEFAULT NULL
+  `noHp` varchar(100) DEFAULT NULL,
+  `kepala` varchar(20) DEFAULT NULL,
+  `pimpinan` varchar(20) DEFAULT NULL,
+  `staf` varchar(20) DEFAULT NULL,
+  `pengajar` varchar(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data untuk tabel `guru`
 --
 
-INSERT INTO `guru` (`id`, `NamaGuru`, `alamat`, `Profil`, `tahun`, `Bidang`, `Motto`, `Telegram`, `Email`, `noHp`) VALUES
-(1, 'Nun Ahsan Maliki, S.Sy, M.Pd', 'Karangbong-Pajarakan', 'Kepala Madrasah.png\r\n\r\n', '2012', 'Aqidah Akhlaq', 'Teruslah menjadi orang yang bermanfaat!', 'AlexSaif', 'alexsaif@yahoo.com', '0811355455'),
-(2, 'Zaenih, M.Pd\r\n', 'Karangbong-Pajarakan', 'IMG_5119.jpg', '1997', 'Aqidah Akhlaq', 'Hidup adalah aqidah dan perjuangan\r\n', 'zaenih', 'zainizainuri41@gmail.com\r\n', '085230253951'),
-(3, 'Solihin, M.Pd', 'Sambirampak Lor-Kotaanyar', 'IMG-20250315 042313.jpg', '2003', 'Sejarah Kebudayaan Islam', 'Hadapi masalah dengan senyuman', 'lihincan', 'mazaha1genggong@gmail.com', '085233050511'),
-(4, 'Ahmad Taufiq,S.Ag', NULL, 'IMG-20250321 113115.png', '1990', 'Fiqih ( Fathul Qorib)', 'Ketulusan adalah kunci kebahagiaan sejati', 'TaufiqMA', 'afiqaja2016@gmail.com', '085258740225'),
-(5, 'Saifullah, S. Pd.', 'Karangbong-Pajarakan', 'IMG_5106.jpg', '1996', 'Ekonomi', 'Hidup hanya sekali, gunakanlah sebaik mungkin untuk bertaqwa', 'Saifullah', 'saifullahma1997@gmail.com', '082336400799'),
-(6, 'Ahmad Juwaini M. S.Ag., M.Pd.\r\n', 'Jrebeng Kidul-Wonoasih', 'IMG_5120.jpg', '1994', 'PKn', 'Hidup adalah Khidmah, sedangkan Sukses adalah buahnya\r\n', 'Jo3w3n', 'juwen270671@gmail.com\r\n', '085335118999\r\n'),
-(7, 'Ahmad Muhibul Firdaus, M.Pd', 'Karangbong-Pajarakan', 'IMG_5145.jpg', '2002', 'Bahasa Arab', 'Tawasaw Bil Haqqi Watawasaw Bis Shobri', 'abi_fardhan', 'ahmadmuhibul@gmail.com\r\n', '085234556820'),
-(8, 'Azkalakum Zakiyullah', 'Jatiurip-Krejengan', 'IMG-20250321 113158.png', '2023', 'Karyawan Perpusda', 'Setiap langkah ada hikmah dan barokah.', 'Azkalakum22', 'azkajih88@gmail.com', '082338792318'),
-(9, 'Ira Daniati, S.Pd\r\n', 'Talkandang-Kotaanyar', 'IMG_5114.JPG', '2010', 'Geografi', 'Selama anda hidup selalu berbuat baik \r\n', 'Irasenewi', 'ira.senewi@gmail.com\r\n', '085258740329'),
-(10, 'Abdillah Luthfi, S.Th.I', 'Karangbong-Pajarakan', 'IMG-20250321 113229.png', '2005', 'Al-Qur\'an dan Hadits', 'Tidak ada tujuan yang lebih baik dan lebih utama selain Ilahi Anta Maqshudi', 'abdillah_luthfi', 'luthfi.234@gmail.com', '081234504234'),
-(11, 'Winanto', NULL, 'IMG-20250321 113348.png', '2009', 'Sejarah', 'Berjuang terus pantang menyerah', 'Winanto', 'Mariaulfa@gmail.com', '085230519960'),
-(12, 'Ali Munir Mustaghfirin,SH.I', 'Wangkal-Gading', 'IMG_5126.JPG', '1997', 'Fikih/ Ushul Fikih', 'Laki laki sejati bukan orang yang pasrah terhadap takdir. Tetapi orang yang berusaha dari takdir yang satu ke takdir yang lain\r\n', 'N64710', 'Masiing71@gmail.com\r\n', '082228758889'),
-(13, 'Sri Adi Wahyuni, S.Hum\r\n', 'Pakuniran-Pakuniran', 'IMG_5107.jpg', '2021', 'Bahasa Indonesia', 'Bekerjalah untuk duniamu seakan-akan kamu hidup selamanya, beramalah untuk akhiratku seakan-akan kamu mati besok. \r\n', 'Sri adi wahyuni\r\n', 'sriadiwahyuni5@gmail.com\r\n', '085253600997'),
-(14, 'Maisurah, M.Pd', 'Jurang Jero-Gading', 'IMG_5127.jpg', '2007', 'Sejarah kebudayaan Islam', 'Kesuksesan adalah akumulasi dari Proses\r\n', 'meme2510', 'maysurahmeme@gmail.com\r\n', '085230506087'),
-(15, 'Mohammad Hendra, M.Pd.I', 'Maron Kidul-Maron', 'IMG_5095.jpg', '2008', 'Sejarah kebudayaan Islam', 'Humanis religius', 'Hendra_Senyum', 'hendramuhammad603@gmail.com', '081333661100'),
-(16, 'Almuharrom', 'Sentul-Gading', 'IMG_5128.jpg', '2017', 'Ilmu Fiqih', 'kudu mempeng', 'almuharrom', 'almuharrom90@gmail.com\r\n', '082233315546'),
-(17, 'Sumaryono, M.Pd.I', 'Gebangan-Krejengan', 'IMG_5146.jpg', '2012', 'Informatika', 'Berjuang tanpa henti, meski hidup hanya sekali\r\n', 'SumaRyon0', 's.youn2011@gmail.com\r\n', '085204891113'),
-(18, 'Robiatul Adawiyah, S.Si', 'Karangbong-Pajarakan', 'IMG-20250310 015753.jpg', '2014', 'Matematika', 'Hidup itu bukan tentang memiliki segalanya, tapi mensyukuri yang ada☺️', 'Robicc', 'robikadawiyah32@gmail.com', '082330712412'),
-(19, 'Mohammad Jamalul Lail, S.Pd.\r\n', 'Nogosaren-Gading', 'IMG_5132.jpg', '2015', 'Fisika', 'Titik tertinggi yang dikejar ternyata hanya ruang kosong', 'iyLoeL', 'iyloel.terkep@gmail.com\r\n', '082331103145'),
-(20, 'Mulyadi, S.Pd', 'Randupitu-Gending', 'IMG_5138.jpg', '2005', 'Matematika', 'Man Jadda wajada\r\n', 'Mulyadi', 'alfiahmulyadi1975@gmail.com\r\n', '085288003243'),
-(21, 'Barokatul Laili, S.H.I', 'Suko-Maron', 'IMG_5112.jpg', '2013', 'Hadits', 'Semangat, sabar dan tetap rendah hati', 'Laili_NL', 'nellychy29@gmail.com\r\n', '085204854304'),
-(22, 'Ahmad Efendi', 'Ranuyoso-Lumajang', 'IMG_5124.jpg', '2022', 'PJOK', 'Orang sukses paham tentang Proses\r\n', 'Pepen1304', 'ahmadefendi121304@gmail.com\r\n', '082331146276'),
-(23, 'Dwi Restiana Widyaningsih, S.Pd', 'Mangunharjo-Mayangan', 'IMG_5135.jpg', '2009', 'Matematika', 'Tidak ada yg sia sia dalam belajar,karena ilmu akan bermanfaat pada waktunya\r\n', 'DwiR_ana', 'dwirestiana.w@gmail.com\r\n', '082234778427'),
-(24, 'Misbahun Najib, S.Pd', NULL, 'IMG-20250312 094426.jpg', '2012', 'Fiqih dan Ta\'lim', 'Berusahalah selalu ingat sama Allah', 'MisbahunNajib', 'misbahunnajib@gmail.com', '082334118331'),
-(25, 'Linda Anggraeni, S.Pd.I', 'Ganting Kulon-Maron', 'IMG_5102 (2).jpg', '2011', 'Hadits', 'Mulailah darimana kau berada dan lakukan yang kau bisa\r\n', 'Linsyaif', 'linsyaif91@gmail.com\r\n', '081331512714'),
-(26, 'Moh Fauzi Afnani, S.Pd\r\n', 'Tiris-Tiris', 'IMG_5129.JPG\r\n', '2018', 'Alfiyah Ibnu Malik & Aqidah Alhlak', 'Manfaatkan masa mudamu sebaik-baiknya dan carilah ilmu sebanyak-banyaknya. Jangan batasi diri dengan satu ilmu saja, tapi carilah ilmu apa saja.\r\n', 'aanz89', 'aanvauzy89@gmail.com\r\n', '082233315665'),
-(27, 'Sholehuddin, S.Hum', 'Karangbong-Pajarakan', 'IMG-20250312 094620.jpg', '2024', 'Sejarah Indonesia', 'aku mung cah angon, angon roso, angon rogo', 'Sholeh300497', 'sholehuddin0430@gmail.com', '085731794837'),
-(28, 'Mariyatul Kiptiyah,S.Ag', 'Karangbong-Pajarakan', 'IMG_5117.jpg', '1997', 'Fikih', 'Terus melangkah dan berfikir positif', 'me_ry', 'mariyatulqibti82@gmail.com', '082233118235'),
-(29, 'Riatiningsih, S.Pd', 'Tigasan Wetan-Leces', 'IMG_5115.jpg', '2011', 'Biologi', 'Jadilah versi terbaik dari dirimu setiap hari\r\n', 'Ria_88', 'khansariatiningsih@gmail.com\r\n', '082293767701'),
-(30, 'Amaris Subiantoro, S.Pd.I', 'Pajarakan Kulon-Pajarakan', 'IMG_5105 (1).jpg', '2006', 'Pendidikan Kewarganegaraan', 'Tidak ada yang lebih berharga dari pada Ilmu yang bermanfaat, tidak ada yang lebih tinggi dari pada adab, dan tidak ada yang lebih penting daripada kepatuhan kepada Orang tua dan Guru\r\n', 'amaris87', 'amarissubiantoro.as@gmail.com\r\n', '085335137113'),
-(31, 'Aninatul Baidiyah, S.TP', 'Liprak Kidul-Banyuanyar', 'IMG_5108.jpg', '2013', 'Biologi, Geografi', 'Di jalani, Di syukuri, dan Jangan lupa bahagia☺️', '@aninatul_baidiyah', 'baidiyahaninatul@gmail.com', '85233075078\r'),
-(32, 'Ayu Malinda Bulqis, S.H.I', 'Karangbong-Pajarakan', 'IMG_5110.jpg', '2012', 'Akhlak', 'Jadikan akhlak sebagai perhiasan dan tameng dari ilmu pengetahuan', '@ayubulqis', 'malinda.bulqis@gmail.com', '82338403299\r'),
-(33, 'Herawati, S.Pd', 'Randupitu-Gending', 'IMG_5116.jpg', '2003', 'Ekonomi', 'Tetaplah jadi orang baik', '@H3rawati', 'hera140475@gmail.com', '82333507952\r'),
-(34, 'M Sahri, M.Pd', 'Sumbersecang-Gading', 'IMG_5142.jpg', '2009', 'Ilmu Tafsir', 'Dadio wong apik seng iso manfaat marang liyane', '@sahriks', 'Syahriemohammad@gmail.com', '85330150812\r'),
-(35, 'Najwan Nada, S. Sos', 'Karangbong-Pajarakan', 'IMG_5111.JPG', '2019', 'Bimbingan Konseling', 'Hidup itu hanya tentang dua hal: Bergerak atau diam saja.', '@najwannada', 'najwannada12@gmail.com', '82234510002\r'),
-(36, 'Rialis Kriswati, S.Pd', 'Bulu-Kraksaan', 'IMG_5137.JPG', '2002', 'Bahasa indonesia', 'Keikhlasan & kesabaran juga butuh kejujuran', 'Mbklies', 'rialiskriswati0505@gmail.com', '87761132480\r'),
-(37, 'Ach. Mustain, M.Pd.I', 'Kregenan-Kraksaan', 'IMG_5104.JPG', '1999', 'Hadist / Bahasa arab', 'Profesi seorang guru adalah pribadi yang tulus mengabdi', 'must41n@', 'tetesanilmi11@gmail.com', '81233410996\r'),
-(38, 'Didik Supriyanto, S.H', 'Karangbong-Pajarakan', 'IMG_5099.jpg', '2007', 'Pkn', '\" Hidup hanya sekali buatlah berarti \"', '@didik supriyanto', 'didiksupritanto@gmail.com', '85336220899\r'),
-(39, 'Moh Su\'udi, S.Pd.I', NULL, 'IMG_5096.jpg', NULL, 'KA TU', '', '@Udik_bae', 'Mohammad.suudi@yahoo.co.id', '85236140526\r'),
-(40, 'Mohammad Ahsanun Na\'im, S.SOS', 'Opo Opo-Krejengan', 'IMG_5141.jpg', '2019', 'Bimbingan Konseling', 'LIFE TEST US BIG TO MAKE US BIG', '@ahsanaim', 'achsan95@gmail.com', '85234003424\r'),
-(41, 'Lilikatus sholeha, S.Pd.I', 'Nogosaren-Gading', 'IMG_5123.JPG', '2013', 'Mulok', '', '@liliksholeha', 'Lilikatussholeha@gmail.com', '81235233222\r'),
-(42, 'Gatot Heriyanto, S.Pd.I', 'Puspan-Maron', 'IMG_5121.JPG', '2006', 'Alqur\'an Hadis', 'Man jadda wajada', '@GatotHeriyanto', 'gatotheriyanto73270@gmail.com', '85236755355\r'),
-(43, 'Zaimatus Sholehah, S.Pd', 'Bucorwetan-Pakuniran', 'IMG_5131.JPG', '2020', 'Bahasa Inggris', 'Just keep working until you know that no useless effort inthis world. There is always happiness waiting in your future', '@zaimatuss', 'zaimatissholehah@gmail.com', '85156009382\r'),
-(44, 'Mukadi, S.H.I', 'Penambangan-Pajarakan', 'IMG-20250321 114134.png', '2005', 'Sorof', 'Rendah diri memberi jalan pada terangkatnya derajat', 'Jisalman', 'Mukadi@gmail.com', NULL),
-(45, 'Ika Cahyanti, S.Pd.', 'Klaseman-Gending', 'IMG_5136.JPG', '2018', 'Bahasa Indonesia', 'Belajarlah dari hari kemarin, hidup untuk hari ini, dan berharaplah untuk hari esok', 'Ika0912', 'ikacahyanti0@gmail.com', '82230309231\r'),
-(46, 'Izudin, s.pd.i', NULL, 'IMG-20250312 130805.jpg', '1998', 'Qur an Hadits', 'Pengabdian Abadi', 'Izudin', 'izudin8972@gmail.com', '085259044258'),
-(47, 'Abd. Rahim, Lc.', 'Jorongan-Leces', 'IMG-20250310 020231.JPG', '2001', 'Bhs. Arab', 'Belajar sepanjang hidup. Uthlubul \'ilmi minal mahdi ilal lahdi', '@AR_LC66', 'abdrhmlc@gmail.com', '08999223455'),
-(48, 'Siti Bahria, S.Pdi', 'Karangpati-Pajarakan', 'IMG_5109.jpg', '2011', 'Fiqih', 'Berkhidmat untuk lembaga dan pesantren', 'Siti Bahria', 'romsaja@gmail.com', '82335524014\r'),
-(49, 'Yanto, S.Pd.I., M.Si', 'Sumberanyar-Paiton', 'IMG_5143.JPG', '2006', 'Sosiologi', 'Motivasi diri itu lebih penting dari pada termotivasi oleh orang lain', 'yanto87', 'yantopaiton9@gmail.com', '85330207559\r'),
-(50, 'Izzah Himayatud Dauliyah, S.Hum', NULL, 'IMG_5130.jpg', '2021', 'Bahasa Inggris', 'Lakukan segalanya dengan penuh ikhlas', '@nila_izzah', 'izzahhimayatuddauliyah@gmail.com', '85258335631\r'),
-(51, 'Bambang Dwi Mulyadi, S.Pd', NULL, 'IMG_5139.jpg', '2000', 'Bahasa Inggris, Pramuka, PKWU', 'Jadilah orang yang berguna dan beradab di manapun berada', 'DM BAMBANG\r\n', 'bambangdm45@gmail.id\r\n', '082334747284\r\n'),
-(52, 'Shohihah, M.Pd', NULL, 'IMG_5113.JPG', '2007', 'Aqidah Akhlak', 'Khoirunnas yanfa\'u linnas\r\n', 'Shohihah', 'sohihah02@gmail.com\r\n', '081249592220'),
-(53, 'Syaifullah', NULL, 'IMG_5125.JPG', NULL, 'Komputer', 'Try and Try until we cry never give up la tahzan inna Allaha ma\'ana', '082299577946\r\n', 'rahs8391@gmail.com\r\n', '082299577946'),
-(54, 'Tutik Hardianti, S.Pd', 'Wonorejo-Maron', 'IMG_5101.jpg', '2020', 'Petugas Piket', 'Permata tidak bisa berkilau tanpa gesekan, begitu juga manusia. Tidak ada manusia yang luar biasa tanpa cobaan\r\n', 'tutikhardianti', 'tutikhardianti17@gmail.com \r\n', '085259710809'),
-(55, 'Mukhlas Kholil, S.H.I', NULL, 'IMG-20250321 113544.png', '2004', 'Bahasa Arab', 'Bahasa Arab mahkota Islam', 'Mukhlaskholil', 'mukhlashalil@gmail.com', '085259299956'),
-(56, 'Susilawati, S.Pd.I', NULL, 'IMG-20250312 094859.jpg', NULL, 'Karyawan TU', 'Semangat hidup meraih perjuangan', 'susil45', 'kucing05@gmail.com', '082334747328'),
-(57, 'Deo A. Pramadhan', 'Besuki-Situbondo', 'IMG-20250312 095030.jpg', '2018', 'Al Qur\'an dan Hadist', 'Hidup sekali, sanggup berbaik hati', 'deramadhan85', 'deramadhan85@gmail.com', '08568747911'),
-(58, 'Shautul Azkiyak. S.Pd.I', 'Karangbong-Pajarakan', 'IMG-20250321 113624.png', '2021', 'koordinator prodistik', 'Jika kamu ingin menjadi kuat, pelajari cara bertarung sendirian.', 'azkiyak07', 'azkiyak07@gmail.com', '085792518395'),
-(59, 'Candra Useh, S.Pd.I', NULL, 'IMG-20250321 113653.png', NULL, 'Mulok', 'Barang siapa belum pernah merasakan pahitnya mencari ilmu walau sesaat, ia akan menelan hinanya kebodohan sepanjang hidupnya', 'candrauseh', 'candrauseh999@gmail.com', '085258740227'),
-(60, 'Muhammad Fakhrur Rizky, SE', 'Bungatan-Situbondo', 'IMG-20250312 095217.jpg', '2019', 'Ketua Tim Media', 'Belajar dengan Hati, Berkarya dengan Ilmu.', 'rizzky_muhammad', 'rizzkymuhammad19@gmail.com', '085707426773'),
-(61, 'Moh. Zarkasyi, S.Pd.I\r\n', NULL, 'IMG_5122.JPG', '2014', 'Ilmu Hadis\r\n', 'Khidmah ilmu, guru, dan orang tua\r\n', 'Kaziy87', 'moh.zarkasyi@gmail.com\r\n', '085235592093'),
-(62, 'Nur Fitriyah, S.Pd.I', 'Karangbong-Pajarakan', 'IMG-20250312 095345.jpg', '2017', 'Karyawan', 'Hidup adalah ibadah', 'Fitriyah', 'fitriyahfitri1416@gmail.com', '085234049987'),
-(63, 'Ali Imron Maulana,S.M', 'Patemon-Krejengan', 'IMG-20250321 113732.png', '2024', 'Pewarta', 'Bisa Karena Biasa', 'Aliimronmaulana', 'aliimronmaulana99@gmail.com', '082231322797'),
-(64, 'Moh. Zainul Hasan S.pd\r\n', 'Nogosaren-Gading', 'IMG_5144.JPG', '2022', 'Piket putra\r\n', 'Terus berjuang sampai kau mencapai puncak  Sehingga cacian itu berubah menjadi tepuk tangan...!!!\r\n', 'ZainulBinSalim', 'Zainulcb30@gmail.com\r\n', '085219868994'),
-(65, 'M Zainul Arifin, S.Pd', NULL, 'IMG-20250312 131025.jpg', NULL, 'Staf Kurikulum', 'Jalani hidup dengan semangat', 'Z41nul_4r1f1n', 'az7746520@gmail.com', NULL),
-(66, 'Muhammad Daniel Ainul Islam', 'Jrebeng Kidul-Wonoasih', 'IMG-20250312 095540.jpg', '2016', 'Al Quran Hadits', 'Berdoa dan berjuanglah untuk mimpimu', 'Muhammaddanielainulislam', 'daniel.ainulislam@gmail.com', '082325588569'),
-(67, 'Sholeh Hasan', 'Karangbong-Pajarakan', 'IMG-20250321 113901.png', '2021', NULL, 'Jangan mengaku jadi orang sabar, sebelum menjadi operstor madrasah', 'zhoel_89', 'ahsanzhoel03@gmail.com', '082336163232'),
-(68, 'Agus Surahman, S.Si., Gr\r\n', 'Karanggeger-Pajarakan', 'IMG_5134.jpg', '2015', 'Kimia', 'Ketika sekarang terpikir, segeralah mengukir biar esok kan terukir\r\n', 'agus_surahman', 'gusurgusur@gmail.com\r\n', '082236517179'),
-(69, 'Maziyyatul Qudsiyah', 'Pakuniran-Pakuniran', 'IMG_5100.jpg', '2021', 'Petugas Piket', 'Jadilah berharga meski tak dihargai', 'Yaluhmezi', 'alfathoniy608@gmail.com', '6282232274945'),
-(70, 'Fakhrur Razi, S.H.I', 'Besuki-Situbondo', 'IMG_5133.JPG', '2004', 'Kifayatul Akhyar\r\n', 'Qoola Umar bin Al-Khattab ra.: (tafaqqohuu qobla an tusawwaduu)ma\'naahu ta\'allamul \'ilma maa dumtum shighooron qobla an tashiruu saadatan ruasaan mandzuuron ilaihim, fain lam tata\'allamu qobla an yastahyaytum an tata\'allamu ba\'da alkibaro fabaqoitum juhhaalan ta\'khuzuunahu minal ashoogiri allaziina laa yuhsinuunal \'ilma fayuzrii zaalika bikum', 'FAKHRUR_RAZI_AS', 'ahsanzainina4@gmail.com\r\n', '0816563626'),
-(71, 'Bambang Sumaryono, S.T', 'Gebangan-Krejengan', 'IMG-20250321 113812.png', '2012', 'Kimia', 'Semesta cinta - SEMESTA ILAHI', 'Bambangst007', 'semestacinta55@gmail.com', '081335511405'),
-(75, 'Ahmad Yani, S.Kom', NULL, 'IMG-20250312 130448.jpg', NULL, 'Developer', 'tidak ada kata terlambat untuk mempelajari suatu hal yang baru', 'abu_naum', 'ahmad.yani.ar.dath@gmail.com', '085173456771'),
-(76, 'Siti Walida, S.Pd.', 'Maron Kidul-Maron', 'IMG-20250312 131602.jpg', '2015', 'Staf Keuangan', 'Jika orang lain bisa, maka aku juga pasti bisa', 'Lieda06', 'sitiwalida73@gmail.com', '082234129990');
+INSERT INTO `guru` (`id`, `NamaGuru`, `alamat`, `Profil`, `tahun`, `Bidang`, `Motto`, `Telegram`, `Email`, `noHp`, `kepala`, `pimpinan`, `staf`, `pengajar`) VALUES
+(1, 'Nun Ahsan Maliki, S.Sy, M.Pd', 'Karangbong-Pajarakan', 'Kepala Madrasah.png\r\n\r\n', '2012', 'Aqidah Akhlaq', 'Teruslah menjadi orang yang bermanfaat!', 'AlexSaif', 'alexsaif@yahoo.com', '0811355455', 'Ya', NULL, NULL, 'Ya'),
+(2, 'Zaenih, M.Pd', 'Karangbong-Pajarakan', 'IMG_5119.jpg', '1997', 'Aqidah Akhlaq', 'Hidup adalah aqidah dan perjuangan', 'zaenih', 'zainizainuri41@gmail.com', '085230253951', NULL, 'Ya', NULL, 'Ya'),
+(3, 'Solihin, M.Pd', 'Sambirampak Lor-Kotaanyar', 'IMG-20250315 042313.jpg', '2003', 'Sejarah Kebudayaan Islam', 'Hadapi masalah dengan senyuman', 'lihincan', 'mazaha1genggong@gmail.com', '085233050511', NULL, 'Ya', NULL, 'Ya'),
+(4, 'Ahmad Taufiq,S.Ag', NULL, 'IMG-20250321 113115.png', '1990', 'Fiqih ( Fathul Qorib)', 'Ketulusan adalah kunci kebahagiaan sejati', 'TaufiqMA', 'afiqaja2016@gmail.com', '085258740225', NULL, 'Ya', NULL, 'Ya'),
+(5, 'Saifullah, S. Pd.', 'Karangbong-Pajarakan', 'IMG_5106.jpg', '1996', 'Ekonomi', 'Hidup hanya sekali, gunakanlah sebaik mungkin untuk bertaqwa', 'Saifullah', 'saifullahma1997@gmail.com', '082336400799', NULL, 'Ya', NULL, 'Ya'),
+(6, 'Ahmad Juwaini M. S.Ag., M.Pd.', 'Jrebeng Kidul-Wonoasih', 'IMG_5120.jpg', '1994', 'PKn', 'Hidup adalah Khidmah, sedangkan Sukses adalah buahnya', 'Jo3w3n', 'juwen270671@gmail.com', '085335118999', NULL, NULL, 'Ya', 'Ya'),
+(7, 'Ahmad Muhibul Firdaus, M.Pd', 'Karangbong-Pajarakan', 'IMG_5145.jpg', '2002', 'Bahasa Arab', 'Tawasaw Bil Haqqi Watawasaw Bis Shobri', 'abi_fardhan', 'ahmadmuhibul@gmail.com\r\n', '085234556820', NULL, NULL, NULL, 'Ya'),
+(8, 'Azkalakum Zakiyullah', 'Jatiurip-Krejengan', 'IMG-20250321 113158.png', '2023', 'Karyawan Perpusda', 'Setiap langkah ada hikmah dan barokah.', 'Azkalakum22', 'azkajih88@gmail.com', '082338792318', NULL, NULL, 'Ya', NULL),
+(9, 'Ira Daniati, S.Pd\r\n', 'Talkandang-Kotaanyar', 'IMG_5114.JPG', '2010', 'Geografi', 'Selama anda hidup selalu berbuat baik \r\n', 'Irasenewi', 'ira.senewi@gmail.com\r\n', '085258740329', NULL, NULL, NULL, 'Ya'),
+(10, 'Abdillah Luthfi, S.Th.I', 'Karangbong-Pajarakan', 'IMG-20250321 113229.png', '2005', 'Al-Qur\'an dan Hadits', 'Tidak ada tujuan yang lebih baik dan lebih utama selain Ilahi Anta Maqshudi', 'abdillah_luthfi', 'luthfi.234@gmail.com', '081234504234', NULL, NULL, NULL, 'Ya'),
+(11, 'Winanto', NULL, 'IMG-20250321 113348.png', '2009', 'Sejarah', 'Berjuang terus pantang menyerah', 'Winanto', 'Mariaulfa@gmail.com', '085230519960', NULL, NULL, NULL, 'Ya'),
+(12, 'Ali Munir Mustaghfirin,SH.I', 'Wangkal-Gading', 'IMG_5126.JPG', '1997', 'Fikih/ Ushul Fikih', 'Laki laki sejati bukan orang yang pasrah terhadap takdir. Tetapi orang yang berusaha dari takdir yang satu ke takdir yang lain\r\n', 'N64710', 'Masiing71@gmail.com\r\n', '082228758889', NULL, NULL, NULL, 'Ya'),
+(13, 'Sri Adi Wahyuni, S.Hum\r\n', 'Pakuniran-Pakuniran', 'IMG_5107.jpg', '2021', 'Bahasa Indonesia', 'Bekerjalah untuk duniamu seakan-akan kamu hidup selamanya, beramalah untuk akhiratku seakan-akan kamu mati besok. \r\n', 'Sri adi wahyuni\r\n', 'sriadiwahyuni5@gmail.com\r\n', '085253600997', NULL, NULL, NULL, 'Ya'),
+(14, 'Maisurah, M.Pd', 'Jurang Jero-Gading', 'IMG_5127.jpg', '2007', 'Sejarah kebudayaan Islam', 'Kesuksesan adalah akumulasi dari Proses\r\n', 'meme2510', 'maysurahmeme@gmail.com\r\n', '085230506087', NULL, NULL, NULL, 'Ya'),
+(15, 'Mohammad Hendra, M.Pd.I', 'Maron Kidul-Maron', 'IMG_5095.jpg', '2008', 'Sejarah kebudayaan Islam', 'Humanis religius', 'Hendra_Senyum', 'hendramuhammad603@gmail.com', '081333661100', NULL, NULL, NULL, 'Ya'),
+(16, 'Almuharrom', 'Sentul-Gading', 'IMG_5128.jpg', '2017', 'Ilmu Fiqih', 'kudu mempeng', 'almuharrom', 'almuharrom90@gmail.com\r\n', '082233315546', NULL, NULL, NULL, 'Ya'),
+(17, 'Sumaryono, M.Pd.I', 'Gebangan-Krejengan', 'IMG_5146.jpg', '2012', 'Informatika', 'Berjuang tanpa henti, meski hidup hanya sekali\r\n', 'SumaRyon0', 's.youn2011@gmail.com\r\n', '085204891113', NULL, NULL, NULL, 'Ya'),
+(18, 'Robiatul Adawiyah, S.Si', 'Karangbong-Pajarakan', 'IMG-20250310 015753.jpg', '2014', 'Matematika', 'Hidup itu bukan tentang memiliki segalanya, tapi mensyukuri yang ada☺️', 'Robicc', 'robikadawiyah32@gmail.com', '082330712412', NULL, NULL, NULL, 'Ya'),
+(19, 'Mohammad Jamalul Lail, S.Pd.\r\n', 'Nogosaren-Gading', 'IMG_5132.jpg', '2015', 'Fisika', 'Titik tertinggi yang dikejar ternyata hanya ruang kosong', 'iyLoeL', 'iyloel.terkep@gmail.com\r\n', '082331103145', NULL, NULL, NULL, 'Ya'),
+(20, 'Mulyadi, S.Pd', 'Randupitu-Gending', 'IMG_5138.jpg', '2005', 'Matematika', 'Man Jadda wajada\r\n', 'Mulyadi', 'alfiahmulyadi1975@gmail.com\r\n', '085288003243', NULL, NULL, NULL, 'Ya'),
+(21, 'Barokatul Laili, S.H.I', 'Suko-Maron', 'IMG_5112.jpg', '2013', 'Hadits', 'Semangat, sabar dan tetap rendah hati', 'Laili_NL', 'nellychy29@gmail.com\r\n', '085204854304', NULL, NULL, NULL, 'Ya'),
+(22, 'Ahmad Efendi', 'Ranuyoso-Lumajang', 'IMG_5124.jpg', '2022', 'PJOK', 'Orang sukses paham tentang Proses\r\n', 'Pepen1304', 'ahmadefendi121304@gmail.com\r\n', '082331146276', NULL, NULL, NULL, 'Ya'),
+(23, 'Dwi Restiana Widyaningsih, S.Pd', 'Mangunharjo-Mayangan', 'IMG_5135.jpg', '2009', 'Matematika', 'Tidak ada yg sia sia dalam belajar,karena ilmu akan bermanfaat pada waktunya\r\n', 'DwiR_ana', 'dwirestiana.w@gmail.com\r\n', '082234778427', NULL, NULL, NULL, 'Ya'),
+(24, 'Misbahun Najib, S.Pd', NULL, 'IMG-20250312 094426.jpg', '2012', 'Fiqih dan Ta\'lim', 'Berusahalah selalu ingat sama Allah', 'MisbahunNajib', 'misbahunnajib@gmail.com', '082334118331', NULL, NULL, NULL, 'Ya'),
+(25, 'Linda Anggraeni, S.Pd.I', 'Ganting Kulon-Maron', 'IMG_5102 (2).jpg', '2011', 'Hadits', 'Mulailah darimana kau berada dan lakukan yang kau bisa\r\n', 'Linsyaif', 'linsyaif91@gmail.com\r\n', '081331512714', NULL, NULL, NULL, 'Ya'),
+(26, 'Moh Fauzi Afnani, S.Pd\r\n', 'Tiris-Tiris', 'IMG_5129.JPG\r\n', '2018', 'Alfiyah Ibnu Malik & Aqidah Alhlak', 'Manfaatkan masa mudamu sebaik-baiknya dan carilah ilmu sebanyak-banyaknya. Jangan batasi diri dengan satu ilmu saja, tapi carilah ilmu apa saja.\r\n', 'aanz89', 'aanvauzy89@gmail.com\r\n', '082233315665', NULL, NULL, NULL, 'Ya'),
+(27, 'Sholehuddin, S.Hum', 'Karangbong-Pajarakan', 'IMG-20250312 094620.jpg', '2024', 'Sejarah Indonesia', 'aku mung cah angon, angon roso, angon rogo', 'Sholeh300497', 'sholehuddin0430@gmail.com', '085731794837', NULL, NULL, NULL, 'Ya'),
+(28, 'Mariyatul Kiptiyah,S.Ag', 'Karangbong-Pajarakan', 'IMG_5117.jpg', '1997', 'Fikih', 'Terus melangkah dan berfikir positif', 'me_ry', 'mariyatulqibti82@gmail.com', '082233118235', NULL, NULL, NULL, 'Ya'),
+(29, 'Riatiningsih, S.Pd', 'Tigasan Wetan-Leces', 'IMG_5115.jpg', '2011', 'Biologi', 'Jadilah versi terbaik dari dirimu setiap hari\r\n', 'Ria_88', 'khansariatiningsih@gmail.com\r\n', '082293767701', NULL, NULL, NULL, 'Ya'),
+(30, 'Amaris Subiantoro, S.Pd.I', 'Pajarakan Kulon-Pajarakan', 'IMG_5105 (1).jpg', '2006', 'Pendidikan Kewarganegaraan', 'Tidak ada yang lebih berharga dari pada Ilmu yang bermanfaat, tidak ada yang lebih tinggi dari pada adab, dan tidak ada yang lebih penting daripada kepatuhan kepada Orang tua dan Guru\r\n', 'amaris87', 'amarissubiantoro.as@gmail.com\r\n', '085335137113', NULL, NULL, NULL, 'Ya'),
+(31, 'Aninatul Baidiyah, S.TP', 'Liprak Kidul-Banyuanyar', 'IMG_5108.jpg', '2013', 'Biologi, Geografi', 'Di jalani, Di syukuri, dan Jangan lupa bahagia☺️', 'aninatul_baidiyah', 'baidiyahaninatul@gmail.com', '85233075078\r', NULL, NULL, NULL, 'Ya'),
+(32, 'Ayu Malinda Bulqis, S.H.I', 'Karangbong-Pajarakan', 'IMG_5110.jpg', '2012', 'Akhlak', 'Jadikan akhlak sebagai perhiasan dan tameng dari ilmu pengetahuan', 'ayubulqis', 'malinda.bulqis@gmail.com', '82338403299\r', NULL, NULL, NULL, 'Ya'),
+(33, 'Herawati, S.Pd', 'Randupitu-Gending', 'IMG_5116.jpg', '2003', 'Ekonomi', 'Tetaplah jadi orang baik', 'H3rawati', 'hera140475@gmail.com', '82333507952\r', NULL, NULL, NULL, 'Ya'),
+(34, 'M Sahri, M.Pd', 'Sumbersecang-Gading', 'IMG_5142.jpg', '2009', 'Ilmu Tafsir', 'Dadio wong apik seng iso manfaat marang liyane', 'sahriks', 'Syahriemohammad@gmail.com', '85330150812\r', NULL, NULL, NULL, 'Ya'),
+(35, 'Najwan Nada, S. Sos', 'Karangbong-Pajarakan', 'IMG_5111.JPG', '2019', 'Bimbingan Konseling', 'Hidup itu hanya tentang dua hal: Bergerak atau diam saja.', 'najwannada', 'najwannada12@gmail.com', '82234510002\r', NULL, NULL, NULL, 'Ya'),
+(36, 'Rialis Kriswati, S.Pd', 'Bulu-Kraksaan', 'IMG_5137.JPG', '2002', 'Bahasa indonesia', 'Keikhlasan & kesabaran juga butuh kejujuran', 'Mbklies', 'rialiskriswati0505@gmail.com', '87761132480\r', NULL, NULL, NULL, 'Ya'),
+(37, 'Ach. Mustain, M.Pd.I', 'Kregenan-Kraksaan', 'IMG_5104.JPG', '1999', 'Hadist / Bahasa arab', 'Profesi seorang guru adalah pribadi yang tulus mengabdi', 'must41n@', 'tetesanilmi11@gmail.com', '81233410996\r', NULL, NULL, NULL, 'Ya'),
+(38, 'Didik Supriyanto, S.H', 'Karangbong-Pajarakan', 'IMG_5099.jpg', '2007', 'Pkn', NULL, 'didik supriyanto', 'didiksupritanto@gmail.com', NULL, NULL, NULL, 'Ya', 'Ya'),
+(39, 'Moh Su\'udi, S.Pd.I', NULL, 'IMG_5096.jpg', NULL, 'KA TU', NULL, 'Udik_bae', 'Mohammad.suudi@yahoo.co.id', NULL, NULL, NULL, 'Ya', NULL),
+(40, 'Mohammad Ahsanun Na\'im, S.SOS', 'Opo Opo-Krejengan', 'IMG_5141.jpg', '2019', 'Bimbingan Konseling', 'LIFE TEST US BIG TO MAKE US BIG', 'ahsanaim', 'achsan95@gmail.com', '85234003424\r', NULL, NULL, NULL, 'Ya'),
+(41, 'Lilikatus sholeha, S.Pd.I', 'Nogosaren-Gading', 'IMG_5123.JPG', '2013', 'Mulok', NULL, 'liliksholeha', 'Lilikatussholeha@gmail.com', NULL, NULL, NULL, 'Ya', NULL),
+(42, 'Gatot Heriyanto, S.Pd.I', 'Puspan-Maron', 'IMG_5121.JPG', '2006', 'Alqur\'an Hadis', 'Man jadda wajada', 'GatotHeriyanto', 'gatotheriyanto73270@gmail.com', '85236755355\r', NULL, NULL, NULL, 'Ya'),
+(43, 'Zaimatus Sholehah, S.Pd', 'Bucorwetan-Pakuniran', 'IMG_5131.JPG', '2020', 'Bahasa Inggris', 'Just keep working until you know that no useless effort inthis world. There is always happiness waiting in your future', '@zaimatuss', 'zaimatissholehah@gmail.com', '85156009382\r', NULL, NULL, NULL, 'Ya'),
+(44, 'Mukadi, S.H.I', 'Penambangan-Pajarakan', 'IMG-20250321 114134.png', '2005', 'Sorof', 'Rendah diri memberi jalan pada terangkatnya derajat', 'Jisalman', 'Mukadi@gmail.com', NULL, NULL, NULL, NULL, 'Ya'),
+(45, 'Ika Cahyanti, S.Pd.', 'Klaseman-Gending', 'IMG_5136.JPG', '2018', 'Bahasa Indonesia', 'Belajarlah dari hari kemarin, hidup untuk hari ini, dan berharaplah untuk hari esok', 'Ika0912', 'ikacahyanti0@gmail.com', '82230309231\r', NULL, NULL, NULL, 'Ya'),
+(46, 'Izudin, s.pd.i', NULL, 'IMG-20250312 130805.jpg', '1998', 'Qur an Hadits', 'Pengabdian Abadi', 'Izudin', 'izudin8972@gmail.com', '085259044258', NULL, NULL, NULL, 'Ya'),
+(47, 'Abd. Rahim, Lc.', 'Jorongan-Leces', 'IMG-20250310 020231.JPG', '2001', 'Bhs. Arab', 'Belajar sepanjang hidup. Uthlubul \'ilmi minal mahdi ilal lahdi', '@AR_LC66', 'abdrhmlc@gmail.com', '08999223455', NULL, NULL, NULL, 'Ya'),
+(48, 'Siti Bahria, S.Pdi', 'Karangpati-Pajarakan', 'IMG_5109.jpg', '2011', 'Fiqih', 'Berkhidmat untuk lembaga dan pesantren', 'Siti Bahria', 'romsaja@gmail.com', '82335524014\r', NULL, NULL, NULL, 'Ya'),
+(49, 'Yanto, S.Pd.I., M.Si', 'Sumberanyar-Paiton', 'IMG_5143.JPG', '2006', 'Sosiologi', 'Motivasi diri itu lebih penting dari pada termotivasi oleh orang lain', 'yanto87', 'yantopaiton9@gmail.com', '85330207559\r', NULL, NULL, NULL, 'Ya'),
+(50, 'Izzah Himayatud Dauliyah, S.Hum', NULL, 'IMG_5130.jpg', '2021', 'Bahasa Inggris', 'Lakukan segalanya dengan penuh ikhlas', '@nila_izzah', 'izzahhimayatuddauliyah@gmail.com', '85258335631\r', NULL, NULL, NULL, 'Ya'),
+(51, 'Bambang Dwi Mulyadi, S.Pd', NULL, 'IMG_5139.jpg', '2000', 'Bahasa Inggris, Pramuka, PKWU', 'Jadilah orang yang berguna dan beradab di manapun berada', 'DM BAMBANG\r\n', 'bambangdm45@gmail.id\r\n', '082334747284\r\n', NULL, NULL, NULL, 'Ya'),
+(52, 'Shohihah, M.Pd', NULL, 'IMG_5113.JPG', '2007', 'Aqidah Akhlak', 'Khoirunnas yanfa\'u linnas\r\n', 'Shohihah', 'sohihah02@gmail.com\r\n', '081249592220', NULL, NULL, NULL, 'Ya'),
+(53, 'Syaifullah', NULL, 'IMG_5125.JPG', NULL, 'Komputer', 'Try and Try until we cry never give up la tahzan inna Allaha ma\'ana', '082299577946', 'rahs8391@gmail.com', '082299577946', NULL, NULL, 'Ya', NULL),
+(54, 'Tutik Hardianti, S.Pd', 'Wonorejo-Maron', 'IMG_5101.jpg', '2020', 'Petugas Piket', 'Permata tidak bisa berkilau tanpa gesekan, begitu juga manusia. Tidak ada manusia yang luar biasa tanpa cobaan', 'tutikhardianti', 'tutikhardianti17@gmail.com', '085259710809', NULL, NULL, 'Ya', NULL),
+(55, 'Mukhlas Kholil, S.H.I', NULL, 'IMG-20250321 113544.png', '2004', 'Bahasa Arab', 'Bahasa Arab mahkota Islam', 'Mukhlaskholil', 'mukhlashalil@gmail.com', '085259299956', NULL, NULL, NULL, 'Ya'),
+(56, 'Susilawati, S.Pd.I', NULL, 'IMG-20250312 094859.jpg', NULL, 'Karyawan TU', 'Semangat hidup meraih perjuangan', 'susil45', 'kucing05@gmail.com', '082334747328', NULL, NULL, 'Ya', NULL),
+(57, 'Deo A. Pramadhan', 'Besuki-Situbondo', 'IMG-20250312 095030.jpg', '2018', 'Al Qur\'an dan Hadist', 'Hidup sekali, sanggup berbaik hati', 'deramadhan85', 'deramadhan85@gmail.com', '08568747911', NULL, NULL, NULL, 'Ya'),
+(58, 'Shautul Azkiyak. S.Pd.I', 'Karangbong-Pajarakan', 'IMG-20250321 113624.png', '2021', 'koordinator prodistik', 'Jika kamu ingin menjadi kuat, pelajari cara bertarung sendirian.', 'azkiyak07', 'azkiyak07@gmail.com', '085792518395', NULL, NULL, 'Ya', NULL),
+(59, 'Candra Useh, S.Pd.I', NULL, 'IMG-20250321 113653.png', NULL, 'Mulok', 'Barang siapa belum pernah merasakan pahitnya mencari ilmu walau sesaat, ia akan menelan hinanya kebodohan sepanjang hidupnya', 'candrauseh', 'candrauseh999@gmail.com', '085258740227', NULL, NULL, 'Ya', 'Ya'),
+(60, 'Muhammad Fakhrur Rizky, SE', 'Bungatan-Situbondo', 'IMG-20250312 095217.jpg', '2019', 'Ketua Tim Media', 'Belajar dengan Hati, Berkarya dengan Ilmu.', 'rizzky_muhammad', 'rizzkymuhammad19@gmail.com', '085707426773', NULL, NULL, 'Ya', NULL),
+(61, 'Moh. Zarkasyi, S.Pd.I\r\n', NULL, 'IMG_5122.JPG', '2014', 'Ilmu Hadis\r\n', 'Khidmah ilmu, guru, dan orang tua\r\n', 'Kaziy87', 'moh.zarkasyi@gmail.com\r\n', '085235592093', NULL, NULL, NULL, 'Ya'),
+(62, 'Nur Fitriyah, S.Pd.I', 'Karangbong-Pajarakan', 'IMG-20250312 095345.jpg', '2017', 'Karyawan', 'Hidup adalah ibadah', 'Fitriyah', 'fitriyahfitri1416@gmail.com', '085234049987', NULL, NULL, 'Ya', NULL),
+(63, 'Ali Imron Maulana,S.M', 'Patemon-Krejengan', 'IMG-20250321 113732.png', '2024', 'Pewarta', 'Bisa Karena Biasa', 'Aliimronmaulana', 'aliimronmaulana99@gmail.com', '082231322797', NULL, NULL, 'Ya', NULL),
+(64, 'Moh. Zainul Hasan S.pd', 'Nogosaren-Gading', 'IMG_5144.JPG', '2022', 'Piket putra', 'Terus berjuang sampai kau mencapai puncak  Sehingga cacian itu berubah menjadi tepuk tangan...!!!', 'ZainulBinSalim', 'Zainulcb30@gmail.com', '085219868994', NULL, NULL, 'Ya', NULL),
+(65, 'M Zainul Arifin, S.Pd', NULL, 'IMG-20250312 131025.jpg', NULL, 'Staf Kurikulum', 'Jalani hidup dengan semangat', 'Z41nul_4r1f1n', 'az7746520@gmail.com', NULL, NULL, NULL, 'Ya', NULL),
+(66, 'Muhammad Daniel Ainul Islam', 'Jrebeng Kidul-Wonoasih', 'IMG-20250312 095540.jpg', '2016', 'Al Quran Hadits', 'Berdoa dan berjuanglah untuk mimpimu', 'Muhammaddanielainulislam', 'daniel.ainulislam@gmail.com', '082325588569', NULL, NULL, 'Ya', NULL),
+(67, 'Sholeh Hasan', 'Karangbong-Pajarakan', 'IMG-20250321 113901.png', '2021', NULL, 'Jangan mengaku jadi orang sabar, sebelum menjadi operstor madrasah', 'zhoel_89', 'ahsanzhoel03@gmail.com', '082336163232', NULL, NULL, 'Ya', NULL),
+(68, 'Agus Surahman, S.Si., Gr\r\n', 'Karanggeger-Pajarakan', 'IMG_5134.jpg', '2015', 'Kimia', 'Ketika sekarang terpikir, segeralah mengukir biar esok kan terukir\r\n', 'agus_surahman', 'gusurgusur@gmail.com\r\n', '082236517179', NULL, NULL, NULL, 'Ya'),
+(69, 'Maziyyatul Qudsiyah', 'Pakuniran-Pakuniran', 'IMG_5100.jpg', '2021', 'Petugas Piket', 'Jadilah berharga meski tak dihargai', 'Yaluhmezi', 'alfathoniy608@gmail.com', '6282232274945', NULL, NULL, 'Ya', NULL),
+(70, 'Fakhrur Razi, S.H.I', 'Besuki-Situbondo', 'IMG_5133.JPG', '2004', 'Kifayatul Akhyar\r\n', 'Qoola Umar bin Al-Khattab ra.: (tafaqqohuu qobla an tusawwaduu)ma\'naahu ta\'allamul \'ilma maa dumtum shighooron qobla an tashiruu saadatan ruasaan mandzuuron ilaihim, fain lam tata\'allamu qobla an yastahyaytum an tata\'allamu ba\'da alkibaro fabaqoitum juhhaalan ta\'khuzuunahu minal ashoogiri allaziina laa yuhsinuunal \'ilma fayuzrii zaalika bikum', 'FAKHRUR_RAZI_AS', 'ahsanzainina4@gmail.com\r\n', '0816563626', NULL, NULL, NULL, 'Ya'),
+(71, 'Bambang Sumaryono, S.T', 'Gebangan-Krejengan', 'IMG-20250321 113812.png', '2012', 'Kimia', 'Semesta cinta - SEMESTA ILAHI', 'Bambangst007', 'semestacinta55@gmail.com', '081335511405', NULL, NULL, NULL, 'Ya'),
+(75, 'Ahmad Yani, S.Kom', NULL, 'IMG-20250312 130448.jpg', NULL, 'Developer', 'tidak ada kata terlambat untuk mempelajari suatu hal yang baru', 'abu_naum', 'ahmad.yani.ar.dath@gmail.com', '085173456771', NULL, NULL, 'Ya', NULL),
+(76, 'Siti Walida, S.Pd.', 'Maron Kidul-Maron', 'IMG-20250312 131602.jpg', '2015', 'Staf Keuangan', 'Jika orang lain bisa, maka aku juga pasti bisa', 'Lieda06', 'sitiwalida73@gmail.com', '082234129990', NULL, NULL, 'Ya', NULL);
 
 -- --------------------------------------------------------
 
@@ -608,10 +612,42 @@ INSERT INTO `instruktur` (`id`, `NamaGuru`, `file`, `alamat`, `jabatan`, `telegr
 (2, 'Sumaryono, M.Pd.I', 'sek.png', 'GEBANGAN-KREJENGAN', 'SEKRETARIS-PENDIDIK', 'SumaRyon0', NULL, '[\"Microsoft Excel\", \"Basic Design Grapich\"]'),
 (3, 'Yanto,S.Pd.I, M.Si', 'bend.png', 'SUMBERANYAR-PAITON', 'BENDAHARA-PENDIDIK', 'yanto87', 'santrehngoding', '[\"UI/UX\", \"HTML\", \"CSS\", \"JavaScript\", \"Microsoft Access\"]'),
 (4, 'Iqbal Zakariyah, S.T, M.Kom', 'iqbal.png', 'BRUMBUNGAN LOR-GENDING', 'PENDIDIK', 'iqbal_zakariyah', NULL, '[\"Frontend Frameworks & Technologies\", \"Framework-Based Web Development\", \"Database\", \"Full-Stack Web Development\", \"API\"]'),
-(5, 'Rofiqo Handayani, S.Kom', 'rofiqo.png', 'PIKATAN-GENDING', 'Pendidik', 'Ryani11', 'Rofiqotulhikmah', '[\"Adobe XD\", \"Basic Desain Grafis\", \"Microsoft Word\"]'),
+(5, 'Rofiqo Handayani, S.Kom', 'rofiqo.png', 'PIKATAN-GENDING', 'PENDIDIK', 'Ryani11', 'Rofiqotulhikmah', '[\"Adobe XD\", \"Basic Desain Grafis\", \"Microsoft Word\"]'),
 (6, 'Ahmad Muzanni, S.Kom', 'muzanni.png', 'BANYUANYAR TENGAH-BANYUANYAR', 'PENDIDIK', 'comemind', 'comemind_art', '[\"Digital Branding\", \"Digital Imaging\"]'),
-(7, 'Taufiqur Rahman, S.Kom', 'taufiq.png', NULL, 'Pendidik', 'taufiqqurrohman91', NULL, '[\"UI/UX\", \"HTML\", \"CSS\", \"JavaScript\", \"Microsoft Access\"]'),
-(8, 'Muhammad Ishomuddin', 'new.png', NULL, 'Pendidik', 'yanto87', NULL, '[\"UI/UX\", \"HTML\", \"CSS\", \"JavaScript\", \"Microsoft Access\"]');
+(7, 'Taufiqur Rahman, S.Kom', 'taufiq.png', NULL, 'PENDIDIK', 'taufiqqurrohman91', NULL, '[\"UI/UX\", \"HTML\", \"CSS\", \"JavaScript\", \"Microsoft Access\"]'),
+(8, 'Muhammad Ishomuddin', 'new.png', NULL, 'PENDIDIK', 'yanto87', NULL, '[\"UI/UX\", \"HTML\", \"CSS\", \"JavaScript\", \"Microsoft Access\"]');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `kepala_madrasah`
+--
+
+CREATE TABLE `kepala_madrasah` (
+  `id` int(11) NOT NULL,
+  `nama` text NOT NULL,
+  `foto` text DEFAULT NULL,
+  `tahun_mulai` year(4) DEFAULT NULL,
+  `tahun_selesai` varchar(20) DEFAULT NULL,
+  `profil` text DEFAULT NULL,
+  `profil2` text DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data untuk tabel `kepala_madrasah`
+--
+
+INSERT INTO `kepala_madrasah` (`id`, `nama`, `foto`, `tahun_mulai`, `tahun_selesai`, `profil`, `profil2`) VALUES
+(1, 'Drs. KH. Moh. Damanhuri Romly', '1.jpg', '1974', '1978', '1.webp', '2.webp'),
+(2, 'Ust. H. Shohibuddin Basuni, BA, S.Pd.I', 'images.png', '1978', '1980', '2.webp', NULL),
+(3, 'Ust. Albar Salim, BA.', 'images.png', '1980', '1984', '3.webp', NULL),
+(4, 'KH. Moh. Hasan Mutawakkil Alallah, S.H.M.M', '4.jpeg', '1984', '1990', '4.webp', NULL),
+(5, 'KH. Moh. Abdil Bar', '5.jpg', '1990', '1994', '5.webp', NULL),
+(6, 'KH. Muh. Baiduri Faishal, M.Pd', 'images.png', '1996', '1998', '6.webp', NULL),
+(7, 'Ust. Drs. Ibnu Hajar, M.Pd.I', 'images.png', '1994', '1998', '7.webp', NULL),
+(8, 'Ust. Drs. Ghulam Rosul', 'images.png', '1998', '2004', '8.webp', NULL),
+(9, 'Ust. Drs. Haqqul Yaqin, M.Ag.', 'images.png', '2004', '2012', '9.webp', NULL),
+(10, 'Nun Ahsan Maliki, S.Sy, M.Pd.', '10.png', '2012', 'Sekarang', '10.webp', NULL);
 
 -- --------------------------------------------------------
 
@@ -753,7 +789,8 @@ INSERT INTO `prestasi` (`id`, `title`, `file`, `tahun`, `berita`, `created_at`) 
 (98, 'Finalis OLNAS', 'winner-20250326 171810.jpg', 2025, 'Congratulations\r\n\r\n- Faizah Vivi Agustin XI IPA 1\r\n- Aliya Firnanda XI IPA 3\r\n- Nuriyah Rahmawati XI PK 1\r\n- Aril Prasetya XI IPA 4 \r\n- Ula Syafwan Maulana XI IPA 4 \r\n\r\nLOLOS BABAK FINAL\r\nOLNAS 2025 (Olimpiade Sains Nasional) se-Indonesia oleh Ruang Dosen RI ke Batu (Malang) Tgl 27 April 2025.', '2025-03-16'),
 (99, 'Lolos PTN jalur SNBP 2025', 'winner-20250326 171957.jpg', 2025, 'SELAMAT DAN SUKSES\r\n\r\n25 santri MA Zaha diterima di Perguruan Tinggi Negeri Jalur SNBP (Seleksi Nasional Berdasarkan Prestasi) 2025.', '2025-03-17'),
 (100, 'Finalis KMNR-20', 'winner-20250326 172138.jpg', 2025, 'Congratulations\r\n- Widhat Ainur Muttaqin X-G\r\n- Sidqiana Azzahra XII IPA 1\r\nLOLOS BABAK FINAL\r\nOlimpiade KMNR-20 (Kompetisi Matematika Nalaria Realistik) se-Indonesia oleh KPM (Klinik Pendidikan MIPA) Readi Human School 2025 ke Tangerang (Banten) \r\n26 - 28 April 2025.', '2025-03-25'),
-(102, 'Lolos SPAN PTKIN 2025', 'winner-20250414 050710.jpg', 2025, 'SELAMAT DAN SUKSES\r\n\r\n71 santri MA Zaha diterima di Perguruan Tinggi Negeri Jalur SPAN-PTKIN 2025.', '2025-03-29');
+(102, 'Lolos SPAN PTKIN 2025', 'winner-20250414 050710.jpg', 2025, 'SELAMAT DAN SUKSES\r\n\r\n71 santri MA Zaha diterima di Perguruan Tinggi Negeri Jalur SPAN-PTKIN 2025.', '2025-03-29'),
+(103, 'Medalis KMNR-20', 'winner-20250501 134600.jpg', 2025, 'Selamat dan Sukses \r\nSidqiana Azzahra (XII IPA 1)\r\nMedali Perunggu (Bronze) \r\nWidhat Ainur Muttaqin (X-G)\r\nMerit Award\r\nPada Grand Final (Offline) \r\nOlimpiade Matematika KMNR-20 2025 se-Indonesia\r\ndi UTCC Tangerang Selatan, Banten\r\n26 - 29 April 2025.', '2025-04-28');
 
 -- --------------------------------------------------------
 
@@ -825,7 +862,8 @@ INSERT INTO `prestasi_olimpiade` (`id`, `title`, `file`, `tahun`, `berita`, `cre
 (95, 'Juara Fisika UNEJ', 'winner-20250312 164742.jpg', 2024, 'Selamat dan sukses \r\nkepada\r\nSidqiana Azzahra (XII IPA 1) Juara Harapan 3\r\nNuri Faizatul Himmah R. (XII IPA 2) Juara 10 Besar \r\nPada Grand Final (Offline) \r\nOlimpiade Fisika Tingkat Nasional PHYSTON 2024\r\nUniversitas Negeri Jember (UNEJ)', '2024-12-04', 'Daerah', 2),
 (96, 'Semifinalis KMNR-20', 'winner-20250312 165415.jpg', 2025, 'Congratulations\r\n- Sidqiana Azzahra XII IPA 1\r\n- Faizah Vivi Agustin XI IPA 1\r\n- Aliya Firnanda XI IPA 3\r\n- Nuriyah Rahmawati XI PK 1\r\n- Widhat Ainur Muttaqin X-G\r\n- Saelan Maulidany Midad X-I \r\nLOLOS BABAK SEMIFINAL\r\nOlimpiade KMNR-20 (Kompetisi Matematika Nalaria Realistik) se-Indonesia oleh KPM (Klinik Pendidikan MIPA) Readi Human School 2025.', '2025-02-08', 'Nasional', 6),
 (98, 'Finalis OLNAS', 'winner-20250326 171810.jpg', 2025, 'Congratulations\r\n\r\n- Faizah Vivi Agustin XI IPA 1\r\n- Aliya Firnanda XI IPA 3\r\n- Nuriyah Rahmawati XI PK 1\r\n- Aril Prasetya XI IPA 4 \r\n- Ula Syafwan Maulana XI IPA 4 \r\n\r\nLOLOS BABAK FINAL\r\nOLNAS 2025 (Olimpiade Sains Nasional) se-Indonesia oleh Ruang Dosen RI ke Batu (Malang) Tgl 27 April 2025.', '2025-03-16', 'Nasional', 5),
-(100, 'Finalis KMNR-20', 'winner-20250326 172138.jpg', 2025, 'Congratulations\r\n- Widhat Ainur Muttaqin X-G\r\n- Sidqiana Azzahra XII IPA 1\r\nLOLOS BABAK FINAL\r\nOlimpiade KMNR-20 (Kompetisi Matematika Nalaria Realistik) se-Indonesia oleh KPM (Klinik Pendidikan MIPA) Readi Human School 2025 ke Tangerang (Banten) \r\n26 - 28 April 2025.', '2025-03-25', 'Nasional', 2);
+(100, 'Finalis KMNR-20', 'winner-20250326 172138.jpg', 2025, 'Congratulations\r\n- Widhat Ainur Muttaqin X-G\r\n- Sidqiana Azzahra XII IPA 1\r\nLOLOS BABAK FINAL\r\nOlimpiade KMNR-20 (Kompetisi Matematika Nalaria Realistik) se-Indonesia oleh KPM (Klinik Pendidikan MIPA) Readi Human School 2025 ke Tangerang (Banten) \r\n26 - 28 April 2025.', '2025-03-25', 'Nasional', 2),
+(103, 'Medalis KMNR-20', 'winner-20250501 134722.jpg', 2025, 'Selamat dan Sukses \r\nSidqiana Azzahra (XII IPA 1)\r\nMedali Perunggu (Bronze) \r\nWidhat Ainur Muttaqin (X-G)\r\nMerit Award\r\nPada Grand Final (Offline) \r\nOlimpiade Matematika KMNR-20 2025 se-Indonesia\r\ndi UTCC Tangerang Selatan, Banten\r\n26 - 29 April 2025.', '2025-04-28', 'Nasional', 2);
 
 -- --------------------------------------------------------
 
@@ -992,6 +1030,12 @@ ALTER TABLE `instruktur`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indeks untuk tabel `kepala_madrasah`
+--
+ALTER TABLE `kepala_madrasah`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indeks untuk tabel `matakuliah`
 --
 ALTER TABLE `matakuliah`
@@ -1074,6 +1118,12 @@ ALTER TABLE `instruktur`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
+-- AUTO_INCREMENT untuk tabel `kepala_madrasah`
+--
+ALTER TABLE `kepala_madrasah`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+
+--
 -- AUTO_INCREMENT untuk tabel `matakuliah`
 --
 ALTER TABLE `matakuliah`
@@ -1089,13 +1139,13 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT untuk tabel `prestasi`
 --
 ALTER TABLE `prestasi`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=103;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=104;
 
 --
 -- AUTO_INCREMENT untuk tabel `prestasi_olimpiade`
 --
 ALTER TABLE `prestasi_olimpiade`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=103;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=104;
 
 --
 -- AUTO_INCREMENT untuk tabel `testimoni_alumni`
