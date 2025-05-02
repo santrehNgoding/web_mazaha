@@ -225,12 +225,6 @@ button.primary {
     <div data-aos="fade-up" data-aos-duration="1000" class="center">
         <h1 class="text-success-emphasis"><span class="fs-1 fw-bold text-warning-emphasis">Bagian</span> <br> <span class="judul" style="font-size:6vw;font-weight:bold">Keuangan</span></h1>    
         <p class="fw-bold text-warning-emphasis">MA <span id="auto-type" class="fw-bold text-warning-emphasis"></span></p>
-        <div class="d-flex flex-wrap gap-2" id="nav">
-            <a href="#tupoksi" class="button" style="width: 25%"><span>TUPOKSI</span></a>
-            <a href="#tatib" class="button" ><span>TATIB</span></a>
-            <a href="#bk" class="button"><span>BK</span></a>
-            <a href="{{route('olimpiade.prestasi')}}" class="button"><span>OSIS</span></a>
-        </div>
     </div>
     <div data-aos="fade-right" data-aos-duration="1000" class="right">
         <img style="height:30vw" class="d-block m-auto" src="{{asset('img/keuangan.png')}}" alt="">
@@ -246,7 +240,7 @@ button.primary {
               <li class="list-group-item">Menerima keuangan dari siswa melalui pembantu bendahara </li>
               <li class="list-group-item">Memasukkan ke rekening Bank yang telah ditentukan </li>
               <li class="list-group-item">Membukukan ke buku Kas ke uangan dibantu pembantu bendahara </li>
-              <li class="list-group-item">Menyetorkan / membayar HR dan Transport guru dan karyawan  </li>
+              <li class="list-group-item">Mengatur dan menyiapkan bisyaroh, transport Guru dan Karyawan</li>
               <li class="list-group-item">Membayar rekening listrik, wifi, koran dan telepon </li>
               <li class="list-group-item">Menyetorkan keuangan pesantren /  Yayasan </li>
               <li class="list-group-item">Mengeluarkan keuangan untuk keperluan MADRASAH di luar rutin setelah diketahui kepala MADRASAH </li>
@@ -289,40 +283,6 @@ button.primary {
                 </div>
             </div>
         </div>
-    </div>
-</div>
-<div id="tatib">
-    <h1 data-aos="flip-left" data-aos-duration="1000" class="text-center fw-bold text-success-emphasis">Tata Tertib Guru dan Santri</h1>
-    <img data-aos="flip-left" data-aos-duration="1000" style="max-width: 75%" class="mx-auto d-block mb-4"  src="/img/hr.png" alt="">
-    <div class="d-flex" style="max-width: 100%;overflow-x:auto">
-        <embed src="/img/tatib-guru.pdf" type="application/pdf" height="600px" width="50%">
-        <embed src="/img/tatib-santri.pdf" type="application/pdf" height="600px" width="50%">
-    </div>
-</div>
-<h1 id="bk" data-aos="flip-left" data-aos-duration="1000" class="mt-5 text-center fw-bold text-success-emphasis">Bimbingan & Konseling</h1>
-<img data-aos="flip-left" data-aos-duration="1000" style="max-width: 75%" class="mx-auto d-block mb-4"  src="/img/hr.png" alt="">
-<div class="bk">
-    <div class="card rounded-5 d-flex mx-auto" style="width: 90%;">
-        <img class="w-25" id="BK_putra" src="/img/bk-putra.png" alt="">
-        <div style="position: absolute; left: 30%; top: 40%; transform: translateY(-50%);">
-            <h1 class="fw-bold text-light">Mohammad Ahsanun Na'im, S.Sos</h1>
-            <h4 class="text-light">Guru BK Putra</h4>
-            <button class="primary">
-                <a class="text-success-emphasis" href="https://t.me/ahsanaim">Kirim Pesan</a>
-              </button>
-        </div>
-    </div>
-</div>
-<div class="bk2 mb-5">
-    <div class="card rounded-5 d-flex mx-auto justify-content-end" style="width: 90%;">
-        <div style="position: absolute; left: 30%; top: 40%; transform: translateY(-50%);">
-            <h1 class="fw-bold text-light">Najwan Nada, S.Sos</h1>
-            <h4 class="text-light">Guru BK Putri</h4>
-            <button class="primary">
-                <a class="text-success-emphasis" href="https://t.me/najwannada">Kirim Pesan</a>
-              </button>
-        </div>
-        <img class="w-25" id="BK_putri" src="/img/bk-putri.png" alt="">
     </div>
 </div>
 <script src="{{asset('js/aos.js')}}"></script>
