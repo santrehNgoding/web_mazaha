@@ -209,9 +209,9 @@
                     <li class="nav-item"><a class="nav-link" href="{{route('beranda')}}">Beranda</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Kabar Madrasah</a>
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Berita</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/berita">Berita</a></li>
+                            <li><a class="dropdown-item" href="/berita">Warta Madrasah</a></li>
                             <li><a class="dropdown-item" href="/galeri">Galeri</a></li>
                             <li><a class="dropdown-item" href="/prestasi">Prestasi</a></li>
                             <li><a class="dropdown-item" href="#">Agenda Madrasah</a></li>
@@ -219,7 +219,7 @@
                     </li>
                     
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Profil Madrasah</a>
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Profil</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="/sambutan">Sambutan Kepala Madrasah</a></li>
                             <li><a class="dropdown-item" href="/struktur">Struktur Madrasah</a></li>
