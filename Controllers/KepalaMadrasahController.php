@@ -13,7 +13,6 @@ class KepalaMadrasahController extends Controller
     $featuredKepalaMadrasah = $id 
         ? KepalaMadrasah::findOrFail($id)
         : $allKepalaMadrasah->first();
-
     return view('sambutan', [
         'featured' => $featuredKepalaMadrasah,
         'all' => $allKepalaMadrasah,
