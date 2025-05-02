@@ -150,7 +150,7 @@ header video {
             </div>
             <div data-aos="fade-left" data-aos-duration="1000" data-aos-anchor-placement="top-center" class="image-row">
                 <img style="border-top-left-radius: 10px;border-top-right-radius:10px" src="/img/alasan2.jpg" alt="Gambar 1">
-                <button class="alasan" onclick="location.href='#basel'">
+                <button class="alasan" onclick="location.href='#unggul'">
                     <p class="mb-0 mt-3">Program Unggulan yang ada di MA ZAHA</p>
                     <p>Baca Selengkapnya...</p>
                 </button>
