@@ -8,6 +8,7 @@
         object-position: bottom;
     }
     @media only screen and (max-width:767px){
+
         .right,.center{
             width:100%;
         }
@@ -38,6 +39,9 @@
         #nav{
             order:3;
             width: 100% !important;
+        }
+        #mitra_card{
+            width:80% !important;
         }
         .button span {
             font-size: 2vw;
@@ -79,6 +83,9 @@
 }
     }
     @media only screen and (min-width:768px){
+        .container{
+            margin-bottom:300px;
+        }
         .right{
             width:50%;
         }
@@ -218,6 +225,49 @@ button.primary {
   background-color: gold;
   transition-duration: 0.4s;
 }
+
+        .gallery {
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto;
+            gap: 40px;
+            width: 100%;
+            grid-template-areas: 
+                "img1 img3 img3 "
+                "img1 img4 img5 "
+                "img2 img4 img6 ";
+        }
+        .gallery img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+            transition: transform 0.3s ease-in-out;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Atur posisi masing-masing gambar dalam grid */
+        .img1 { grid-area: img1; }
+        .img2 { grid-area: img2; }
+        .img3 { grid-area: img3; }
+        .img4 { grid-area: img4; }
+        .img5 { grid-area: img5; }
+        .img6 { grid-area: img6; }
+        .container h2{
+        margin-bottom:50px;
+    }
+        .all {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin-bottom:5em;
+        }
 </style>
 <link rel="stylesheet" href="{{asset('css/aos.css')}}">
 <script src="{{asset('js/typed.umd.js')}}"></script>
@@ -227,9 +277,9 @@ button.primary {
         <p class="fw-bold text-warning-emphasis">MA <span id="auto-type" class="fw-bold text-warning-emphasis"></span></p>
         <div class="d-flex flex-wrap gap-2" id="nav">
             <a href="#tupoksi" class="button" style="width: 25%"><span>TUPOKSI</span></a>
-            <a href="#tatib" class="button" ><span>TATIB</span></a>
-            <a href="#bk" class="button"><span>BK</span></a>
-            <a href="{{route('olimpiade.prestasi')}}" class="button"><span>OSIS</span></a>
+            <a href="#mitra" class="button" ><span>Mitra</span></a>
+            <a href="#galeri" class="button"><span>Galeri</span></a>
+            <a href="/galeri?kategori=mitra" class="button"><span>Alumni</span></a>
         </div>
     </div>
     <div data-aos="fade-right" data-aos-duration="1000" class="right">
@@ -290,40 +340,87 @@ button.primary {
         </div>
     </div>
 </div>
-<div id="tatib">
-    <h1 data-aos="flip-left" data-aos-duration="1000" class="text-center fw-bold text-success-emphasis">Tata Tertib Guru dan Santri</h1>
+<div id="mitra" class="p-3">
+    <h1 data-aos="flip-left" data-aos-duration="1000" class="text-center fw-bold text-success-emphasis">Mitra Madrasah</h1>
     <img data-aos="flip-left" data-aos-duration="1000" style="max-width: 75%" class="mx-auto d-block mb-4"  src="/img/hr.png" alt="">
-    <div class="d-flex" style="max-width: 100%;overflow-x:auto">
-        <embed src="/img/tatib-guru.pdf" type="application/pdf" height="600px" width="50%">
-        <embed src="/img/tatib-santri.pdf" type="application/pdf" height="600px" width="50%">
+    <p class="text-center">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, dolor veniam saepe eos illo nisi ratione? Ex officia eum vel dolorum labore aperiam odio! Unde harum asperiores aut at ducimus, non ipsa veritatis porro, quaerat doloremque consequuntur beatae voluptate alias, officia fugiat animi natus. Ea doloribus recusandae provident iste quos.
+    </p>
+    <div class="d-flex flex-wrap justify-content-center gap-3">
+        <div id="mitra_card" class="card w-25 p-3">
+            <img src="/img/uin.png" alt="">
+            <h3 class="mt-4 text-center fw-bold">UIN Malik Ibrahim Malang</h3>
+            <hr class="w-50 mx-auto rounded-pill border border-success border-3 opacity-100">
+            <p class="text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, corporis?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, corporis?
+            </p>
+        </div>
+        <div id="mitra_card" class="card w-25 p-3">
+            <img src="/img/um.jpg" alt="">
+            <h3 class="mt-4 text-center fw-bold">Universitas Negeri Malang</h3>
+            <hr class="w-50 mx-auto rounded-pill border border-success border-3 opacity-100">
+            <p class="text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, corporis?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, corporis?
+            </p>
+        </div>
+        <div id="mitra_card" class="card w-25 p-3">
+            <img src="/img/jami.jpg" alt="">
+            <h3 class="mt-4 text-center fw-bold">Jam'iyyatul Qurra Wal Huffazh</h3>
+            <hr class="w-50 mx-auto rounded-pill border border-success border-3 opacity-100">
+            <p class="text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, corporis?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, corporis?
+            </p>
+        </div>
+        <div id="mitra_card" class="card w-25 p-3">
+            <img src="/img/pplh.png" alt="">
+            <h3 class="mt-4 text-center fw-bold">PPLH Seloliman, Mojokerto</h3>
+            <hr class="w-50 mx-auto rounded-pill border border-success border-3 opacity-100">
+            <p class="text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, corporis?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, corporis?
+            </p>
+        </div>
+        <div id="mitra_card" class="card w-25 p-3">
+            <img src="/img/quipper.png" alt="">
+            <h3 class="mt-4 text-center fw-bold">Quipper School Premium</h3>
+            <hr class="w-50 mx-auto rounded-pill border border-success border-3 opacity-100">
+            <p class="text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, corporis?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, corporis?
+            </p>
+        </div>
+        <div id="mitra_card" class="card w-25 p-3">
+            <img src="/img/bsi.jpg" alt="">
+            <h3 class="mt-4 text-center fw-bold">Bank Syariah Indonesia</h3>
+            <hr class="w-50 mx-auto rounded-pill border border-success border-3 opacity-100">
+            <p class="text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, corporis?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, corporis?
+            </p>
+        </div>
     </div>
 </div>
-<h1 id="bk" data-aos="flip-left" data-aos-duration="1000" class="mt-5 text-center fw-bold text-success-emphasis">Bimbingan & Konseling</h1>
+<h1 data-aos="flip-left" data-aos-duration="1000" class="mt-5 text-center fw-bold text-success-emphasis">Galeri Kegiatan</h1>
 <img data-aos="flip-left" data-aos-duration="1000" style="max-width: 75%" class="mx-auto d-block mb-4"  src="/img/hr.png" alt="">
-<div class="bk">
-    <div class="card rounded-5 d-flex mx-auto" style="width: 90%;">
-        <img class="w-25" id="BK_putra" src="/img/bk-putra.png" alt="">
-        <div style="position: absolute; left: 30%; top: 40%; transform: translateY(-50%);">
-            <h1 class="fw-bold text-light">Mohammad Ahsanun Na'im, S.Sos</h1>
-            <h4 class="text-light">Guru BK Putra</h4>
-            <button class="primary">
-                <a class="text-success-emphasis" href="https://t.me/ahsanaim">Kirim Pesan</a>
-              </button>
-        </div>
+<div class="container">
+    <div class="all">
+<div id="galeri">
+    <div class="gallery">
+    <img src="{{asset('img/slide4.png')}}" alt="Aula" class="img4">
+    <img src="{{asset('img/slide4.png')}}" alt="Perpustakaan" class="img1">
+    <img src="{{asset('img/slide4.png')}}" alt="Kelas" class="img3">
+    <img src="{{asset('img/slide4.png')}}" alt="Laboratorium Komputer" class="img2">
+    <img src="{{asset('img/slide4.png')}}" alt="Proses Belajar" class="img5">
+    <img src="{{asset('img/slide4.png')}}" alt="CCTV Keamanan" class="img6">
     </div>
 </div>
-<div class="bk2 mb-5">
-    <div class="card rounded-5 d-flex mx-auto justify-content-end" style="width: 90%;">
-        <div style="position: absolute; left: 30%; top: 40%; transform: translateY(-50%);">
-            <h1 class="fw-bold text-light">Najwan Nada, S.Sos</h1>
-            <h4 class="text-light">Guru BK Putri</h4>
-            <button class="primary">
-                <a class="text-success-emphasis" href="https://t.me/najwannada">Kirim Pesan</a>
-              </button>
-        </div>
-        <img class="w-25" id="BK_putri" src="/img/bk-putri.png" alt="">
-    </div>
 </div>
+</div>
+
+
 <script src="{{asset('js/aos.js')}}"></script>
 <script>
     AOS.init();
