@@ -84,7 +84,7 @@
 <p class="mx-5" style="text-align: justify">
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint cumque atque minima nisi odio voluptas totam, velit quis, alias autem consequatur assumenda eos, esse itaque labore vero laborum? Repellat sit aperiam delectus, dolores magni voluptas dolor nesciunt alias dolore. Minus placeat, eos, sequi vero aliquid explicabo et vel amet adipisci eligendi exercitationem beatae quo accusamus magnam repellat voluptates error facere quia velit in reprehenderit porro nulla? Maxime quos nulla deleniti beatae mollitia aperiam laborum, debitis possimus necessitatibus, magnam nesciunt impedit repellat temporibus doloremque rem iure omnis qui voluptas ipsa! Atque iste, animi provident similique voluptatibus illum tempora cum architecto quaerat.
 </p>
-<div class="d-flex flex-wrap justify-content-center px-5 mx-auto mb-5">
+<div id="featur" class="d-flex flex-wrap justify-content-center px-5 mx-auto mb-5">
     <div id="semua" class="card p-3 justify-content-center">
         @if($featured)
         <img class="rounded-circle shadow-lg w-50 d-block mx-auto" src="/img/kepala madrasah/{{$featured->foto}}" alt="">
