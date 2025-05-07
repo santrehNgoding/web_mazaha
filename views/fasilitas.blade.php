@@ -81,9 +81,18 @@
 </div>
 
 <header>
-    <h2>Fasilitas Pembelajaran</h2>
+    <h2>Sarana Dan Prasarana</h2>
 </header>
-
+<div class="container text-center">
+<h2 >Wakil Kepala Bidang Sarana dan Prasarana</h2>
+<div style="" class="text-center mt-3 d-flex justify-content-center">
+    <img src="{{asset('sarana1.jpg')}}" alt="" width="400px">
+</div>
+<h2>Staf bagian Sarana dan Prasarana</h2>
+<div class="d-flex justify-content-center gap-5">
+    <img src="{{asset('sarana2.jpg')}}" alt="" width="300px"class=" rounded shadow"" >
+    <img src="{{asset('sarana3.jpg')}}" alt="" width="300px"class=" rounded shadow"" >
+</div></div>
 <div class="container">
     <h2>Fasilitas Pembelajaran</h2>
     <div class="all">
