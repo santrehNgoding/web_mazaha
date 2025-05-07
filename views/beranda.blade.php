@@ -18,7 +18,7 @@
     margin-top: -30%
     }
     body{
-                background-image: url(/img/elang.jpg);
+                background-image: url(/img/Beranda/paralaxMobile.jpg);
                 background-attachment: fixed;
                 background-repeat: no-repeat;
                 background-size:100%;
@@ -118,7 +118,7 @@ header video {
                 <h3 class="text-center text-light fw-bold">Selamat Datang di Madrasah Aliyah Zainul Hasan 1 Genggong </h3>
                 <h3 class="text-center text-light fw-bold">Madrasah Berbasis Pesantren dan Teknologi</h3>
                 <form class="mt-3" action="">
-                    <audio autoplay controls id="murottal">
+                    <audio autoplay loop id="murottal">
                         <source src="/img/MUMTAZ BERKUALITAS.mp3" type="audio/mpeg">
                       </audio>
                 </form>
