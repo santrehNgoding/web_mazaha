@@ -127,14 +127,13 @@
         /* Navbar */
         .navbar-nav .nav-link {
             color: white;
-            font-weight: bold;
+            font-weight:500;
         }
         .navbar-nav .nav-link:hover{
             color:#FFD700;
         }
 
         .navbar-nav .nav-link:hover {
-            font-weight: bold;
             border-radius:10px;
         }
 
@@ -205,7 +204,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto mx-5 gap-4">
+                <ul class="navbar-nav ms-auto mx-5 gap-4 mx-auto">
                     <li class="nav-item"><a class="nav-link" href="{{route('beranda')}}">Beranda</a>
                     </li>
                     <li class="nav-item dropdown">
