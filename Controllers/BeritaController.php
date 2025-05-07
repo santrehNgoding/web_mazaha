@@ -7,10 +7,33 @@ use App\Models\Berita;
 class BeritaController extends Controller
 {
 
-    public function index()
+    public function index(Request $request)
+    {
+        $query = Berita::query();
+    
+        if ($request->filled('search')) {
+            $query->where(function ($q) use ($request) {
+                $q->where('judul', 'like', '%' . $request->search . '%')
+                  ->orWhere('date', 'like', '%' . $request->search . '%');
+            });
+            
+        }
+    
+        $beritas = Berita::orderBy('created_at', 'desc')->get();
+        return view('berita.index', compact('beritas'));
+    }
+    public function cari(Request $request)
+    {
+        $query = $request->input('query');
+
+        // Simulasi hasil pencarian
+        // Nanti bisa kamu ganti dengan query dari model Berita
+        return view('berita.hasil', compact('query'));
+    }
+    public function prestasi()
     {
         $beritas = Berita::orderBy('created_at', 'desc')->get();
-        return view('berita', compact('beritas'));
+        return view('prestasi', compact('beritas'));
     }
     public function index2()
     {
@@ -37,6 +60,7 @@ public function store(Request $request)
             'judul' => 'required|max:255',
             'isi'   => 'required',
             'gambar'=> 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'date'=> 'required',
         ]);
 
         // Proses upload gambar jika ada
@@ -53,6 +77,7 @@ public function store(Request $request)
         Berita::create([
             'judul' => $request->judul,
             'isi'   => $request->isi,
+            'date'   => $request->date,
             'gambar'=> $gambarName,
         ]);
 
@@ -76,6 +101,7 @@ public function update(Request $request, $id)
     $request->validate([
         'judul' => 'required|max:255',
         'isi'   => 'required',
+        'date'   => 'required',
         'gambar'=> 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
     ]);
 
@@ -97,6 +123,7 @@ public function update(Request $request, $id)
 
     $berita->judul = $request->judul;
     $berita->isi   = $request->isi;
+    $berita->date   = $request->date;
     $berita->save();
 
     return redirect()->route('berita.index')->with('success', 'Berita berhasil diperbarui!');
