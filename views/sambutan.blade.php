@@ -81,8 +81,8 @@
 </div>
 <h1 data-aos="flip-left" data-aos-duration="1000" class="mt-5 text-center fw-bold text-success-emphasis">Kepala Madrasah dari Masa ke Masa</h1>
 <img data-aos="flip-left" data-aos-duration="1000" style="max-width: 75%" class="mx-auto d-block mb-4"  src="/img/hr.png" alt="">
-<p class="mx-5" style="text-align: justify">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint cumque atque minima nisi odio voluptas totam, velit quis, alias autem consequatur assumenda eos, esse itaque labore vero laborum? Repellat sit aperiam delectus, dolores magni voluptas dolor nesciunt alias dolore. Minus placeat, eos, sequi vero aliquid explicabo et vel amet adipisci eligendi exercitationem beatae quo accusamus magnam repellat voluptates error facere quia velit in reprehenderit porro nulla? Maxime quos nulla deleniti beatae mollitia aperiam laborum, debitis possimus necessitatibus, magnam nesciunt impedit repellat temporibus doloremque rem iure omnis qui voluptas ipsa! Atque iste, animi provident similique voluptatibus illum tempora cum architecto quaerat.
+<p class="mx-5" style="text-align: center">
+    Tak ada kapal berlayar tanpa kemudi. Begitu pula madrasah kami, selalu ada tokoh utama di setiap langkah yang mengiringi. MA Zainul Hasan 1 Genggong, menghadirkan para pemimpin luar biasa. Memberikan kualitas terbaik dalam setiap terobosannya, juga berperan penting di setiap detik perjuangannya. Di sinilah jasa itu diabadikan, mengukir sejarah untuk kehidupan di masa depan.
 </p>
 <div id="featur" class="d-flex flex-wrap justify-content-center px-5 mx-auto mb-5">
     <div id="semua" class="card p-3 justify-content-center">
