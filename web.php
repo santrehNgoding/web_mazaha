@@ -94,7 +94,13 @@ use App\Http\Controllers\TesUjiController;
 Route::get('/tesuji/reset', [TesUjiController::class, 'reset'])->name('tesuji.reset');
 Route::get('hasil', [TesUjiController::class, 'hasil'])->name('hasil');
 Route::put('/tesuji/updatePilgan/{id}', [TesUjiController::class, 'updatePilgan'])->name('tesuji.updatePilgan');
+Route::get('/alumni', [App\Http\Controllers\HalamanController::class, 'alumni'])->name('alumni');
+Route::get('/struktur', [App\Http\Controllers\HalamanController::class, 'struktur'])->name('struktur');
+Route::get('/fasilitas', [App\Http\Controllers\HalamanController::class, 'fasilitas'])->name('fasilitas');
+use App\Http\Controllers\BeritaController;
 
+Route::get('/berita', [App\Http\Controllers\BeritaController::class, 'index'])->name('index');
+Route::get('/prestasi', [App\Http\Controllers\BeritaController::class, 'prestasi'])->name('prestasi');
 
 
 
