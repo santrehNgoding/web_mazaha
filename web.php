@@ -101,6 +101,10 @@ use App\Http\Controllers\BeritaController;
 
 Route::get('/berita', [App\Http\Controllers\BeritaController::class, 'index'])->name('index');
 Route::get('/prestasi', [App\Http\Controllers\BeritaController::class, 'prestasi'])->name('prestasi');
+use App\Http\Controllers\BeritaController;
 
+Route::get('/berita/index', [BeritaController::class, 'index'])->name('berita.index');
+Route::get('/berita/cari', [BeritaController::class, 'cari'])->name('berita.cari');
+Route::get('/berita/kategori/{slug}', [BeritaController::class, 'kategori'])->name('berita.kategori');
 
 
