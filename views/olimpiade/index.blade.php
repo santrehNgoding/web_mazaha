@@ -199,14 +199,14 @@ padding: 5px !important;
 <script src="{{asset('js/typed.umd.js')}}"></script>
 <header id="headerOlim" class="d-flex flex-wrap align-items-center p-5" >
     <div data-aos="fade-right" data-aos-duration="1000" class="left">
-        <img class="d-block m-auto w-100" src="{{asset('img/olimpiade/coce.png')}}" alt="">
+        <img class="d-block m-auto w-100" src="{{asset('img/olimpiade/putra.png')}}" alt="">
     </div>
     <div data-aos="fade-left" data-aos-duration="1000" class="center">
         <h1 class="text-success-emphasis"><span class="fs-1 fw-bold text-warning-emphasis">Bimbingan</span> <br> <span style="font-size:6vw;font-weight:bold">Olimpiade</span></h1>    
         <p id="auto-type" class="fw-bold"></p>
     </div>
     <div data-aos="fade-right" data-aos-duration="1000" class="right">
-        <img class="d-block m-auto w-100" src="{{asset('img/olimpiade/coco.png')}}" alt="">
+        <img class="d-block m-auto w-100" src="{{asset('img/olimpiade/putri.png')}}" alt="">
     </div>
     <div data-aos="fade-up" data-aos-duration="1000" class="w-50 d-flex flex-wrap gap-2" id="nav">
         <a href="#sejarah" class="button"><span>Sejarah</span></a>
@@ -262,7 +262,7 @@ padding: 5px !important;
 <div id="struktur">
     <h1 data-aos="flip-left" data-aos-duration="1000" class="text-center fw-bold text-success-emphasis">Struktur Pengelola Program Olimpiade</h1>
     <img data-aos="flip-left" data-aos-duration="1000" style="max-width: 75%" class="mx-auto d-block mb-4"  src="/img/hr.png" alt="">
-    <img data-aos="fade-down" data-aos-duration="1000" class="mx-auto d-block mb-4 w-100" src="/img/ss.jpg" alt="">
+    <img data-aos="fade-down" data-aos-duration="1000" class="mx-auto d-block mb-4 w-75" src="/img/olimpiade/struktur.jpg" alt="">
     
 </div>
 <div id="kurikulum">
